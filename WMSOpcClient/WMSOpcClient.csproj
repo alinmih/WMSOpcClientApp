@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-WMSOpcClient-4BB2D8AD-9C92-491C-9E03-4EFAF1DB7618</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.11" />
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Client" Version="1.4.365.10" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="SqlTableDependency" Version="8.5.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+</Project>
