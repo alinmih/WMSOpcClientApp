@@ -39,6 +39,8 @@ namespace WMSOpcClient
         private Int16 itemCount;
 
         private string monitoredItemName;
+
+        public bool OpcServerConnected { get; private set; } = false;
         #endregion
 
         public Worker(ILogger<Worker> logger, IConfiguration configuration, IBoxDataRepository scannedData, IMessageRepository messageRepository)
@@ -57,96 +59,99 @@ namespace WMSOpcClient
             // init client on service startup
 
             // ********************SQL SECTION*****************************
+
             // subscribe to SQL message service broker 
             _messageRepository.OnNewMessage += NewMessageReceived;
+
             // ************************************************************
 
 
-
             // ********************OPC SECTION*****************************
-            // Create OPC Client
-            // 1. Connection
-            // 2. Session
-            var url = _configuration.GetSection("OPCServerUrl").Value;
-            var endpoints = myClientHelperAPI.GetEndpoints(url);
-            mySelectedEndpoint = endpoints[0];
-            //Check if sessions exists; If yes > delete subscriptions and disconnect
-            if (mySession != null && !mySession.Disposed)
+            try
             {
-                try
+                // Create OPC Client
+                // 1. Connection & session creation
+                _logger.LogInformation("Connecting to OPC Server...");
+                while (OpcServerConnected != true)
                 {
-                    mySubscription.Delete(true);
+                    //Thread.Sleep(1000);
+                    ConnectToServer();
                 }
-                catch
-                {
-                    ;
-                }
-
-                myClientHelperAPI.Disconnect();
-                mySession = myClientHelperAPI.Session;
-
+                OpcServerConnected = true;
+                // 2. Subscription of items
+                AddSubscription();
             }
-            else
+            catch (Exception ex)
             {
-                try
-                {
-                    //Register mandatory events (cert and keep alive)
-                    myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
-                    myClientHelperAPI.CertificateValidationNotification += new CertificateValidationEventHandler(Notification_ServerCertificate);
-
-                    //Check for a selected endpoint
-                    if (mySelectedEndpoint != null)
-                    {
-                        //Call connect
-                        myClientHelperAPI.Connect(mySelectedEndpoint, false, "", "").Wait();
-                        //Extract the session object for further direct session interactions
-
-                        mySession = myClientHelperAPI.Session;
-
-                    }
-                    else
-                    {
-                        _logger.LogWarning("Please select an endpoint before connecting to OPC");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex.Message);
-                }
+                _logger.LogError("Cannot connect to OPC server: {message}", ex.Message);
             }
+            // ************************************************************
+            return base.StartAsync(cancellationToken);
+        }
 
-            // 3. Subscription
-            //this example only supports one item per subscription; remove the following IF loop to add more items
-            if (myMonitoredItem != null && mySubscription != null)
-            {
-                try
-                {
-                    myMonitoredItem = myClientHelperAPI.RemoveMonitoredItem(mySubscription, myMonitoredItem);
-                }
-                catch
-                {
-                    //ignore
-                    ;
-                }
-            }
-
+        private void AddSubscription()
+        {
             try
             {
                 //use different item names for correct assignment at the notificatino event
                 itemCount++;
                 monitoredItemName = "myItem" + itemCount.ToString();
-                if (mySubscription == null)
+                if (mySubscription == null && mySession != null)
                 {
-                    mySubscription = myClientHelperAPI.Subscribe(1000);
+                    mySubscription = myClientHelperAPI.Subscribe(100);
+                    myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 }
-                myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
+
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
             }
-            // ************************************************************
-            return base.StartAsync(cancellationToken);
+        }
+
+        private void AddItemsToSubscription(Subscription currentSubscription)
+        {
+            var tag1 = "ns=5;s=Sinusoid1";
+            var tag2 = "ns=5;s=Triangle1";
+            myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag1, monitoredItemName, 1);
+            myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag2, monitoredItemName, 1);
+        }
+
+        private void ConnectToServer()
+        {
+            try
+            {
+                var url = _configuration.GetSection("OPCServerUrl").Value;
+                var endpoints = myClientHelperAPI.GetEndpoints(url);
+                mySelectedEndpoint = endpoints[0];
+
+                //Register mandatory events (cert and keep alive)
+                myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
+                myClientHelperAPI.CertificateValidationNotification += new CertificateValidationEventHandler(Notification_ServerCertificate);
+
+                //Check for a selected endpoint
+                if (mySelectedEndpoint != null)
+                {
+                    //Call connect
+                    myClientHelperAPI.Connect(mySelectedEndpoint, false, "", "").Wait();
+                    //Extract the session object for further direct session interactions
+
+                    mySession = myClientHelperAPI.Session;
+                    OpcServerConnected = true;
+
+                }
+                else
+                {
+                    _logger.LogWarning("Please select an endpoint before connecting to OPC");
+                    OpcServerConnected = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                OpcServerConnected = false;
+            }
+
         }
 
         private void Notification_MonitoredItem(MonitoredItem monitoredItem, MonitoredItemNotificationEventArgs e)
@@ -200,7 +205,32 @@ namespace WMSOpcClient
             }
             catch (Exception ex)
             {
-                _logger.LogError("Error: {error} at {stackTrace}", ex.Message, ex.StackTrace);
+                //Thread.Sleep(1000);
+                //var connected = ConnectToServer();
+                //if (connected)
+                //{
+                //    _logger.LogWarning("Reconnected after server connection fails...");
+                //    AddItemSubscription();
+                //}
+                //else
+                //{
+                _logger.LogError("Error: {error} {stackTrace}", ex.Message, ex.StackTrace);
+                OpcServerConnected = false;
+                mySubscription.Delete(true);
+                mySubscription = null;
+                myClientHelperAPI.Disconnect();
+                mySession = null;
+                myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
+                myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
+                myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
+                while (OpcServerConnected !=true)
+                {
+                    //Thread.Sleep(1000);
+                    ConnectToServer();
+                }
+                AddSubscription();
+                AddItemsToSubscription(mySubscription);
+
             }
         }
 
@@ -235,44 +265,68 @@ namespace WMSOpcClient
         {
             // dispose services
 
-            _messageRepository.Dispose();
-            _logger.LogInformation("The service has been stopped...");
+            try
+            {
+                _logger.LogInformation("Try disposing services");
+                _messageRepository.Dispose();
+
+                myClientHelperAPI.Disconnect();
+                _logger.LogInformation("The service has been stopped...");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Cannot disposing services: {mess}", ex.Message);
+            }
             return base.StopAsync(cancellationToken);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-
-            _logger.LogInformation("Getting unprocessed boxes...");
-            var records = await _scannedData.GetBoxes();
-
-            foreach (var record in records)
+            try
             {
-                var model = new MessageModel
-                {
-                    Id = record.Id,
-                    SSSC = record.SSSC,
-                    OriginalBox = record.OriginalBox,
-                    Destination = record.Destination
-                };
-                var trySend = SendToOPC(model);
+                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                if (trySend == true)
+                _logger.LogInformation("Getting unprocessed boxes...");
+                var records = await _scannedData.GetBoxes();
+
+                foreach (var record in records)
                 {
-                    await _scannedData.UpdateSingleBox(record);
+                    var model = new MessageModel
+                    {
+                        Id = record.Id,
+                        SSSC = record.SSSC,
+                        OriginalBox = record.OriginalBox,
+                        Destination = record.Destination
+                    };
+                    var trySend = SendToOPC(model);
+
+                    if (trySend == true)
+                    {
+                        await _scannedData.UpdateSingleBox(record);
+                    }
                 }
+
+                _logger.LogInformation("Processed {boxes} boxes from past", records.Count);
+
+                _logger.LogInformation("Entering subscription mode...");
+
+                // start monitor SQL table
+                _messageRepository.Start(_configuration.GetConnectionString("Default"));
+
+
+                if (mySession != null)
+                {
+                    if (mySession.SubscriptionCount > 0)
+                    {
+                        AddItemsToSubscription(mySubscription);
+                    }
+                }
+
             }
-
-            _logger.LogInformation("Processed {boxes} boxes", records.Count);
-
-            _logger.LogInformation("Entering subscription mode...");
-
-            _messageRepository.Start(_configuration.GetConnectionString("Default"));
-
-            var tag = "ns=5;s=Square1";
-            myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag, monitoredItemName, 1);
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Service failure: {message}", ex.Message);
+            }
         }
     }
 }

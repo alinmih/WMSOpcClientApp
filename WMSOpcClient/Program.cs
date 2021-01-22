@@ -57,5 +57,6 @@ namespace WMSOpcClient
                     services.AddTransient<IBoxDataRepository, BoxDataRepository>();
                     services.AddTransient<IMessageRepository, MessageRepository>();
                 }).UseWindowsService().UseSerilog();
+
     }
 }

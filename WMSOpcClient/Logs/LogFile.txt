@@ -340,3 +340,805 @@ Opc.Ua.ServiceResultException: Error establishing a connection: BadNotConnected
 2021-01-21 10:59:36.074 +02:00 [INF] Getting unprocessed boxes...
 2021-01-21 10:59:36.996 +02:00 [INF] Processed 6 boxes
 2021-01-21 10:59:37.001 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:47:51.131 +02:00 [INF] Starting up the service
+2021-01-21 12:47:55.126 +02:00 [INF] Worker running at: "2021-01-21T12:47:55.1188833+02:00"
+2021-01-21 12:47:55.139 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:47:55.835 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:47:55.839 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:49:46.767 +02:00 [INF] The service has been stopped...
+2021-01-21 12:49:57.873 +02:00 [INF] Starting up the service
+2021-01-21 12:50:01.964 +02:00 [INF] Worker running at: "2021-01-21T12:50:01.9577679+02:00"
+2021-01-21 12:50:01.973 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:50:02.432 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:50:02.435 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:52:21.577 +02:00 [INF] The service has been stopped...
+2021-01-21 12:52:57.953 +02:00 [INF] Starting up the service
+2021-01-21 12:53:01.989 +02:00 [INF] Worker running at: "2021-01-21T12:53:01.9745182+02:00"
+2021-01-21 12:53:02.006 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:53:02.469 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:53:02.472 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:53:41.257 +02:00 [INF] The service has been stopped...
+2021-01-21 12:53:47.039 +02:00 [INF] Starting up the service
+2021-01-21 12:53:51.106 +02:00 [INF] Worker running at: "2021-01-21T12:53:51.0887446+02:00"
+2021-01-21 12:53:51.124 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:53:51.966 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:53:51.968 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:55:32.374 +02:00 [INF] Starting up the service
+2021-01-21 12:55:36.062 +02:00 [INF] Worker running at: "2021-01-21T12:55:36.0545088+02:00"
+2021-01-21 12:55:36.074 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:55:36.751 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:55:36.753 +02:00 [INF] Entering subscription mode...
+2021-01-21 12:59:05.946 +02:00 [INF] The service has been stopped...
+2021-01-21 12:59:16.669 +02:00 [INF] Starting up the service
+2021-01-21 12:59:20.865 +02:00 [INF] Worker running at: "2021-01-21T12:59:20.8523567+02:00"
+2021-01-21 12:59:20.880 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 12:59:21.690 +02:00 [INF] Processed 0 boxes
+2021-01-21 12:59:21.693 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:00:28.748 +02:00 [INF] The service has been stopped...
+2021-01-21 13:00:30.971 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 31
+2021-01-21 13:01:10.430 +02:00 [INF] Starting up the service
+2021-01-21 13:01:14.405 +02:00 [INF] Worker running at: "2021-01-21T13:01:14.3943526+02:00"
+2021-01-21 13:01:14.421 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:01:15.197 +02:00 [INF] Processed 0 boxes
+2021-01-21 13:01:15.199 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:03:07.664 +02:00 [INF] The service has been stopped...
+2021-01-21 13:09:09.788 +02:00 [INF] Starting up the service
+2021-01-21 13:09:14.582 +02:00 [INF] Worker running at: "2021-01-21T13:09:14.5690109+02:00"
+2021-01-21 13:09:14.597 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:09:15.816 +02:00 [INF] Processed 0 boxes
+2021-01-21 13:09:15.819 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:11:27.579 +02:00 [INF] The service has been stopped...
+2021-01-21 13:13:38.902 +02:00 [INF] Starting up the service
+2021-01-21 13:13:43.279 +02:00 [INF] Worker running at: "2021-01-21T13:13:43.2697813+02:00"
+2021-01-21 13:13:43.297 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:13:43.867 +02:00 [INF] Processed 0 boxes
+2021-01-21 13:13:43.869 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:14:19.034 +02:00 [INF] The service has been stopped...
+2021-01-21 13:25:22.262 +02:00 [INF] Starting up the service
+2021-01-21 13:25:26.469 +02:00 [INF] Worker running at: "2021-01-21T13:25:26.4557695+02:00"
+2021-01-21 13:25:26.487 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:25:27.226 +02:00 [INF] Processed 0 boxes
+2021-01-21 13:25:27.228 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:31:43.837 +02:00 [INF] The service has been stopped...
+2021-01-21 13:50:01.507 +02:00 [INF] Starting up the service
+2021-01-21 13:50:05.548 +02:00 [INF] Worker running at: "2021-01-21T13:50:05.5314069+02:00"
+2021-01-21 13:50:05.606 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:50:06.212 +02:00 [INF] Processed 0 boxes from past
+2021-01-21 13:50:06.215 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:50:22.394 +02:00 [INF] The service has been stopped...
+2021-01-21 13:53:07.260 +02:00 [INF] Starting up the service
+2021-01-21 13:53:10.720 +02:00 [INF] Worker running at: "2021-01-21T13:53:10.7128709+02:00"
+2021-01-21 13:53:10.728 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:53:11.354 +02:00 [INF] Processed 0 boxes from past
+2021-01-21 13:53:11.356 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:53:22.756 +02:00 [INF] The service has been stopped...
+2021-01-21 13:53:41.358 +02:00 [INF] Starting up the service
+2021-01-21 13:53:45.069 +02:00 [INF] Worker running at: "2021-01-21T13:53:45.0583531+02:00"
+2021-01-21 13:53:45.086 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:54:15.568 +02:00 [WRN] Service failure: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2021-01-21 13:54:45.036 +02:00 [INF] The service has been stopped...
+2021-01-21 13:54:55.668 +02:00 [INF] Starting up the service
+2021-01-21 13:55:48.476 +02:00 [INF] Starting up the service
+2021-01-21 13:56:03.104 +02:00 [FTL] There was a problem starting the service
+Opc.Ua.ServiceResultException: Unsupported transport profile for scheme opc3.tcp.
+   at Opc.Ua.UaChannelBase.CreateUaBinaryChannel(ApplicationConfiguration configuration, EndpointDescription description, EndpointConfiguration endpointConfiguration, X509Certificate2 clientCertificate, X509Certificate2Collection clientCertificateChain, ServiceMessageContext messageContext)
+   at Opc.Ua.UaChannelBase.CreateUaBinaryChannel(ApplicationConfiguration configuration, EndpointDescription description, EndpointConfiguration endpointConfiguration, X509Certificate2 clientCertificate, ServiceMessageContext messageContext)
+   at Opc.Ua.DiscoveryChannel.Create(Uri discoveryUrl, EndpointConfiguration endpointConfiguration, ServiceMessageContext messageContext, X509Certificate2 clientCertificate)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl, EndpointConfiguration endpointConfiguration, ApplicationConfiguration applicationConfiguration)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl, EndpointConfiguration configuration)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl)
+   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 102
+   at WMSOpcClient.Worker.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 102
+   at WMSOpcClient.Worker.StartAsync(CancellationToken cancellationToken) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 72
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 31
+2021-01-21 13:57:47.631 +02:00 [INF] Starting up the service
+2021-01-21 13:58:04.608 +02:00 [FTL] There was a problem starting the service
+Opc.Ua.ServiceResultException: Unsupported transport profile for scheme opc3.tcp.
+   at Opc.Ua.UaChannelBase.CreateUaBinaryChannel(ApplicationConfiguration configuration, EndpointDescription description, EndpointConfiguration endpointConfiguration, X509Certificate2 clientCertificate, X509Certificate2Collection clientCertificateChain, ServiceMessageContext messageContext)
+   at Opc.Ua.UaChannelBase.CreateUaBinaryChannel(ApplicationConfiguration configuration, EndpointDescription description, EndpointConfiguration endpointConfiguration, X509Certificate2 clientCertificate, ServiceMessageContext messageContext)
+   at Opc.Ua.DiscoveryChannel.Create(Uri discoveryUrl, EndpointConfiguration endpointConfiguration, ServiceMessageContext messageContext, X509Certificate2 clientCertificate)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl, EndpointConfiguration endpointConfiguration, ApplicationConfiguration applicationConfiguration)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl, EndpointConfiguration configuration)
+   at Opc.Ua.DiscoveryClient.Create(Uri discoveryUrl)
+   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 102
+   at WMSOpcClient.Worker.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 110
+   at WMSOpcClient.Worker.StartAsync(CancellationToken cancellationToken) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 73
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 31
+2021-01-21 13:59:01.119 +02:00 [INF] Starting up the service
+2021-01-21 13:59:03.126 +02:00 [ERR] Cannot connect to OPC server: Unsupported transport profile for scheme opc3.tcp.
+2021-01-21 13:59:03.139 +02:00 [INF] Worker running at: "2021-01-21T13:59:03.1390928+02:00"
+2021-01-21 13:59:03.145 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 13:59:04.109 +02:00 [INF] Processed 0 boxes from past
+2021-01-21 13:59:04.118 +02:00 [INF] Entering subscription mode...
+2021-01-21 13:59:49.356 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-21 14:33:19.767 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args)
+2021-01-21 14:33:28.713 +02:00 [INF] Starting up the service
+2021-01-21 14:33:30.914 +02:00 [ERR] Cannot connect to OPC server: Unsupported transport profile for scheme opc3.tcp.
+2021-01-21 14:33:30.927 +02:00 [INF] Worker running at: "2021-01-21T14:33:30.9269335+02:00"
+2021-01-21 14:33:30.933 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 14:33:32.107 +02:00 [INF] Processed 0 boxes from past
+2021-01-21 14:33:32.110 +02:00 [INF] Entering subscription mode...
+2021-01-21 14:33:40.732 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-21 14:34:04.665 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 31
+2021-01-21 14:35:40.849 +02:00 [INF] Starting up the service
+2021-01-21 14:35:42.980 +02:00 [ERR] Cannot connect to OPC server: Unsupported transport profile for scheme opc3.tcp.
+2021-01-21 14:35:42.996 +02:00 [INF] Worker running at: "2021-01-21T14:35:42.9963549+02:00"
+2021-01-21 14:35:43.008 +02:00 [INF] Getting unprocessed boxes...
+2021-01-21 14:35:44.076 +02:00 [INF] Processed 0 boxes from past
+2021-01-21 14:35:44.078 +02:00 [INF] Entering subscription mode...
+2021-01-21 14:35:53.465 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-21 14:36:03.423 +02:00 [INF] Try disposing services
+2021-01-21 14:36:07.942 +02:00 [WRN] Cannot disposing services: Object reference not set to an instance of an object.
+2021-01-22 11:06:58.282 +02:00 [INF] Starting up the service
+2021-01-22 11:07:05.166 +02:00 [ERR] Cannot connect to OPC server: Error establishing a connection: BadNotConnected
+2021-01-22 11:07:05.177 +02:00 [INF] Worker running at: "2021-01-22T11:07:05.1767965+02:00"
+2021-01-22 11:07:05.184 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 11:07:05.900 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 11:07:05.902 +02:00 [INF] Entering subscription mode...
+2021-01-22 11:07:37.644 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 12:08:33.159 +02:00 [INF] Starting up the service
+2021-01-22 12:08:39.412 +02:00 [ERR] Cannot connect to OPC server: Error establishing a connection: BadNotConnected
+2021-01-22 12:08:39.423 +02:00 [INF] Worker running at: "2021-01-22T12:08:39.4231128+02:00"
+2021-01-22 12:08:39.429 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 12:08:40.079 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 12:08:40.081 +02:00 [INF] Entering subscription mode...
+2021-01-22 12:08:58.819 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 12:09:37.070 +02:00 [INF] Try disposing services
+2021-01-22 12:09:44.958 +02:00 [WRN] Cannot disposing services: Object reference not set to an instance of an object.
+2021-01-22 12:09:44.993 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 31
+2021-01-22 13:31:53.693 +02:00 [INF] Starting up the service
+2021-01-22 13:31:57.892 +02:00 [INF] Worker running at: "2021-01-22T13:31:57.8804963+02:00"
+2021-01-22 13:31:57.906 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 13:31:58.650 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 13:31:58.652 +02:00 [INF] Entering subscription mode...
+2021-01-22 13:32:25.999 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 203
+2021-01-22 13:36:46.008 +02:00 [INF] Try disposing services
+2021-01-22 13:36:46.227 +02:00 [INF] The service has been stopped...
+2021-01-22 13:39:50.945 +02:00 [INF] Starting up the service
+2021-01-22 13:39:55.349 +02:00 [INF] Worker running at: "2021-01-22T13:39:55.3419462+02:00"
+2021-01-22 13:39:55.359 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 13:39:55.909 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 13:39:55.911 +02:00 [INF] Entering subscription mode...
+2021-01-22 13:40:28.743 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 13:44:14.470 +02:00 [INF] Try disposing services
+2021-01-22 13:44:14.651 +02:00 [INF] The service has been stopped...
+2021-01-22 14:02:20.632 +02:00 [INF] Starting up the service
+2021-01-22 14:02:25.767 +02:00 [ERR] Cannot connect to OPC server: Error establishing a connection: BadNotConnected
+2021-01-22 14:02:25.778 +02:00 [INF] Worker running at: "2021-01-22T14:02:25.7783271+02:00"
+2021-01-22 14:02:25.783 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:02:26.326 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:02:26.328 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:02:45.332 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 14:02:55.293 +02:00 [INF] Try disposing services
+2021-01-22 14:03:36.901 +02:00 [INF] Starting up the service
+2021-01-22 14:03:40.778 +02:00 [INF] Worker running at: "2021-01-22T14:03:40.7690490+02:00"
+2021-01-22 14:03:40.791 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:03:41.408 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:03:41.409 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:10:15.571 +02:00 [INF] Starting up the service
+2021-01-22 14:10:19.620 +02:00 [INF] Worker running at: "2021-01-22T14:10:19.6079253+02:00"
+2021-01-22 14:10:19.636 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:10:20.295 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:10:20.296 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:15:26.376 +02:00 [INF] Try disposing services
+2021-01-22 14:15:26.595 +02:00 [INF] The service has been stopped...
+2021-01-22 14:15:26.649 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args)
+2021-01-22 14:15:36.137 +02:00 [INF] Starting up the service
+2021-01-22 14:16:49.159 +02:00 [INF] Starting up the service
+2021-01-22 14:16:55.512 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:16:59.626 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:17:03.771 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:17:07.890 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:17:12.067 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:17:16.255 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:17:20.450 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:21:34.708 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:21:34.708 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:21:48.527 +02:00 [ERR] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-01-22 14:21:48.542 +02:00 [INF] Worker running at: "2021-01-22T14:21:48.5394059+02:00"
+2021-01-22 14:21:48.562 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:21:49.052 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:21:49.054 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:21:55.667 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 14:22:47.365 +02:00 [INF] Try disposing services
+2021-01-22 14:22:47.515 +02:00 [INF] The service has been stopped...
+2021-01-22 14:22:54.928 +02:00 [INF] Starting up the service
+2021-01-22 14:22:58.598 +02:00 [INF] Worker running at: "2021-01-22T14:22:58.5671639+02:00"
+2021-01-22 14:22:58.773 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:22:59.498 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:22:59.500 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:23:49.798 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:23:53.936 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:23:58.095 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:02.257 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:06.394 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:10.563 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:14.732 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:18.909 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:23.092 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:27.501 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:31.745 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:24:36.014 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:27:03.529 +02:00 [INF] Starting up the service
+2021-01-22 14:27:11.268 +02:00 [INF] Worker running at: "2021-01-22T14:27:11.2604666+02:00"
+2021-01-22 14:27:11.277 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:27:11.892 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:27:11.894 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:27:48.190 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:27:52.358 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:27:56.514 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:00.671 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:04.856 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:09.051 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:13.224 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:17.512 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:21.704 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:28:59.610 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 218
+2021-01-22 14:30:19.278 +02:00 [INF] Starting up the service
+2021-01-22 14:30:25.553 +02:00 [INF] Worker running at: "2021-01-22T14:30:25.5276519+02:00"
+2021-01-22 14:30:25.597 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:30:26.149 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:30:26.151 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:30:57.555 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:31:01.817 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:31:05.978 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:31:10.212 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:31:14.351 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:31:19.067 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:33:22.979 +02:00 [INF] Try disposing services
+2021-01-22 14:33:23.133 +02:00 [INF] The service has been stopped...
+2021-01-22 14:33:29.418 +02:00 [INF] Starting up the service
+2021-01-22 14:33:33.214 +02:00 [INF] Worker running at: "2021-01-22T14:33:33.2036436+02:00"
+2021-01-22 14:33:33.229 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:33:33.912 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:33:33.914 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:34:07.526 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:11.657 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:15.803 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:19.949 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:24.180 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:28.351 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:34:33.060 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:36:03.964 +02:00 [INF] Starting up the service
+2021-01-22 14:36:07.220 +02:00 [INF] Worker running at: "2021-01-22T14:36:07.1821063+02:00"
+2021-01-22 14:36:07.298 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:36:08.107 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:36:08.109 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:36:42.034 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:36:46.183 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:36:50.312 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:36:54.508 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:36:58.681 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:37:02.869 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:37:05.076 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:37:05.167 +02:00 [ERR] Subscription has not been created.
+2021-01-22 14:38:08.710 +02:00 [INF] Try disposing services
+2021-01-22 14:38:08.871 +02:00 [INF] The service has been stopped...
+2021-01-22 14:38:13.325 +02:00 [INF] Starting up the service
+2021-01-22 14:38:20.030 +02:00 [INF] Worker running at: "2021-01-22T14:38:20.0156479+02:00"
+2021-01-22 14:38:20.044 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:38:20.628 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:38:20.630 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:38:51.633 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:38:55.826 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:38:59.998 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:39:04.304 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:39:08.462 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:39:11.871 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:43:14.243 +02:00 [ERR] Subscription has not been created.
+2021-01-22 14:43:20.122 +02:00 [INF] Try disposing services
+2021-01-22 14:43:20.127 +02:00 [INF] The service has been stopped...
+2021-01-22 14:43:23.482 +02:00 [INF] Starting up the service
+2021-01-22 14:43:29.272 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:43:39.094 +02:00 [ERR] Cannot connect to OPC server: Object reference not set to an instance of an object.
+2021-01-22 14:43:39.104 +02:00 [INF] Worker running at: "2021-01-22T14:43:39.1035387+02:00"
+2021-01-22 14:43:39.112 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:43:39.688 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:43:39.689 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:45:10.453 +02:00 [INF] Starting up the service
+2021-01-22 14:45:16.671 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:45:43.038 +02:00 [ERR] Cannot connect to OPC server: Object reference not set to an instance of an object.
+2021-01-22 14:45:43.049 +02:00 [INF] Worker running at: "2021-01-22T14:45:43.0485865+02:00"
+2021-01-22 14:45:43.054 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:45:43.792 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:45:43.794 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:45:50.216 +02:00 [INF] Starting up the service
+2021-01-22 14:45:56.269 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:04.497 +02:00 [INF] Starting up the service
+2021-01-22 14:47:10.883 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:17.564 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:24.476 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:28.618 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:32.837 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:37.019 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:41.203 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:45.503 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:49.631 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:53.840 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:47:58.076 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:48:02.361 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:48:06.786 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:49:31.947 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:49:36.684 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:49:44.982 +02:00 [ERR] Subscription has not been created.
+2021-01-22 14:49:51.312 +02:00 [ERR] Subscription has not been created.
+2021-01-22 14:49:51.319 +02:00 [INF] Worker running at: "2021-01-22T14:49:51.3179232+02:00"
+2021-01-22 14:49:51.329 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:49:51.911 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:49:51.913 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:51:21.385 +02:00 [INF] Try disposing services
+2021-01-22 14:51:21.545 +02:00 [INF] The service has been stopped...
+2021-01-22 14:51:26.480 +02:00 [INF] Starting up the service
+2021-01-22 14:51:33.154 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:51:40.665 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:51:44.825 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:51:48.975 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:53:28.348 +02:00 [ERR] One or more errors occurred. (BadSecureChannelClosed)
+2021-01-22 14:53:28.401 +02:00 [ERR] Error: Object reference not set to an instance of an object.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 226
+2021-01-22 14:53:31.740 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:53:35.916 +02:00 [ERR] BadConnectionClosed
+2021-01-22 14:53:35.916 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:53:35.960 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:53:36.726 +02:00 [WRN] Reconnected after server connection fails...
+2021-01-22 14:53:41.489 +02:00 [INF] Worker running at: "2021-01-22T14:53:41.4886160+02:00"
+2021-01-22 14:53:41.514 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:53:42.059 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:53:42.061 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:56:40.672 +02:00 [INF] Starting up the service
+2021-01-22 14:56:50.000 +02:00 [INF] Worker running at: "2021-01-22T14:56:49.9924191+02:00"
+2021-01-22 14:56:50.009 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 14:56:50.559 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 14:56:50.561 +02:00 [INF] Entering subscription mode...
+2021-01-22 14:57:12.852 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 222
+2021-01-22 14:58:04.493 +02:00 [INF] Try disposing services
+2021-01-22 14:58:04.665 +02:00 [INF] The service has been stopped...
+2021-01-22 14:58:13.137 +02:00 [INF] Starting up the service
+2021-01-22 14:58:20.152 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:24.282 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:28.419 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:32.601 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:36.780 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:40.945 +02:00 [ERR] Endpoint not available...
+2021-01-22 14:58:45.102 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:00:31.660 +02:00 [ERR] Error: BadConnectionClosed    at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.BeginSendRequest(IServiceRequest request, Int32 timeout, AsyncCallback callback, Object state)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.BeginSendRequest(IServiceRequest request, AsyncCallback callback, Object callbackData)
+   at Opc.Ua.SessionClient.BeginActivateSession(RequestHeader requestHeader, SignatureData clientSignature, SignedSoftwareCertificateCollection clientSoftwareCertificates, StringCollection localeIds, ExtensionObject userIdentityToken, SignatureData userTokenSignature, AsyncCallback callback, Object asyncState)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-22 15:02:06.370 +02:00 [ERR] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-01-22 15:02:06.378 +02:00 [INF] Worker running at: "2021-01-22T15:02:06.3778364+02:00"
+2021-01-22 15:02:06.384 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:02:06.896 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:02:06.899 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:02:20.053 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 15:05:35.506 +02:00 [INF] Starting up the service
+2021-01-22 15:05:39.836 +02:00 [INF] Worker running at: "2021-01-22T15:05:39.8129471+02:00"
+2021-01-22 15:05:39.848 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:05:40.356 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:05:40.358 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:06:06.989 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:06:11.141 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:06:15.285 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:06:19.468 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:06:23.707 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:06:27.848 +02:00 [ERR] Endpoint not available...
+2021-01-22 15:07:43.161 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 225
+2021-01-22 15:09:14.193 +02:00 [INF] Starting up the service
+2021-01-22 15:09:28.582 +02:00 [INF] Worker running at: "2021-01-22T15:09:28.5750098+02:00"
+2021-01-22 15:09:28.593 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:09:29.209 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:09:29.211 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:09:54.768 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:09:57.921 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:01.054 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:04.223 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:07.352 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:10.520 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:13.952 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:17.167 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:20.390 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:10:24.198 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 229
+2021-01-22 15:41:27.326 +02:00 [INF] Starting up the service
+2021-01-22 15:41:31.454 +02:00 [INF] Worker running at: "2021-01-22T15:41:31.4436998+02:00"
+2021-01-22 15:41:31.467 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:41:32.196 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:41:32.198 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:42:13.396 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 214
+2021-01-22 15:42:34.020 +02:00 [INF] Starting up the service
+2021-01-22 15:42:39.035 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:44:20.941 +02:00 [ERR] Object reference not set to an instance of an object.
+2021-01-22 15:44:21.025 +02:00 [INF] Worker running at: "2021-01-22T15:44:21.0240389+02:00"
+2021-01-22 15:44:21.034 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:44:21.520 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:44:21.521 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:44:27.541 +02:00 [WRN] Service failure: Object reference not set to an instance of an object.
+2021-01-22 15:45:23.546 +02:00 [INF] Starting up the service
+2021-01-22 15:45:28.737 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:45:28.745 +02:00 [INF] Worker running at: "2021-01-22T15:45:28.7449692+02:00"
+2021-01-22 15:45:28.751 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:45:29.264 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:45:29.268 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:50:16.699 +02:00 [INF] Starting up the service
+2021-01-22 15:50:27.919 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 15:50:27.928 +02:00 [INF] Worker running at: "2021-01-22T15:50:27.9270483+02:00"
+2021-01-22 15:50:27.935 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:50:28.485 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:50:28.488 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:51:42.129 +02:00 [INF] Starting up the service
+2021-01-22 15:51:45.936 +02:00 [INF] Worker running at: "2021-01-22T15:51:45.9156200+02:00"
+2021-01-22 15:51:46.001 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:51:46.525 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:51:46.527 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:53:22.985 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 214
+2021-01-22 15:54:07.681 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 214
+2021-01-22 15:56:40.728 +02:00 [INF] Starting up the service
+2021-01-22 15:56:44.088 +02:00 [INF] Worker running at: "2021-01-22T15:56:44.0794629+02:00"
+2021-01-22 15:56:44.101 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:56:44.905 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:56:44.907 +02:00 [INF] Entering subscription mode...
+2021-01-22 15:59:04.179 +02:00 [INF] Starting up the service
+2021-01-22 15:59:09.461 +02:00 [INF] Worker running at: "2021-01-22T15:59:09.4480097+02:00"
+2021-01-22 15:59:09.475 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 15:59:10.030 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 15:59:10.032 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:00:07.099 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 214
+2021-01-22 16:07:24.648 +02:00 [INF] Starting up the service
+2021-01-22 16:07:28.306 +02:00 [INF] Worker running at: "2021-01-22T16:07:28.2947804+02:00"
+2021-01-22 16:07:28.322 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:07:29.333 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:07:29.340 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:07:58.509 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 214
+2021-01-22 16:15:11.494 +02:00 [INF] Starting up the service
+2021-01-22 16:15:16.364 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:15:16.377 +02:00 [INF] Worker running at: "2021-01-22T16:15:16.3750862+02:00"
+2021-01-22 16:15:16.387 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:15:17.273 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:15:17.276 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:15:38.133 +02:00 [INF] Try disposing services
+2021-01-22 16:16:02.244 +02:00 [INF] Starting up the service
+2021-01-22 16:20:11.611 +02:00 [INF] Starting up the service
+2021-01-22 16:20:15.615 +02:00 [INF] Worker running at: "2021-01-22T16:20:15.6056295+02:00"
+2021-01-22 16:20:15.633 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:20:16.327 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:20:16.328 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:20:41.468 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:21:35.183 +02:00 [INF] Starting up the service
+2021-01-22 16:21:40.413 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:21:40.425 +02:00 [INF] Worker running at: "2021-01-22T16:21:40.4236196+02:00"
+2021-01-22 16:21:40.434 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:21:40.998 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:21:41.001 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:21:44.470 +02:00 [INF] Try disposing services
+2021-01-22 16:22:18.220 +02:00 [INF] Starting up the service
+2021-01-22 16:22:22.292 +02:00 [INF] Worker running at: "2021-01-22T16:22:22.2799458+02:00"
+2021-01-22 16:22:22.307 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:22:22.971 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:22:22.972 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:22:47.763 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:23:07.712 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:23:29.113 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:27:01.798 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:30:41.075 +02:00 [INF] Starting up the service
+2021-01-22 16:30:45.287 +02:00 [INF] Worker running at: "2021-01-22T16:30:45.2762232+02:00"
+2021-01-22 16:30:45.304 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:30:45.984 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:30:45.987 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:31:09.916 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:32:37.901 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:35:08.641 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:35:40.893 +02:00 [INF] Try disposing services
+2021-01-22 16:35:41.048 +02:00 [INF] The service has been stopped...
+2021-01-22 16:35:48.175 +02:00 [INF] Starting up the service
+2021-01-22 16:35:51.983 +02:00 [INF] Worker running at: "2021-01-22T16:35:51.9545721+02:00"
+2021-01-22 16:35:52.046 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:35:52.728 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:35:52.730 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:36:17.711 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:36:27.256 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:36:30.363 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:36:33.519 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:36:36.634 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:36:39.778 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:38:26.223 +02:00 [ERR] BadConnectionClosed
+2021-01-22 16:39:46.801 +02:00 [INF] Try disposing services
+2021-01-22 16:39:46.946 +02:00 [INF] The service has been stopped...
+2021-01-22 16:40:05.944 +02:00 [INF] Starting up the service
+2021-01-22 16:40:10.665 +02:00 [INF] Worker running at: "2021-01-22T16:40:10.6428615+02:00"
+2021-01-22 16:40:10.892 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:40:11.603 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:40:11.606 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:40:35.312 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:40:41.529 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:40:44.656 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:40:47.793 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:40:50.921 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:40:54.083 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:40:57.322 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:41:00.547 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:45:22.937 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-22 16:46:04.003 +02:00 [INF] Starting up the service
+2021-01-22 16:46:06.954 +02:00 [INF] Worker running at: "2021-01-22T16:46:06.9380161+02:00"
+2021-01-22 16:46:06.973 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:46:07.872 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:46:07.874 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:46:40.804 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:46:47.390 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:46:50.602 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:46:54.112 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:46:57.810 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:47:01.032 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:47:04.177 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:47:07.330 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:26.676 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:48:32.856 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:35.995 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:39.120 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:42.224 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:45.348 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:48.461 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:51.614 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:48:54.728 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:49:45.449 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:50:31.364 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:53:20.647 +02:00 [INF] Starting up the service
+2021-01-22 16:53:26.334 +02:00 [INF] Worker running at: "2021-01-22T16:53:26.3260083+02:00"
+2021-01-22 16:53:26.349 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:53:26.907 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:53:26.913 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:53:49.414 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:54:53.732 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 200
+2021-01-22 16:54:59.910 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:03.074 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:06.176 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:09.329 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:12.477 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:15.608 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:18.741 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:21.902 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:25.031 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:28.166 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:31.277 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:34.388 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:37.521 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:40.763 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:43.899 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:47.050 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:50.189 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:53.301 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:55:56.456 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:09.523 +02:00 [INF] Starting up the service
+2021-01-22 16:57:10.692 +02:00 [INF] Connecting to OPC Server...
+2021-01-22 16:57:14.728 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:17.866 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:20.991 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:24.128 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:27.304 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:30.413 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:33.558 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:36.792 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:39.993 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:43.263 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:46.387 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:57:48.021 +02:00 [INF] Worker running at: "2021-01-22T16:57:48.0200395+02:00"
+2021-01-22 16:57:48.034 +02:00 [INF] Getting unprocessed boxes...
+2021-01-22 16:57:48.576 +02:00 [INF] Processed 0 boxes from past
+2021-01-22 16:57:48.578 +02:00 [INF] Entering subscription mode...
+2021-01-22 16:58:16.106 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 206
+2021-01-22 16:58:22.273 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:25.377 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:28.514 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:31.663 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:34.803 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:37.919 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:41.054 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:44.244 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:47.817 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 16:58:51.044 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 17:01:00.509 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 206
+2021-01-22 17:01:06.692 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-22 17:01:09.272 +02:00 [INF] Try disposing services
+2021-01-22 17:01:09.404 +02:00 [INF] The service has been stopped...
