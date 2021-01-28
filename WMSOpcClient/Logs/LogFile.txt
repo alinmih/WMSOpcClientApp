@@ -1142,3 +1142,1244 @@ Object name: 'TransportChannel is not available.'.
 2021-01-22 17:01:06.692 +02:00 [ERR] Error establishing a connection: BadNotConnected
 2021-01-22 17:01:09.272 +02:00 [INF] Try disposing services
 2021-01-22 17:01:09.404 +02:00 [INF] The service has been stopped...
+2021-01-25 13:07:27.466 +02:00 [INF] Starting up the service
+2021-01-25 13:07:30.921 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:07:34.079 +02:00 [INF] Worker running at: "2021-01-25T13:07:34.0769905+02:00"
+2021-01-25 13:07:34.095 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:07:35.127 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:07:35.129 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:08:09.841 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:08:23.491 +02:00 [INF] Try disposing services
+2021-01-25 13:08:23.526 +02:00 [INF] The service has been stopped...
+2021-01-25 13:08:27.967 +02:00 [INF] Starting up the service
+2021-01-25 13:08:29.197 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:08:31.789 +02:00 [INF] Worker running at: "2021-01-25T13:08:31.7869674+02:00"
+2021-01-25 13:08:31.868 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:08:32.676 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:08:32.679 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:09:35.463 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:09:45.408 +02:00 [INF] Starting up the service
+2021-01-25 13:09:46.631 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:09:49.380 +02:00 [INF] Worker running at: "2021-01-25T13:09:49.3789619+02:00"
+2021-01-25 13:09:49.415 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:09:50.258 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:09:50.260 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:11:07.701 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:11:07.881 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 222
+2021-01-25 13:11:08.318 +02:00 [ERR] Error: BadConnectionClosed    at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.BeginSendRequest(IServiceRequest request, Int32 timeout, AsyncCallback callback, Object state)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.BeginSendRequest(IServiceRequest request, AsyncCallback callback, Object callbackData)
+   at Opc.Ua.SessionClient.BeginActivateSession(RequestHeader requestHeader, SignatureData clientSignature, SignedSoftwareCertificateCollection clientSoftwareCertificates, StringCollection localeIds, ExtensionObject userIdentityToken, SignatureData userTokenSignature, AsyncCallback callback, Object asyncState)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 222
+2021-01-25 13:11:39.050 +02:00 [INF] Try disposing services
+2021-01-25 13:11:39.079 +02:00 [INF] The service has been stopped...
+2021-01-25 13:11:45.035 +02:00 [INF] Starting up the service
+2021-01-25 13:11:46.683 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:11:49.358 +02:00 [INF] Worker running at: "2021-01-25T13:11:49.3565755+02:00"
+2021-01-25 13:11:49.368 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:11:50.158 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:11:50.200 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:18:03.604 +02:00 [INF] Starting up the service
+2021-01-25 13:18:04.536 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:18:07.418 +02:00 [INF] Worker running at: "2021-01-25T13:18:07.4166355+02:00"
+2021-01-25 13:18:07.429 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:18:13.485 +02:00 [INF] Processed 3 boxes from past
+2021-01-25 13:18:13.488 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:18:56.316 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:19:18.629 +02:00 [INF] Starting up the service
+2021-01-25 13:19:42.759 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:19:44.330 +02:00 [INF] Worker running at: "2021-01-25T13:19:44.3288641+02:00"
+2021-01-25 13:19:44.337 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:20:31.153 +02:00 [INF] Processed 3 boxes from past
+2021-01-25 13:20:31.158 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:20:50.525 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 222
+2021-01-25 13:22:17.179 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:22:17.213 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 222
+2021-01-25 13:23:47.536 +02:00 [INF] Starting up the service
+2021-01-25 13:23:49.501 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:23:52.193 +02:00 [INF] Worker running at: "2021-01-25T13:23:52.1919911+02:00"
+2021-01-25 13:23:52.204 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:23:52.970 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:23:52.972 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:24:53.012 +02:00 [WRN] Service failure: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2021-01-25 13:24:53.347 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-25 13:24:53.555 +02:00 [ERR] Error: BadConnectionClosed    at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.BeginSendRequest(IServiceRequest request, Int32 timeout, AsyncCallback callback, Object state)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.BeginSendRequest(IServiceRequest request, AsyncCallback callback, Object callbackData)
+   at Opc.Ua.SessionClient.BeginActivateSession(RequestHeader requestHeader, SignatureData clientSignature, SignedSoftwareCertificateCollection clientSoftwareCertificates, StringCollection localeIds, ExtensionObject userIdentityToken, SignatureData userTokenSignature, AsyncCallback callback, Object asyncState)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-25 13:25:30.869 +02:00 [INF] Starting up the service
+2021-01-25 13:25:32.060 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:25:32.109 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.141 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.169 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.202 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.230 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.260 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.294 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.326 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.359 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.409 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.445 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.487 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.518 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.547 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.577 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.607 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.638 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.668 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.699 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.732 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.766 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.795 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.825 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.857 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.889 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.922 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.954 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:32.988 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.033 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.072 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.126 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.161 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.192 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.231 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.293 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.325 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.359 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.390 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.422 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.452 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.483 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.517 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.555 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.587 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.633 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.678 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.775 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.813 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.851 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.884 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.916 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:33.976 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.241 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.272 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.304 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.333 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.362 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.390 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.421 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.450 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.480 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.509 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.538 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.567 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.597 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.625 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.656 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.688 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.720 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.750 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.780 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.810 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.840 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.872 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.904 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.944 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:34.977 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.008 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.039 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.069 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.100 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.134 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.164 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.194 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.226 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.255 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.285 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.325 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.355 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.385 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.423 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.455 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.485 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.516 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.550 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.582 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.613 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.643 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.674 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.705 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.735 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.766 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.801 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.831 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.864 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.895 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.924 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.955 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:35.992 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.023 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.052 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.083 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.112 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.142 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.173 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.213 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.244 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.273 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.303 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.331 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.360 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.390 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.441 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.470 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.499 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.529 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.558 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.588 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.619 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.648 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.678 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.708 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.738 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.766 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.795 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.824 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.855 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.886 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.910 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.935 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.961 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:36.994 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.026 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.055 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.083 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.105 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.129 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.152 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.176 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.199 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.222 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.251 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.284 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.306 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.332 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.357 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.381 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.404 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.428 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.452 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.479 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.507 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.533 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.555 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.578 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.602 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.625 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.648 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.672 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.697 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.728 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.757 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.786 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.816 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.846 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.874 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.903 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.934 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.969 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:37.999 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.028 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.053 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.075 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.099 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.126 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.156 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.180 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.203 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.224 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.246 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.271 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.294 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.317 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.344 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.370 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.394 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.418 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.442 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.468 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.490 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.514 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.536 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.561 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.586 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.613 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.635 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.658 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.682 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.706 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.729 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.756 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.784 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.814 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.846 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.875 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.904 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.932 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.962 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:38.990 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.019 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.050 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.078 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.105 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.135 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.165 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.190 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.214 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.238 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.271 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.300 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.326 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.349 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.373 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.397 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.421 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.448 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.475 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.503 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.527 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.549 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.572 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.595 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.619 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.643 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.670 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.698 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.721 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.746 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.769 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.796 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.825 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.853 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.883 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.913 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.943 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.967 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:39.994 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.020 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.046 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.069 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.097 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.127 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.154 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.179 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.212 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.245 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.276 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.303 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.344 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.400 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.453 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.493 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.531 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.577 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.612 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.641 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.670 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.698 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.723 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.767 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.814 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.846 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.878 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.910 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.943 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:40.979 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.023 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.074 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.106 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.137 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.167 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.198 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.229 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.258 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.288 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.317 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.347 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.379 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.418 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.460 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.492 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.524 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.555 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.587 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.618 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.653 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.684 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.711 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.739 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.765 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.797 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.827 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.860 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.888 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.918 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.945 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.973 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:41.999 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.034 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.073 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.102 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.128 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.155 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.181 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.210 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.239 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.274 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.323 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.354 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.390 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.419 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.444 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.471 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.505 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.538 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.571 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.599 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.624 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.647 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.671 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.695 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.722 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.747 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.772 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.805 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.835 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.863 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.892 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.926 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.956 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:42.984 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.008 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.031 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.059 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.083 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.105 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.135 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.161 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.185 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.208 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.230 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.252 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.278 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.303 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.325 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.352 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.377 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.404 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.430 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.455 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.478 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.503 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.526 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.551 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.581 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.604 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.628 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.652 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.675 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.697 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.723 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.744 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.774 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.809 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.840 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.870 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.900 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.929 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.962 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:43.992 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.026 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.060 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.089 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.118 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.145 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.170 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.194 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.221 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:25:44.249 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:22.568 +02:00 [INF] Starting up the service
+2021-01-25 13:26:23.706 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:26:23.836 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:23.867 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:23.897 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:23.930 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:23.964 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:23.993 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.027 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.058 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.088 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.119 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.160 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.194 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.223 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.252 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.283 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.321 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.363 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.396 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.426 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.463 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.492 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.522 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.552 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.582 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.610 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.636 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.664 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.693 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.734 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.769 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.800 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.831 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:24.895 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.003 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.040 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.074 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.140 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.197 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.233 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.266 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.302 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.335 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.385 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.441 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.497 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.531 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.576 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.612 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.678 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.738 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.794 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.831 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.873 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:25.933 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.002 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.040 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.083 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.139 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.192 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.321 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.380 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.471 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.512 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.549 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.582 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.646 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.698 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.749 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.804 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:26.981 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.047 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.081 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.116 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.181 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.354 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.439 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.475 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.507 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.541 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.574 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.630 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.663 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.693 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.724 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.756 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.829 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.862 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.893 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.925 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.957 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:27.991 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.045 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.074 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.106 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.137 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.168 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.199 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.231 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.262 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.293 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.321 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.371 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:26:28.424 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:18.096 +02:00 [INF] Starting up the service
+2021-01-25 13:27:22.329 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:27:22.365 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.394 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.416 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.437 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.458 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.480 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.502 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.527 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.552 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.576 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.607 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.640 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.670 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.700 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.733 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.765 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.815 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.852 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.881 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.910 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.940 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:22.971 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.009 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.067 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.096 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.125 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.151 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.179 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.213 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.269 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.313 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.341 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.364 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.388 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.412 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.436 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.464 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.493 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.545 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.579 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.609 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.641 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.674 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.703 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.742 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.772 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.804 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.832 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.863 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.898 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.938 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:23.971 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.008 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.033 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.058 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.080 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.108 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.135 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.166 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.192 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.216 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.241 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.268 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.301 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.339 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.417 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.440 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.465 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.489 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.518 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.547 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.571 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.598 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.626 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.654 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.682 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.717 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.749 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.792 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.825 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.855 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.883 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.914 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.944 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:24.977 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.012 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.048 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.082 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.113 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.143 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.170 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.197 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.231 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.265 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.295 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.325 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.358 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.387 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.414 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.454 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.487 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.517 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.547 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.574 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.601 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.629 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.659 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.690 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.718 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.748 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.777 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.806 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.837 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.869 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.899 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.929 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.959 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:25.988 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.018 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.048 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.076 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.108 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.133 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.161 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.189 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.218 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.246 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.274 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.302 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.339 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.367 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.397 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.426 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.453 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.481 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.511 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.541 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.567 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.590 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.616 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.645 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.675 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.704 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.740 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.800 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.830 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.862 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.892 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.925 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.957 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:26.989 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.037 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.069 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.101 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.132 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.162 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.199 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.240 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.272 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.300 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.331 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.361 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.392 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.430 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.461 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.486 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.509 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.534 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.558 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.582 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.605 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.636 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.667 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.695 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.721 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.746 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.772 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.799 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.827 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.860 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.889 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.915 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.939 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.963 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:27.987 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.010 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.036 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.064 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.087 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.114 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.139 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.163 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.186 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.209 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.232 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.255 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.283 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.314 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.342 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.366 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.392 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.422 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.447 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.470 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.499 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.526 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.552 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.581 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.606 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.634 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.664 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.692 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.723 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.754 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.782 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.812 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.837 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.861 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.884 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.908 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.935 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.963 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:28.993 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.018 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.040 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.063 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.086 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.110 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.135 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.160 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.190 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.223 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.249 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.272 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.296 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.322 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.347 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.373 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.401 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.427 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.453 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.488 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.538 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.574 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.599 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.634 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.665 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.692 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.717 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.743 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.770 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.800 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.831 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.869 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.899 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.929 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.956 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:29.984 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.009 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.044 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.070 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.100 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.125 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.147 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.171 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.195 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.218 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.245 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.273 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.297 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.323 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.350 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.374 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.396 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.421 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.445 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.469 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.532 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.559 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.580 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.606 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.633 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.661 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.693 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.721 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.750 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.774 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.798 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.823 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.848 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.872 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.898 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.928 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.958 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:30.989 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.017 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.044 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.071 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.100 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.132 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.160 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.188 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.215 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.243 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.272 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.307 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.340 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.381 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.411 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.441 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.467 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.494 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.522 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.552 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.585 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.616 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.645 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.676 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.706 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.734 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.763 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.793 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.823 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.853 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.882 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.913 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.943 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:31.972 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.005 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.035 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.065 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.094 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.123 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.153 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.179 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.210 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.242 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.268 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.296 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.327 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.357 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.386 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.416 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.447 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.476 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.499 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.524 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.547 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.570 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.592 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.618 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.647 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.672 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.701 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.729 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.756 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.779 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.804 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.828 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.856 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.890 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.919 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.946 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.972 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:32.995 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.022 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.045 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.071 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.100 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.129 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.154 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.176 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.201 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.225 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.249 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.274 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.304 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.337 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.365 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.392 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.420 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.449 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.475 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.502 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.529 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.554 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.577 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.600 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.635 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.684 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.733 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.770 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.800 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.829 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.858 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.887 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.916 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.948 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:33.985 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.008 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.030 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.055 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.076 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.101 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.124 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.152 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.182 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.209 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.233 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.255 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.279 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.302 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.325 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.350 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.380 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.414 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.441 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.464 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.488 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.512 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.535 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.558 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.583 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.611 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.647 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.675 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.702 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:34.730 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:27:50.173 +02:00 [INF] Starting up the service
+2021-01-25 13:27:58.342 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:28:02.964 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.233 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.256 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.277 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.297 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.322 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.344 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.366 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.396 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.430 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.456 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.479 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.500 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.522 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.544 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.566 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.589 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.615 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.643 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.696 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:42.722 +02:00 [ERR] Value cannot be null. (Parameter 'uriString')
+2021-01-25 13:28:46.574 +02:00 [INF] Worker running at: "2021-01-25T13:28:46.5710676+02:00"
+2021-01-25 13:28:47.296 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:28:51.156 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:28:51.158 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:29:59.773 +02:00 [INF] Starting up the service
+2021-01-25 13:30:04.124 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:30:08.946 +02:00 [INF] Worker running at: "2021-01-25T13:30:08.9244363+02:00"
+2021-01-25 13:30:08.972 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:30:09.522 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:30:09.524 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:35:19.688 +02:00 [INF] Starting up the service
+2021-01-25 13:35:27.149 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:35:33.084 +02:00 [INF] Worker running at: "2021-01-25T13:35:33.0822573+02:00"
+2021-01-25 13:35:33.097 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:35:33.626 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:35:33.628 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:38:24.870 +02:00 [INF] Starting up the service
+2021-01-25 13:38:25.965 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:38:28.408 +02:00 [INF] Worker running at: "2021-01-25T13:38:28.4069402+02:00"
+2021-01-25 13:38:28.441 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:38:29.290 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:38:29.292 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:38:56.954 +02:00 [WRN] Service failure: BadConnectionClosed
+2021-01-25 13:39:24.350 +02:00 [INF] Try disposing services
+2021-01-25 13:39:24.533 +02:00 [INF] The service has been stopped...
+2021-01-25 13:39:37.685 +02:00 [INF] Starting up the service
+2021-01-25 13:39:39.075 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:39:41.416 +02:00 [INF] Worker running at: "2021-01-25T13:39:41.4142259+02:00"
+2021-01-25 13:39:41.449 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:39:42.159 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:39:42.161 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:40:14.461 +02:00 [ERR] Error: BadNotConnected    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndConnect(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.Reconnect()
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Worker.cs:line 223
+2021-01-25 13:40:20.707 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-25 13:40:23.850 +02:00 [ERR] Error establishing a connection: BadNotConnected
+2021-01-25 13:47:30.573 +02:00 [INF] Starting up the service
+2021-01-25 13:47:31.866 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:47:34.413 +02:00 [INF] Worker running at: "2021-01-25T13:47:34.4107189+02:00"
+2021-01-25 13:47:34.496 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:47:35.470 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:47:35.473 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:47:58.160 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-25 13:49:13.751 +02:00 [INF] Starting up the service
+2021-01-25 13:49:15.137 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:49:18.076 +02:00 [INF] Worker running at: "2021-01-25T13:49:18.0747822+02:00"
+2021-01-25 13:49:18.086 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:49:18.815 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:49:18.817 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:49:21.762 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-25 13:49:21.764 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-25 13:49:39.874 +02:00 [INF] Starting up the service
+2021-01-25 13:49:40.876 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:49:42.991 +02:00 [INF] Worker running at: "2021-01-25T13:49:42.9889737+02:00"
+2021-01-25 13:49:43.011 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:49:44.232 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:49:44.235 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:49:44.582 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-25 13:49:44.584 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-25 13:58:54.404 +02:00 [INF] Starting up the service
+2021-01-25 13:58:55.780 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 13:58:58.415 +02:00 [INF] Worker running at: "2021-01-25T13:58:58.4137921+02:00"
+2021-01-25 13:58:58.528 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 13:58:59.535 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 13:58:59.537 +02:00 [INF] Entering subscription mode...
+2021-01-25 13:59:00.342 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-25 13:59:00.351 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-25 13:59:00.365 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-25 13:59:00.371 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-25 14:01:19.838 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-25 14:01:25.695 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Sinusoid1
+2021-01-25 14:01:25.705 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Triangle1
+2021-01-25 14:01:39.921 +02:00 [INF] Starting up the service
+2021-01-25 14:01:41.069 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 14:01:43.360 +02:00 [INF] Connected to OPC Server: null
+2021-01-25 14:01:43.458 +02:00 [INF] Worker running at: "2021-01-25T14:01:43.4553984+02:00"
+2021-01-25 14:01:43.533 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 14:01:44.284 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 14:01:44.286 +02:00 [INF] Entering subscription mode...
+2021-01-25 14:01:45.120 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-25 14:01:45.137 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-25 14:01:45.150 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-25 14:01:45.151 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-25 14:02:54.434 +02:00 [INF] Try disposing services
+2021-01-25 14:02:54.628 +02:00 [INF] The service has been stopped...
+2021-01-25 14:12:58.940 +02:00 [INF] Starting up the service
+2021-01-25 14:13:00.356 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 14:13:03.005 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-25 14:13:03.097 +02:00 [INF] Worker running at: "2021-01-25T14:13:03.0967747+02:00"
+2021-01-25 14:13:03.105 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 14:13:03.865 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 14:13:03.867 +02:00 [INF] Entering subscription mode...
+2021-01-25 14:13:04.678 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-25 14:13:24.617 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-25 14:20:22.852 +02:00 [ERR] BadConnectionClosed
+2021-01-25 14:20:23.390 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-25 14:20:24.240 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Sinusoid1
+2021-01-25 14:20:24.251 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Triangle1
+2021-01-25 14:20:34.601 +02:00 [INF] Starting up the service
+2021-01-25 14:20:35.850 +02:00 [INF] Connecting to OPC Server...
+2021-01-25 14:20:38.080 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-25 14:20:38.279 +02:00 [INF] Worker running at: "2021-01-25T14:20:38.2785831+02:00"
+2021-01-25 14:20:38.287 +02:00 [INF] Getting unprocessed boxes...
+2021-01-25 14:20:39.132 +02:00 [INF] Processed 0 boxes from past
+2021-01-25 14:20:39.135 +02:00 [INF] Entering subscription mode...
+2021-01-25 14:20:39.836 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-25 14:24:33.744 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-25 14:24:33.969 +02:00 [ERR] BadSessionClosed
+2021-01-28 10:13:13.502 +02:00 [INF] Starting up the service
+2021-01-28 10:13:16.436 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 10:13:19.169 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 10:13:19.270 +02:00 [INF] Worker running at: "2021-01-28T10:13:19.2703638+02:00"
+2021-01-28 10:13:19.302 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 10:13:20.222 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 10:13:20.224 +02:00 [INF] Entering subscription mode...
+2021-01-28 10:13:21.000 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 10:13:21.043 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 10:13:21.057 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 10:13:21.058 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 10:14:41.376 +02:00 [INF] Try disposing services
+2021-01-28 10:14:41.556 +02:00 [INF] The service has been stopped...
+2021-01-28 10:14:46.767 +02:00 [INF] Starting up the service
+2021-01-28 10:14:48.089 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 10:14:50.593 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 10:14:50.655 +02:00 [INF] Worker running at: "2021-01-28T10:14:50.6550198+02:00"
+2021-01-28 10:14:50.659 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 10:14:51.152 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 10:14:51.154 +02:00 [INF] Entering subscription mode...
+2021-01-28 10:14:51.421 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 10:14:51.428 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 10:14:51.436 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 10:14:51.438 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 10:14:56.980 +02:00 [INF] Try disposing services
+2021-01-28 10:14:57.116 +02:00 [INF] The service has been stopped...
+2021-01-28 10:15:07.109 +02:00 [INF] Starting up the service
+2021-01-28 10:15:08.372 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 10:15:10.365 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 10:15:10.518 +02:00 [INF] Worker running at: "2021-01-28T10:15:10.5178823+02:00"
+2021-01-28 10:15:10.523 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 10:15:11.128 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 10:15:11.130 +02:00 [INF] Entering subscription mode...
+2021-01-28 10:15:30.721 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 10:15:37.282 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 10:16:49.358 +02:00 [ERR] BadSessionClosed
+2021-01-28 10:16:55.219 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.Worker.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-28 10:16:55.725 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Sinusoid1
+2021-01-28 10:16:55.734 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Triangle1
+2021-01-28 10:17:22.241 +02:00 [INF] New Message Received:9/545645/false/4
+2021-01-28 10:21:27.795 +02:00 [INF] New Message Received:16/123456789/true/1
+2021-01-28 10:21:27.824 +02:00 [INF] New Message Received:17/123456789/false/2
+2021-01-28 10:21:27.843 +02:00 [INF] New Message Received:18/123456789/false/3
+2021-01-28 10:21:27.869 +02:00 [INF] New Message Received:19/123456789/false/4
+2021-01-28 10:21:27.887 +02:00 [INF] New Message Received:20/123456789/false/5
+2021-01-28 10:42:03.741 +02:00 [INF] Starting up the service
+2021-01-28 10:42:04.982 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 10:42:07.246 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 10:42:07.335 +02:00 [INF] Worker running at: "2021-01-28T10:42:07.3348435+02:00"
+2021-01-28 10:42:07.396 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 10:42:08.267 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 10:42:08.269 +02:00 [INF] Entering subscription mode...
+2021-01-28 10:42:11.876 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 10:42:11.886 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 10:42:11.895 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 10:42:11.896 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 10:43:23.253 +02:00 [INF] New Message Received:21/123456789/true/1
+2021-01-28 10:43:23.282 +02:00 [INF] New Message Received:22/123456789/false/2
+2021-01-28 10:43:23.304 +02:00 [INF] New Message Received:23/123456789/false/3
+2021-01-28 10:43:23.337 +02:00 [INF] New Message Received:24/123456789/false/4
+2021-01-28 10:43:23.367 +02:00 [INF] New Message Received:25/123456789/false/5
+2021-01-28 10:43:37.093 +02:00 [INF] New Message Received:26/123456789/true/1
+2021-01-28 10:43:49.240 +02:00 [INF] New Message Received:27/123456789/false/2
+2021-01-28 10:43:49.930 +02:00 [INF] New Message Received:28/123456789/false/3
+2021-01-28 10:43:50.661 +02:00 [INF] New Message Received:29/123456789/false/4
+2021-01-28 10:43:51.235 +02:00 [INF] New Message Received:30/123456789/false/5
+2021-01-28 10:44:43.857 +02:00 [INF] New Message Received:31/123456789/true/1
+2021-01-28 10:44:46.900 +02:00 [INF] New Message Received:32/123456789/false/2
+2021-01-28 10:44:46.928 +02:00 [INF] New Message Received:33/123456789/false/3
+2021-01-28 10:44:46.960 +02:00 [INF] New Message Received:34/123456789/false/4
+2021-01-28 10:44:46.991 +02:00 [INF] New Message Received:35/123456789/false/5
+2021-01-28 10:44:47.022 +02:00 [INF] New Message Received:36/123456789/false/6
+2021-01-28 10:44:47.053 +02:00 [INF] New Message Received:37/123456789/false/7
+2021-01-28 10:44:47.062 +02:00 [INF] New Message Received:38/123456789/false/8
+2021-01-28 10:44:47.072 +02:00 [INF] New Message Received:39/123456789/false/9
+2021-01-28 10:44:47.100 +02:00 [INF] New Message Received:40/123456789/false/10
+2021-01-28 10:45:50.892 +02:00 [INF] Try disposing services
+2021-01-28 10:45:51.106 +02:00 [INF] The service has been stopped...

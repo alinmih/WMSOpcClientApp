@@ -39,6 +39,13 @@ namespace WMSOpcClient
         private Int16 itemCount;
 
         private string monitoredItemName;
+        private bool ToWMS_dataReceived = false;
+        private bool ToWMS_dataReady = false;
+        private bool FromWMS_watchdog = false;
+
+        public MessageModel MessageModel { get; set; }
+        public Queue<MessageModel> MessageQueue { get; set; }
+
 
         public bool OpcServerConnected { get; private set; } = false;
         #endregion
@@ -51,6 +58,7 @@ namespace WMSOpcClient
             _messageRepository = messageRepository;
             myClientHelperAPI = new UAClientHelperAPI();
             myRegisteredNodeIdStrings = new List<string>();
+            MessageQueue = new Queue<MessageModel>();
         }
 
         // init clients on startup
@@ -78,6 +86,9 @@ namespace WMSOpcClient
                     ConnectToServer();
                 }
                 OpcServerConnected = true;
+
+                _logger.LogInformation("Connected to OPC Server: {opc}", _configuration.GetSection("OPCServerUrl").Value);
+
                 // 2. Subscription of items
                 AddSubscription();
             }
@@ -93,15 +104,11 @@ namespace WMSOpcClient
         {
             try
             {
-                //use different item names for correct assignment at the notificatino event
-                itemCount++;
-                monitoredItemName = "myItem" + itemCount.ToString();
                 if (mySubscription == null && mySession != null)
                 {
                     mySubscription = myClientHelperAPI.Subscribe(100);
                     myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 }
-
             }
             catch (Exception ex)
             {
@@ -109,12 +116,42 @@ namespace WMSOpcClient
             }
         }
 
-        private void AddItemsToSubscription(Subscription currentSubscription)
+        private void AddTagsToSubscription(Subscription currentSubscription)
         {
-            var tag1 = "ns=5;s=Sinusoid1";
-            var tag2 = "ns=5;s=Triangle1";
-            myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag1, monitoredItemName, 1);
-            myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag2, monitoredItemName, 1);
+            // to be modified to OPCSubscriptionTags after testing
+            var tags = _configuration.GetSection("TestTagsToSubscription").GetChildren();
+            foreach (var tag in tags)
+            {
+                itemCount++;
+                //monitoredItemName = "Tag_" + itemCount.ToString();
+                monitoredItemName = tag.Key;
+                myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag.Value, monitoredItemName, 1);
+
+                _logger.LogInformation("Added tags to subscription {subscr} : {tag}", currentSubscription.DisplayName, tag.Value);
+            }
+        }
+
+        private void AddTagsToSession()
+        {
+            // to be modified to OPCSessionTags after testing
+            var tags = _configuration.GetSection("TestTagsToSession").GetChildren();
+            List<String> nodeIdStrings = new List<String>();
+            foreach (var tag in tags)
+            {
+                nodeIdStrings.Add(tag.Value);
+            }
+            try
+            {
+                myRegisteredNodeIdStrings = myClientHelperAPI.RegisterNodeIds(nodeIdStrings);
+                foreach (var registeredTag in myRegisteredNodeIdStrings)
+                {
+                    _logger.LogInformation("Added tags to session: {tags}", registeredTag);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
         }
 
         private void ConnectToServer()
@@ -154,17 +191,7 @@ namespace WMSOpcClient
 
         }
 
-        private void Notification_MonitoredItem(MonitoredItem monitoredItem, MonitoredItemNotificationEventArgs e)
-        {
-            MonitoredItemNotification notification = e.NotificationValue as MonitoredItemNotification;
-            if (notification == null)
-            {
-                return;
-            }
 
-            Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
-
-        }
 
         private void Notification_ServerCertificate(CertificateValidator sender, CertificateValidationEventArgs e)
         {
@@ -205,15 +232,6 @@ namespace WMSOpcClient
             }
             catch (Exception ex)
             {
-                //Thread.Sleep(1000);
-                //var connected = ConnectToServer();
-                //if (connected)
-                //{
-                //    _logger.LogWarning("Reconnected after server connection fails...");
-                //    AddItemSubscription();
-                //}
-                //else
-                //{
                 _logger.LogError("Error: {error} {stackTrace}", ex.Message, ex.StackTrace);
                 OpcServerConnected = false;
                 mySubscription.Delete(true);
@@ -223,22 +241,54 @@ namespace WMSOpcClient
                 myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
                 myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
                 myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
-                while (OpcServerConnected !=true)
+                while (OpcServerConnected != true)
                 {
                     //Thread.Sleep(1000);
                     ConnectToServer();
                 }
                 AddSubscription();
-                AddItemsToSubscription(mySubscription);
+                AddTagsToSubscription(mySubscription);
 
             }
         }
 
+        private void Notification_MonitoredItem(MonitoredItem monitoredItem, MonitoredItemNotificationEventArgs e)
+        {
+            MonitoredItemNotification notification = e.NotificationValue as MonitoredItemNotification;
+            if (notification == null)
+            {
+                return;
+            }
+
+            Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
+            if (monitoredItem.DisplayName == "ToWMS_dataReady")
+            {
+                ReadFromOPC();
+            }
+            if (monitoredItem.DisplayName == "ToWMS_dataReceived")
+            {
+                if (notification.Value.WrappedValue == "1")
+                {
+                    ToWMS_dataReceived = true;
+                }
+            }
+
+            //Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
+
+        }
+
+        private void ReadFromOPC()
+        {
+            throw new NotImplementedException();
+        }
         private void NewMessageReceived(MessageModel message)
         {
-            Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
+            //Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
+            _logger.LogInformation("New Message Received:{id}/{sssc}/{orig}/{dest}", message.Id, message.SSSC, message.OriginalBox, message.Destination);
 
-            var trySend = SendToOPC(message);
+            MessageQueue.Enqueue(message);
+            
+            var trySend = SendMessageToOPC(message);
             if (trySend == true)
             {
                 // Update the record with send flag = true
@@ -254,11 +304,36 @@ namespace WMSOpcClient
             }
         }
 
-        private bool SendToOPC(MessageModel message)
+        private bool SendMessageToOPC(MessageModel message)
         {
             Console.WriteLine($"Message {message.Id} sent to OPC Server");
+            SendSSSCTagToOPC(message.SSSC);
+            SendOriginalBoxTagToOPC(message.OriginalBox);
+            SendDestinationToOPC(message.Destination);
+            SendDataReadyToOPC(true);
+
             // Send to server the message
             return true;
+        }
+
+        private void SendDataReadyToOPC(bool sent)
+        {
+            //Send FromWMS_dataReady tag to server
+        }
+
+        private void SendDestinationToOPC(int destination)
+        {
+            //Send Destination tag to server
+        }
+
+        private void SendOriginalBoxTagToOPC(bool originalBox)
+        {
+            //Send Original box tag to server
+        }
+
+        private void SendSSSCTagToOPC(string sSSC)
+        {
+            //Send SSSC tag to server
         }
 
         public override Task StopAsync(CancellationToken cancellationToken)
@@ -298,7 +373,7 @@ namespace WMSOpcClient
                         OriginalBox = record.OriginalBox,
                         Destination = record.Destination
                     };
-                    var trySend = SendToOPC(model);
+                    var trySend = SendMessageToOPC(model);
 
                     if (trySend == true)
                     {
@@ -318,10 +393,11 @@ namespace WMSOpcClient
                 {
                     if (mySession.SubscriptionCount > 0)
                     {
-                        AddItemsToSubscription(mySubscription);
+                        AddTagsToSubscription(mySubscription);
                     }
                 }
 
+                AddTagsToSession();
             }
             catch (Exception ex)
             {
