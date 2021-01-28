@@ -31,8 +31,7 @@ namespace WMSOpcClient
             _configuration = configuration;
             _scannedData = scannedData;
             _messageRepository = messageRepository;
-            _opcClient = OPCClient;
-            
+            _opcClient = OPCClient;  
         }
 
         // init clients on startup
@@ -43,12 +42,15 @@ namespace WMSOpcClient
             // ********************SQL SECTION*****************************
 
             // subscribe to SQL message service broker 
-            _messageRepository.OnNewMessage += NewMessageReceived;
+            _messageRepository.OnNewMessage += HandleSQLMessageReceived;
+
 
             // ************************************************************
 
 
             // ********************OPC SECTION*****************************
+            _opcClient.OnSSSCReceived += HandleSSSCMessageRead;
+            _opcClient.OnMessageReveived += HandleOPCMessageReceived;
             try
             {
                 _opcClient.Connect();
@@ -61,25 +63,30 @@ namespace WMSOpcClient
             return base.StartAsync(cancellationToken);
         }
 
-        private void NewMessageReceived(MessageModel message)
+        private async Task HandleOPCMessageReceived(MessageModel message)
+        {
+            var box = new BoxModel
+            {
+                Id = message.Id,
+                SSSC = message.SSSC,
+                OriginalBox = message.OriginalBox,
+                Destination = message.Destination
+            };
+
+            await _scannedData.UpdateSingleBox(box);
+        }
+
+        private void HandleSSSCMessageRead(string sssc)
+        {
+            _logger.LogInformation("SSSC scanned: {sssc}", sssc);
+        }
+
+        private void HandleSQLMessageReceived(MessageModel message)
         {
             //Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
             _logger.LogInformation("New Message Received:{id}/{sssc}/{orig}/{dest}", message.Id, message.SSSC, message.OriginalBox, message.Destination);
 
-            var trySend = _opcClient.SendMessageToOPC(message);
-            if (trySend == true)
-            {
-                // Update the record with send flag = true
-                var box = new BoxModel
-                {
-                    Id = message.Id,
-                    SSSC = message.SSSC,
-                    OriginalBox = message.OriginalBox,
-                    Destination = message.Destination
-                };
-
-                _scannedData.UpdateSingleBox(box);
-            }
+            _opcClient.SendMessageToOPC(message);
         }
 
         public override Task StopAsync(CancellationToken cancellationToken)
@@ -118,12 +125,8 @@ namespace WMSOpcClient
                         OriginalBox = record.OriginalBox,
                         Destination = record.Destination
                     };
-                    var trySend = _opcClient.SendMessageToOPC(model);
+                    _opcClient.SendMessageToOPC(model);
 
-                    if (trySend == true)
-                    {
-                        await _scannedData.UpdateSingleBox(record);
-                    }
                 }
 
                 _logger.LogInformation("Processed {boxes} boxes from past", records.Count);

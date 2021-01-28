@@ -55,8 +55,12 @@ namespace WMSOpcClient
                     {
                         SqlConnectionName = "Default"
                     });
+
+                    // SQL services
                     services.AddTransient<IBoxDataRepository, BoxDataRepository>();
                     services.AddTransient<IMessageRepository, MessageRepository>();
+
+                    // OPC service
                     services.AddTransient<IOPCClient, OPCClient>();
                 }).UseWindowsService().UseSerilog();
 

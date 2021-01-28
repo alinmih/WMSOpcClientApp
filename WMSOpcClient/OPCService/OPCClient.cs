@@ -6,16 +6,24 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading.Tasks;
+using WMSOpcClient.Common;
 using WMSOpcClient.DataAccessService.Models;
 
 namespace WMSOpcClient.OPCService
 {
+    public delegate Task NewOPCMessageHandler(MessageModel message);
+    public delegate void NewSSSCMessageHandler(string sssc);
+
     public class OPCClient : IOPCClient
     {
+        public event NewOPCMessageHandler OnMessageReveived;
+        public event NewSSSCMessageHandler OnSSSCReceived;
         private readonly ILogger<OPCClient> _logger;
         private readonly IConfiguration _configuration;
 
-        public Queue<MessageModel> MessageQueue { get; set; }
+        public MessageQueue<MessageModel> MessageQueue { get; set; }
+        public MessageModel MessageModel { get; set; }
 
         private Session mySession;
         private Subscription mySubscription;
@@ -38,7 +46,7 @@ namespace WMSOpcClient.OPCService
             _configuration = configuration;
             myClientHelperAPI = new UAClientHelperAPI();
             myRegisteredNodeIdStrings = new List<string>();
-            MessageQueue = new Queue<MessageModel>();
+            MessageQueue = new MessageQueue<MessageModel>();
         }
 
         public bool OpcServerConnected { get; private set; }
@@ -175,17 +183,20 @@ namespace WMSOpcClient.OPCService
             {
                 return;
             }
-
+            
             Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
             if (monitoredItem.DisplayName == "ToWMS_dataReady")
             {
-                ReadFromOPC();
+                var ssscItem = ReadFromOPC();
+                OnSSSCReceived?.Invoke(ssscItem);
             }
             if (monitoredItem.DisplayName == "ToWMS_dataReceived")
             {
                 if (notification.Value.WrappedValue == "1")
                 {
                     ToWMS_dataReceived = true;
+                    MessageQueue.Dequeue();
+                    OnMessageReveived?.Invoke(MessageModel);
                 }
             }
 
@@ -248,9 +259,9 @@ namespace WMSOpcClient.OPCService
             }
         }
 
-        private void ReadFromOPC()
+        private string ReadFromOPC()
         {
-            throw new NotImplementedException();
+            return "121313131313";
         }
 
         public void Start()
@@ -266,21 +277,23 @@ namespace WMSOpcClient.OPCService
             AddTagsToSession();
         }
 
-        public bool SendMessageToOPC(MessageModel message)
+        public void SendMessageToOPC(MessageModel message)
         {
-            Console.WriteLine($"Message {message.Id} sent to OPC Server");
+            Console.WriteLine($"Message {message.Id} enqued and send to process to OPC Server");
             MessageQueue.Enqueue(message);
-
-            SendSSSCTagToOPC(message.SSSC);
-            SendOriginalBoxTagToOPC(message.OriginalBox);
-            SendDestinationToOPC(message.Destination);
-            SendDataReadyToOPC(true);
-
-            // Send to server the message
-            return true;
+            MessageQueue.ItemAdded += ProcessMessage;
         }
 
-
+        public void ProcessMessage(MessageModel message)
+        {
+            var currentMessage = MessageQueue.Peek();
+            SendSSSCTagToOPC(currentMessage.SSSC);
+            SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
+            SendDestinationToOPC(currentMessage.Destination);
+            SendDataReadyToOPC(true);
+            MessageModel = currentMessage;
+            MessageQueue.Dequeue();
+        }
 
         private void SendDataReadyToOPC(bool sent)
         {

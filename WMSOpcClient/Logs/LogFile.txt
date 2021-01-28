@@ -2406,3 +2406,43 @@ Object name: 'TransportChannel is not available.'.
 2021-01-28 11:57:51.556 +02:00 [INF] New Message Received:50/123456789/false/10
 2021-01-28 11:58:15.985 +02:00 [INF] Try disposing services
 2021-01-28 11:58:16.197 +02:00 [INF] The service has been stopped...
+2021-01-28 14:12:46.249 +02:00 [INF] Starting up the service
+2021-01-28 14:12:47.516 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 14:12:52.755 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 14:12:52.859 +02:00 [INF] Worker running at: "2021-01-28T14:12:52.8588491+02:00"
+2021-01-28 14:12:52.866 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 14:12:53.528 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 14:12:53.530 +02:00 [INF] Entering subscription mode...
+2021-01-28 14:12:54.114 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 14:12:54.123 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 14:12:54.134 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 14:12:54.136 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 14:13:11.715 +02:00 [INF] New Message Received:51/123456789/true/1
+2021-01-28 14:13:11.727 +02:00 [INF] New Message Received:52/123456789/false/2
+2021-01-28 14:13:11.746 +02:00 [INF] New Message Received:53/123456789/false/3
+2021-01-28 14:13:11.761 +02:00 [INF] New Message Received:54/123456789/false/4
+2021-01-28 14:13:11.771 +02:00 [INF] New Message Received:55/123456789/false/5
+2021-01-28 14:13:11.779 +02:00 [INF] New Message Received:56/123456789/false/6
+2021-01-28 14:13:11.788 +02:00 [INF] New Message Received:57/123456789/false/7
+2021-01-28 14:13:11.794 +02:00 [INF] New Message Received:58/123456789/false/8
+2021-01-28 14:13:11.804 +02:00 [INF] New Message Received:59/123456789/false/9
+2021-01-28 14:13:11.811 +02:00 [INF] New Message Received:60/123456789/false/10
+2021-01-28 14:14:26.603 +02:00 [INF] New Message Received:61/123456789/true/1
+2021-01-28 14:16:02.176 +02:00 [INF] New Message Received:62/123456789/true/1
+2021-01-28 14:16:54.193 +02:00 [INF] New Message Received:63/123456789/true/1
+2021-01-28 14:18:18.303 +02:00 [INF] Starting up the service
+2021-01-28 14:18:19.449 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 14:18:24.525 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 14:18:24.581 +02:00 [INF] Worker running at: "2021-01-28T14:18:24.5811813+02:00"
+2021-01-28 14:18:24.586 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 14:18:25.066 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 14:18:25.069 +02:00 [INF] Entering subscription mode...
+2021-01-28 14:18:25.703 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 14:18:25.710 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 14:18:25.721 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 14:18:25.722 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 14:18:32.585 +02:00 [INF] New Message Received:64/123456789/true/1
+2021-01-28 14:18:51.029 +02:00 [INF] New Message Received:65/123456789/true/1
+2021-01-28 14:19:41.601 +02:00 [INF] New Message Received:66/123456789/true/1
+2021-01-28 14:21:13.183 +02:00 [INF] Try disposing services
+2021-01-28 14:21:13.326 +02:00 [INF] The service has been stopped...
