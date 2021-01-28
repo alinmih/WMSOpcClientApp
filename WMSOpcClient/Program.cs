@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using WMSOpcClient.DataAccessService;
 using WMSOpcClient.DataAccessService.DataRepository;
 using WMSOpcClient.DataAccessService.MessageRepository;
+using WMSOpcClient.OPCService;
 
 namespace WMSOpcClient
 {
@@ -56,6 +57,7 @@ namespace WMSOpcClient
                     });
                     services.AddTransient<IBoxDataRepository, BoxDataRepository>();
                     services.AddTransient<IMessageRepository, MessageRepository>();
+                    services.AddTransient<IOPCClient, OPCClient>();
                 }).UseWindowsService().UseSerilog();
 
     }

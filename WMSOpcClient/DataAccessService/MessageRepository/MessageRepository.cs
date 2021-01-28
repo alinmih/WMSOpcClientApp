@@ -16,12 +16,12 @@ namespace WMSOpcClient.DataAccessService.MessageRepository
         public void Start(string connectionString)
         {
             _tableDependency = new SqlTableDependency<MessageModel>(connectionString, "aBox");
-            _tableDependency.OnChanged += DataChanged;
+            _tableDependency.OnChanged += OnDataChanged;
             _tableDependency.Start();
         }
 
 
-        private void DataChanged(object sender, RecordChangedEventArgs<MessageModel> e)
+        private void OnDataChanged(object sender, RecordChangedEventArgs<MessageModel> e)
         {
             if (e.ChangeType == TableDependency.SqlClient.Base.Enums.ChangeType.Insert || e.ChangeType == TableDependency.SqlClient.Base.Enums.ChangeType.Update)
             {

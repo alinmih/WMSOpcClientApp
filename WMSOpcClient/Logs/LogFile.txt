@@ -2383,3 +2383,26 @@ Object name: 'TransportChannel is not available.'.
 2021-01-28 10:44:47.100 +02:00 [INF] New Message Received:40/123456789/false/10
 2021-01-28 10:45:50.892 +02:00 [INF] Try disposing services
 2021-01-28 10:45:51.106 +02:00 [INF] The service has been stopped...
+2021-01-28 11:57:18.682 +02:00 [INF] Starting up the service
+2021-01-28 11:57:19.955 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 11:57:22.451 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 11:57:22.562 +02:00 [INF] Worker running at: "2021-01-28T11:57:22.5620830+02:00"
+2021-01-28 11:57:22.576 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 11:57:23.661 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 11:57:23.663 +02:00 [INF] Entering subscription mode...
+2021-01-28 11:57:24.609 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 11:57:24.621 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 11:57:24.634 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 11:57:24.642 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 11:57:51.065 +02:00 [INF] New Message Received:41/123456789/true/1
+2021-01-28 11:57:51.106 +02:00 [INF] New Message Received:42/123456789/false/2
+2021-01-28 11:57:51.148 +02:00 [INF] New Message Received:43/123456789/false/3
+2021-01-28 11:57:51.205 +02:00 [INF] New Message Received:44/123456789/false/4
+2021-01-28 11:57:51.255 +02:00 [INF] New Message Received:45/123456789/false/5
+2021-01-28 11:57:51.332 +02:00 [INF] New Message Received:46/123456789/false/6
+2021-01-28 11:57:51.444 +02:00 [INF] New Message Received:47/123456789/false/7
+2021-01-28 11:57:51.503 +02:00 [INF] New Message Received:48/123456789/false/8
+2021-01-28 11:57:51.539 +02:00 [INF] New Message Received:49/123456789/false/9
+2021-01-28 11:57:51.556 +02:00 [INF] New Message Received:50/123456789/false/10
+2021-01-28 11:58:15.985 +02:00 [INF] Try disposing services
+2021-01-28 11:58:16.197 +02:00 [INF] The service has been stopped...
