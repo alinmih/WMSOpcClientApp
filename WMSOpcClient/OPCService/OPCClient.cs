@@ -47,6 +47,7 @@ namespace WMSOpcClient.OPCService
             myClientHelperAPI = new UAClientHelperAPI();
             myRegisteredNodeIdStrings = new List<string>();
             MessageQueue = new MessageQueue<MessageModel>();
+            MessageQueue.ItemAdded += ProcessMessage;
         }
 
         public bool OpcServerConnected { get; private set; }
@@ -183,8 +184,9 @@ namespace WMSOpcClient.OPCService
             {
                 return;
             }
-            
-            Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
+
+            _logger.LogInformation("Monitored Item: {item} has value: {value}",monitoredItem.DisplayName,notification.Value.WrappedValue);
+           
             if (monitoredItem.DisplayName == "ToWMS_dataReady")
             {
                 var ssscItem = ReadFromOPC();
@@ -192,18 +194,14 @@ namespace WMSOpcClient.OPCService
             }
             if (monitoredItem.DisplayName == "ToWMS_dataReceived")
             {
-                if (notification.Value.WrappedValue == "1")
+                if (notification.Value.WrappedValue == 1.0)
                 {
                     ToWMS_dataReceived = true;
                     MessageQueue.Dequeue();
                     OnMessageReveived?.Invoke(MessageModel);
                 }
             }
-
-            //Console.WriteLine($"Monitored Item {notification.Value.WrappedValue}");
-
         }
-
 
         private void AddSubscription()
         {
@@ -224,7 +222,7 @@ namespace WMSOpcClient.OPCService
         private void AddTagsToSession()
         {
             // to be modified to OPCSessionTags after testing
-            var tags = _configuration.GetSection("TestTagsToSession").GetChildren();
+            var tags = _configuration.GetSection("OPCTestSessionTags").GetChildren();
             List<String> nodeIdStrings = new List<String>();
             foreach (var tag in tags)
             {
@@ -247,7 +245,7 @@ namespace WMSOpcClient.OPCService
         private void AddTagsToSubscription(Subscription currentSubscription)
         {
             // to be modified to OPCSubscriptionTags after testing
-            var tags = _configuration.GetSection("TestTagsToSubscription").GetChildren();
+            var tags = _configuration.GetSection("OPCTestSubscriptionTags").GetChildren();
             foreach (var tag in tags)
             {
                 itemCount++;
@@ -280,18 +278,20 @@ namespace WMSOpcClient.OPCService
         public void SendMessageToOPC(MessageModel message)
         {
             Console.WriteLine($"Message {message.Id} enqued and send to process to OPC Server");
+            
             MessageQueue.Enqueue(message);
-            MessageQueue.ItemAdded += ProcessMessage;
         }
 
         public void ProcessMessage(MessageModel message)
         {
             var currentMessage = MessageQueue.Peek();
+            MessageModel = currentMessage;
+
             SendSSSCTagToOPC(currentMessage.SSSC);
             SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
             SendDestinationToOPC(currentMessage.Destination);
             SendDataReadyToOPC(true);
-            MessageModel = currentMessage;
+
             MessageQueue.Dequeue();
         }
 
@@ -312,7 +312,7 @@ namespace WMSOpcClient.OPCService
 
         private void SendSSSCTagToOPC(string sSSC)
         {
-            //Send SSSC tag to server
+            //ll,
         }
     }
 }

@@ -2446,3 +2446,95 @@ Object name: 'TransportChannel is not available.'.
 2021-01-28 14:19:41.601 +02:00 [INF] New Message Received:66/123456789/true/1
 2021-01-28 14:21:13.183 +02:00 [INF] Try disposing services
 2021-01-28 14:21:13.326 +02:00 [INF] The service has been stopped...
+2021-01-28 14:26:41.546 +02:00 [INF] Starting up the service
+2021-01-28 14:26:42.818 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 14:26:47.794 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 14:26:47.870 +02:00 [INF] Worker running at: "2021-01-28T14:26:47.8697258+02:00"
+2021-01-28 14:26:47.874 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 14:26:48.362 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 14:26:48.365 +02:00 [INF] Entering subscription mode...
+2021-01-28 14:26:48.853 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 14:26:48.863 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 14:26:48.872 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 14:26:48.873 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 14:27:04.002 +02:00 [INF] New Message Received:67/123456789/true/1
+2021-01-28 14:27:32.366 +02:00 [INF] New Message Received:68/123456789/true/1
+2021-01-28 14:27:50.976 +02:00 [INF] New Message Received:69/123456789/true/1
+2021-01-28 14:28:51.770 +02:00 [INF] Try disposing services
+2021-01-28 14:28:51.926 +02:00 [INF] The service has been stopped...
+2021-01-28 14:29:07.526 +02:00 [INF] Starting up the service
+2021-01-28 14:29:08.743 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 14:29:13.723 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 14:29:13.808 +02:00 [INF] Worker running at: "2021-01-28T14:29:13.8082836+02:00"
+2021-01-28 14:29:13.813 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 14:29:14.304 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 14:29:14.306 +02:00 [INF] Entering subscription mode...
+2021-01-28 14:29:14.763 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Sinusoid1
+2021-01-28 14:29:14.769 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=Triangle1
+2021-01-28 14:29:14.780 +02:00 [INF] Added tags to session: ns=5;s=Random1
+2021-01-28 14:29:14.781 +02:00 [INF] Added tags to session: ns=5;s=Sawtooth1
+2021-01-28 14:29:21.735 +02:00 [INF] New Message Received:70/123456789/true/1
+2021-01-28 14:29:33.211 +02:00 [INF] New Message Received:71/123456789/true/1
+2021-01-28 14:29:44.258 +02:00 [INF] New Message Received:72/123456789/true/1
+2021-01-28 14:30:24.282 +02:00 [INF] New Message Received:73/123456789/true/1
+2021-01-28 14:30:55.058 +02:00 [INF] New Message Received:74/123456789/false/2
+2021-01-28 14:32:06.102 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 155
+2021-01-28 14:32:06.114 +02:00 [ERR] Error: BadSessionIdInvalid    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 155
+2021-01-28 14:32:20.619 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Sinusoid1
+2021-01-28 14:32:20.627 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=Triangle1
+2021-01-28 14:32:41.011 +02:00 [INF] Try disposing services
+2021-01-28 14:32:41.143 +02:00 [INF] The service has been stopped...
+2021-01-28 15:35:27.740 +02:00 [INF] Starting up the service
+2021-01-28 15:35:29.078 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 15:35:34.304 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 15:35:34.400 +02:00 [INF] Worker running at: "2021-01-28T15:35:34.4001148+02:00"
+2021-01-28 15:35:34.405 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 15:35:34.902 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 15:35:34.906 +02:00 [INF] Entering subscription mode...
+2021-01-28 15:35:35.401 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=FromWMS_dataReady
+2021-01-28 15:35:35.409 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=ToWMS_dataReceived
+2021-01-28 15:35:35.411 +02:00 [INF] SSSC scanned: 121313131313
+2021-01-28 15:35:35.419 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_dataReady
+2021-01-28 15:35:35.422 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_destination
+2021-01-28 15:35:35.424 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_originalBox
+2021-01-28 15:35:35.428 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_sscc
+2021-01-28 15:35:35.429 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_watchdog
+2021-01-28 15:35:35.430 +02:00 [INF] Added tags to session: ns=5;s=ToWMS_sscc
+2021-01-28 15:37:37.193 +02:00 [INF] Starting up the service
+2021-01-28 15:37:38.088 +02:00 [INF] Connecting to OPC Server...
+2021-01-28 15:37:42.861 +02:00 [INF] Connected to OPC Server: opc.tcp://DESKTOP-ITG8I1H.senior.seniorsoftware.ro:53530/OPCUA/SimulationServer
+2021-01-28 15:37:42.921 +02:00 [INF] Worker running at: "2021-01-28T15:37:42.9207108+02:00"
+2021-01-28 15:37:42.929 +02:00 [INF] Getting unprocessed boxes...
+2021-01-28 15:37:43.530 +02:00 [INF] Processed 0 boxes from past
+2021-01-28 15:37:43.532 +02:00 [INF] Entering subscription mode...
+2021-01-28 15:37:44.024 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=FromWMS_dataReady
+2021-01-28 15:37:44.033 +02:00 [INF] Added tags to subscription Subscription 1 : ns=5;s=ToWMS_dataReceived
+2021-01-28 15:37:44.044 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_dataReady
+2021-01-28 15:37:44.046 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_destination
+2021-01-28 15:37:44.048 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_originalBox
+2021-01-28 15:37:44.049 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_sscc
+2021-01-28 15:37:44.050 +02:00 [INF] Added tags to session: ns=5;s=FromWMS_watchdog
+2021-01-28 15:37:44.052 +02:00 [INF] Added tags to session: ns=5;s=ToWMS_sscc
+2021-01-28 15:37:52.728 +02:00 [INF] SSSC scanned: 121313131313
+2021-01-28 15:38:59.406 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-28 15:39:00.749 +02:00 [ERR] Error: BadSecureChannelClosed    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndSendRequest(IAsyncResult result)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e)
+2021-01-28 15:39:09.948 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=FromWMS_dataReady
+2021-01-28 15:39:09.954 +02:00 [INF] Added tags to subscription Subscription 2 : ns=5;s=ToWMS_dataReceived
+2021-01-28 15:39:19.186 +02:00 [INF] SSSC scanned: 121313131313
+2021-01-28 15:41:53.549 +02:00 [INF] New Message Received:75/123456789/true/1
+2021-01-28 15:42:41.752 +02:00 [INF] New Message Received:76/123456789/true/1
+2021-01-28 15:45:20.218 +02:00 [INF] Try disposing services
+2021-01-28 15:45:20.460 +02:00 [INF] The service has been stopped...
