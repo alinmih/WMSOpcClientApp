@@ -69,7 +69,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             {
 
                 var sqlString = "UPDATE [dbo].[aBox]\n"
-                       + "   SET [SendToServer] = 1\n"
+                       + $"   SET [SendToServer] = {boxModel.Id}\n"
                        + $" WHERE [dbo].[aBox].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)

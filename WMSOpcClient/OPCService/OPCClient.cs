@@ -9,10 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using WMSOpcClient.Common;
 using WMSOpcClient.DataAccessService.Models;
+using System.Linq;
 
 namespace WMSOpcClient.OPCService
 {
-    public delegate Task NewOPCMessageHandler(MessageModel message);
+    public delegate void NewOPCMessageHandler(MessageModel message);
     public delegate void NewSSSCMessageHandler(string sssc);
 
     public class OPCClient : IOPCClient
@@ -185,20 +186,27 @@ namespace WMSOpcClient.OPCService
                 return;
             }
 
-            _logger.LogInformation("Monitored Item: {item} has value: {value}",monitoredItem.DisplayName,notification.Value.WrappedValue);
-           
+            _logger.LogInformation("Monitored Item: {item} has value: {value}", monitoredItem.DisplayName, notification.Value.WrappedValue);
+
             if (monitoredItem.DisplayName == "ToWMS_dataReady")
             {
-                var ssscItem = ReadFromOPC();
-                OnSSSCReceived?.Invoke(ssscItem);
+                if (notification.Value.WrappedValue == true)
+                {
+                    var ssscItem = ReadFromOPC();
+                    OnSSSCReceived?.Invoke(ssscItem);
+                }
             }
             if (monitoredItem.DisplayName == "ToWMS_dataReceived")
             {
-                if (notification.Value.WrappedValue == 1.0)
+                if (notification.Value.WrappedValue == true)
                 {
                     ToWMS_dataReceived = true;
-                    MessageQueue.Dequeue();
+                    if (MessageQueue.Count > 0)
+                    {
+                        MessageQueue.Dequeue();
+                    }
                     OnMessageReveived?.Invoke(MessageModel);
+                    WriteDataReceived(false);
                 }
             }
         }
@@ -259,7 +267,17 @@ namespace WMSOpcClient.OPCService
 
         private string ReadFromOPC()
         {
-            return "121313131313";
+            List<String> values = new List<String>();
+            try
+            {
+                values = myClientHelperAPI.ReadValues(myRegisteredNodeIdStrings.Where(item => item.Contains("ToWMS_sscc")).ToList());
+                return values.ElementAt<String>(0);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+                return "";
+            }
         }
 
         public void Start()
@@ -277,42 +295,119 @@ namespace WMSOpcClient.OPCService
 
         public void SendMessageToOPC(MessageModel message)
         {
-            Console.WriteLine($"Message {message.Id} enqued and send to process to OPC Server");
-            
+            _logger.LogInformation("Message {message} enqued and send to process to OPC Server",message.Id);
+
             MessageQueue.Enqueue(message);
         }
 
+        //TODO to modifiy the delegate for this method
         public void ProcessMessage(MessageModel message)
         {
-            var currentMessage = MessageQueue.Peek();
-            MessageModel = currentMessage;
+            while (MessageQueue.Count > 0)
+            {
+                var currentMessage = MessageQueue.Peek();
+                MessageModel = currentMessage;
 
-            SendSSSCTagToOPC(currentMessage.SSSC);
-            SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
-            SendDestinationToOPC(currentMessage.Destination);
-            SendDataReadyToOPC(true);
+                //SendDataToOPC(message.SSSC, message.OriginalBox, message.Destination, true);
+                SendSSSCTagToOPC(currentMessage.SSSC);
+                SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
+                SendDestinationToOPC(currentMessage.Destination);
+                SendDataReadyToOPC(true);
 
-            MessageQueue.Dequeue();
+                //******************TO BE REMOVED IN PRODUCTION CODE*****************
+                WriteDataReceived(true);
+                //MessageQueue.Dequeue();
+            }
         }
 
+        private void SendDataToOPC(string sssc, bool original, int destination, bool dataReady)
+        {
+            List<String> values = new List<string>();
+            values.Add(sssc);
+            values.Add(original.ToString());
+            values.Add(destination.ToString());
+            values.Add(dataReady.ToString());
+
+            //var myNodeId = myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList();
+            try
+            {
+                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
+        }
+
+        private void WriteDataReceived(bool data)
+        {
+            List<String> values = new List<string>();
+            List<String> nodeIdStrings = new List<string>();
+            values.Add(data.ToString());
+            nodeIdStrings.Add("ns=2;s=ToWMS_dataReceived");
+            try
+            {
+                myClientHelperAPI.WriteValues(values, nodeIdStrings);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
+        }
         private void SendDataReadyToOPC(bool sent)
         {
-            //Send FromWMS_dataReady tag to server
+            List<String> values = new List<String>();
+            values.Add(sent.ToString());
+            try
+            {
+                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_dataReady")).ToList());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
         }
 
         private void SendDestinationToOPC(int destination)
         {
-            //Send Destination tag to server
+            List<String> values = new List<String>();
+            values.Add(destination.ToString());
+            try
+            {
+                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_destination")).ToList());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
         }
 
         private void SendOriginalBoxTagToOPC(bool originalBox)
         {
-            //Send Original box tag to server
+            List<String> values = new List<String>();
+            values.Add(originalBox.ToString());
+            try
+            {
+                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_originalBox")).ToList());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
         }
 
         private void SendSSSCTagToOPC(string sSSC)
         {
-            //ll,
+            List<String> values = new List<String>();
+            values.Add(sSSC.ToString());
+            try
+            {
+                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_sscc")).ToList());
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
         }
     }
 }

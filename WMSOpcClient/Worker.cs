@@ -63,7 +63,7 @@ namespace WMSOpcClient
             return base.StartAsync(cancellationToken);
         }
 
-        private async Task HandleOPCMessageReceived(MessageModel message)
+        private void HandleOPCMessageReceived(MessageModel message)
         {
             var box = new BoxModel
             {
@@ -72,8 +72,8 @@ namespace WMSOpcClient
                 OriginalBox = message.OriginalBox,
                 Destination = message.Destination
             };
-
-            await _scannedData.UpdateSingleBox(box);
+            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSSC, box.OriginalBox, box.Destination);
+            _scannedData.UpdateSingleBox(box);
         }
 
         private void HandleSSSCMessageRead(string sssc)
