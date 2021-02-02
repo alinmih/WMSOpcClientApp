@@ -7,7 +7,7 @@ namespace WMSOpcClient.Common
     public class MessageQueue<T> : Queue<T>
     {
         //  Add an event that will be triggered after adding an item
-        public event Action<T> ItemAdded;
+        public event Action ItemAdded;
 
         //  Override the add method
         public new void Enqueue(T obj)
@@ -16,7 +16,7 @@ namespace WMSOpcClient.Common
             base.Enqueue(obj);
 
             //  Trigger the event
-            ItemAdded?.Invoke(obj);
+            ItemAdded?.Invoke();
         }
     }
 }

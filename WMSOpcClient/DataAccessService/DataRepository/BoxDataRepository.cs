@@ -69,7 +69,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             {
 
                 var sqlString = "UPDATE [dbo].[aBox]\n"
-                       + $"   SET [SendToServer] = {boxModel.Id}\n"
+                       + $"   SET [SendToServer] = 1\n"
                        + $" WHERE [dbo].[aBox].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)
@@ -77,6 +77,22 @@ namespace WMSOpcClient.DataAccessService.DataRepository
                     boxModel.SendToServer = 1;
                 }
                 return affectedRow;
+            }
+        }
+
+        public bool IsSQLServerConnected(string connectionString)
+        {
+            try
+            {
+                using (IDbConnection dbConnection = new SqlConnection(connectionString))
+                {
+                    dbConnection.Open();
+                    return true;
+                }
+            }
+            catch (SqlException)
+            {
+                return false;
             }
         }
     }

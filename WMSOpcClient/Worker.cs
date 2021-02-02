@@ -5,6 +5,7 @@ using Opc.Ua;
 using Opc.Ua.Client;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
@@ -24,14 +25,19 @@ namespace WMSOpcClient
         private readonly IBoxDataRepository _scannedData;
         private readonly IMessageRepository _messageRepository;
         private readonly IOPCClient _opcClient;
-        
-        public Worker(ILogger<Worker> logger, IConfiguration configuration, IBoxDataRepository scannedData, IMessageRepository messageRepository, IOPCClient OPCClient)
+        private readonly ConnectionStringData _connectionString;
+        private Stopwatch sw;
+
+
+        public Worker(ILogger<Worker> logger, IConfiguration configuration, IBoxDataRepository scannedData, IMessageRepository messageRepository, IOPCClient OPCClient, ConnectionStringData connectionString)
         {
             _logger = logger;
             _configuration = configuration;
             _scannedData = scannedData;
             _messageRepository = messageRepository;
-            _opcClient = OPCClient;  
+            _opcClient = OPCClient;
+            _connectionString = connectionString;
+            sw = new Stopwatch();
         }
 
         // init clients on startup
@@ -53,7 +59,10 @@ namespace WMSOpcClient
             _opcClient.OnMessageReveived += HandleOPCMessageReceived;
             try
             {
+                
                 _opcClient.Connect();
+                var sqlConnected = _scannedData.IsSQLServerConnected(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
+
             }
             catch (Exception ex)
             {
@@ -74,6 +83,9 @@ namespace WMSOpcClient
             };
             _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSSC, box.OriginalBox, box.Destination);
             _scannedData.UpdateSingleBox(box);
+            sw.Stop();
+            _logger.LogCritical("Elapsed time:{e}", sw.Elapsed);
+            sw.Reset();
         }
 
         private void HandleSSSCMessageRead(string sssc)
@@ -83,6 +95,8 @@ namespace WMSOpcClient
 
         private void HandleSQLMessageReceived(MessageModel message)
         {
+            sw.Start();
+            //_logger.LogInformation("Time started", DateTime.Now);
             //Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
             _logger.LogInformation("New Message Received:{id}/{sssc}/{orig}/{dest}", message.Id, message.SSSC, message.OriginalBox, message.Destination);
 
@@ -114,6 +128,11 @@ namespace WMSOpcClient
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
                 _logger.LogInformation("Getting unprocessed boxes...");
+
+
+                // start monitor opc 
+                _opcClient.Start();
+
                 var records = await _scannedData.GetBoxes();
 
                 foreach (var record in records)
@@ -125,6 +144,7 @@ namespace WMSOpcClient
                         OriginalBox = record.OriginalBox,
                         Destination = record.Destination
                     };
+
                     _opcClient.SendMessageToOPC(model);
 
                 }
@@ -134,10 +154,8 @@ namespace WMSOpcClient
                 _logger.LogInformation("Entering subscription mode...");
 
                 // start monitor SQL table
-                _messageRepository.Start(_configuration.GetConnectionString("Default"));
+                _messageRepository.Start(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
 
-                // start monitor opc 
-                _opcClient.Start();
                 
             }
             catch (Exception ex)

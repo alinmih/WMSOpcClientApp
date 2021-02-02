@@ -9,5 +9,6 @@ namespace WMSOpcClient.DataAccessService.DataRepository
         Task<List<BoxModel>> GetBoxes();
         Task<int> UpdateBoxes(List<BoxModel> boxes);
         Task<int> UpdateSingleBox(BoxModel boxModel);
+        bool IsSQLServerConnected(string connectionString);
     }
 }

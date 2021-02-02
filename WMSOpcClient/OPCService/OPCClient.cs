@@ -20,23 +20,19 @@ namespace WMSOpcClient.OPCService
     {
         public event NewOPCMessageHandler OnMessageReveived;
         public event NewSSSCMessageHandler OnSSSCReceived;
+
         private readonly ILogger<OPCClient> _logger;
         private readonly IConfiguration _configuration;
 
         public MessageQueue<MessageModel> MessageQueue { get; set; }
         public MessageModel MessageModel { get; set; }
 
-        private Session mySession;
-        private Subscription mySubscription;
-        private UAClientHelperAPI myClientHelperAPI;
-        private EndpointDescription mySelectedEndpoint;
-        private MonitoredItem myMonitoredItem;
-        private List<String> myRegisteredNodeIdStrings;
-        private ReferenceDescriptionCollection myReferenceDescriptionCollection;
-        private List<string[]> myStructList;
-        private Int16 itemCount;
+        private Session _mySession;
+        private Subscription _mySubscription;
+        private UAClientHelperAPI _myClientHelperAPI;
+        private EndpointDescription _mySelectedEndpoint;
+        private List<String> _myRegisteredNodeIdStrings;
 
-        private string monitoredItemName;
         private bool ToWMS_dataReceived = false;
         private bool ToWMS_dataReady = false;
         private bool FromWMS_watchdog = false;
@@ -45,8 +41,8 @@ namespace WMSOpcClient.OPCService
         {
             _logger = logger;
             _configuration = configuration;
-            myClientHelperAPI = new UAClientHelperAPI();
-            myRegisteredNodeIdStrings = new List<string>();
+            _myClientHelperAPI = new UAClientHelperAPI();
+            _myRegisteredNodeIdStrings = new List<string>();
             MessageQueue = new MessageQueue<MessageModel>();
             MessageQueue.ItemAdded += ProcessMessage;
         }
@@ -83,21 +79,21 @@ namespace WMSOpcClient.OPCService
             try
             {
                 var url = _configuration.GetSection("OPCServerUrl").Value;
-                var endpoints = myClientHelperAPI.GetEndpoints(url);
-                mySelectedEndpoint = endpoints[0];
+                var endpoints = _myClientHelperAPI.GetEndpoints(url);
+                _mySelectedEndpoint = endpoints[0];
 
                 //Register mandatory events (cert and keep alive)
-                myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
-                myClientHelperAPI.CertificateValidationNotification += new CertificateValidationEventHandler(Notification_ServerCertificate);
+                _myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
+                _myClientHelperAPI.CertificateValidationNotification += new CertificateValidationEventHandler(Notification_ServerCertificate);
 
                 //Check for a selected endpoint
-                if (mySelectedEndpoint != null)
+                if (_mySelectedEndpoint != null)
                 {
                     //Call connect
-                    myClientHelperAPI.Connect(mySelectedEndpoint, false, "", "").Wait();
+                    _myClientHelperAPI.Connect(_mySelectedEndpoint, false, "", "").Wait();
                     //Extract the session object for further direct session interactions
 
-                    mySession = myClientHelperAPI.Session;
+                    _mySession = _myClientHelperAPI.Session;
                     OpcServerConnected = true;
 
                 }
@@ -117,7 +113,8 @@ namespace WMSOpcClient.OPCService
 
         public void Disconnect()
         {
-            myClientHelperAPI.Disconnect();
+            MessageQueue.ItemAdded -= ProcessMessage;
+            _myClientHelperAPI.Disconnect();
         }
 
         private void Notification_ServerCertificate(CertificateValidator sender, CertificateValidationEventArgs e)
@@ -145,7 +142,7 @@ namespace WMSOpcClient.OPCService
             try
             {
                 // check for events from discarded sessions.
-                if (!Object.ReferenceEquals(sender, mySession))
+                if (!Object.ReferenceEquals(sender, _mySession))
                 {
                     return;
                 }
@@ -153,31 +150,30 @@ namespace WMSOpcClient.OPCService
                 if (!ServiceResult.IsGood(e.Status))
                 {
                     // try reconnecting using the existing session state
-                    mySession.Reconnect();
+                    _mySession.Reconnect();
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError("Error: {error} {stackTrace}", ex.Message, ex.StackTrace);
                 OpcServerConnected = false;
-                mySubscription.Delete(true);
-                mySubscription = null;
-                myClientHelperAPI.Disconnect();
-                mySession = null;
-                myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
-                myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
-                myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
+                _mySubscription.Delete(true);
+                _mySubscription = null;
+                _myClientHelperAPI.Disconnect();
+                _mySession = null;
+                _myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
+                _myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
+                _myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 while (OpcServerConnected != true)
                 {
                     //Thread.Sleep(1000);
                     ConnectToServer();
                 }
                 AddSubscription();
-                AddTagsToSubscription(mySubscription);
+                AddTagsToSubscription(_mySubscription);
 
             }
         }
-
         private void Notification_MonitoredItem(MonitoredItem monitoredItem, MonitoredItemNotificationEventArgs e)
         {
             MonitoredItemNotification notification = e.NotificationValue as MonitoredItemNotification;
@@ -194,6 +190,7 @@ namespace WMSOpcClient.OPCService
                 {
                     var ssscItem = ReadFromOPC();
                     OnSSSCReceived?.Invoke(ssscItem);
+                    return;
                 }
             }
             if (monitoredItem.DisplayName == "ToWMS_dataReceived")
@@ -205,8 +202,12 @@ namespace WMSOpcClient.OPCService
                     {
                         MessageQueue.Dequeue();
                     }
-                    OnMessageReveived?.Invoke(MessageModel);
+                    if (MessageModel != null)
+                    {
+                        OnMessageReveived?.Invoke(MessageModel);
+                    }
                     WriteDataReceived(false);
+                    return;
                 }
             }
         }
@@ -215,10 +216,10 @@ namespace WMSOpcClient.OPCService
         {
             try
             {
-                if (mySubscription == null && mySession != null)
+                if (_mySubscription == null && _mySession != null)
                 {
-                    mySubscription = myClientHelperAPI.Subscribe(100);
-                    myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
+                    _mySubscription = _myClientHelperAPI.Subscribe(100);
+                    _myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 }
             }
             catch (Exception ex)
@@ -238,8 +239,8 @@ namespace WMSOpcClient.OPCService
             }
             try
             {
-                myRegisteredNodeIdStrings = myClientHelperAPI.RegisterNodeIds(nodeIdStrings);
-                foreach (var registeredTag in myRegisteredNodeIdStrings)
+                _myRegisteredNodeIdStrings = _myClientHelperAPI.RegisterNodeIds(nodeIdStrings);
+                foreach (var registeredTag in _myRegisteredNodeIdStrings)
                 {
                     _logger.LogInformation("Added tags to session: {tags}", registeredTag);
                 }
@@ -256,10 +257,8 @@ namespace WMSOpcClient.OPCService
             var tags = _configuration.GetSection("OPCTestSubscriptionTags").GetChildren();
             foreach (var tag in tags)
             {
-                itemCount++;
-                //monitoredItemName = "Tag_" + itemCount.ToString();
-                monitoredItemName = tag.Key;
-                myMonitoredItem = myClientHelperAPI.AddMonitoredItem(mySubscription, tag.Value, monitoredItemName, 1);
+                var monitoredItemName = tag.Key;
+                _myClientHelperAPI.AddMonitoredItem(_mySubscription, tag.Value, monitoredItemName, 1);
 
                 _logger.LogInformation("Added tags to subscription {subscr} : {tag}", currentSubscription.DisplayName, tag.Value);
             }
@@ -270,7 +269,7 @@ namespace WMSOpcClient.OPCService
             List<String> values = new List<String>();
             try
             {
-                values = myClientHelperAPI.ReadValues(myRegisteredNodeIdStrings.Where(item => item.Contains("ToWMS_sscc")).ToList());
+                values = _myClientHelperAPI.ReadValues(_myRegisteredNodeIdStrings.Where(item => item.Contains("ToWMS_sscc")).ToList());
                 return values.ElementAt<String>(0);
             }
             catch (Exception ex)
@@ -282,11 +281,11 @@ namespace WMSOpcClient.OPCService
 
         public void Start()
         {
-            if (mySession != null)
+            if (_mySession != null)
             {
-                if (mySession.SubscriptionCount > 0)
+                if (_mySession.SubscriptionCount > 0)
                 {
-                    AddTagsToSubscription(mySubscription);
+                    AddTagsToSubscription(_mySubscription);
                 }
             }
 
@@ -295,13 +294,13 @@ namespace WMSOpcClient.OPCService
 
         public void SendMessageToOPC(MessageModel message)
         {
-            _logger.LogInformation("Message {message} enqued and send to process to OPC Server",message.Id);
+            _logger.LogInformation("Message {message} enqued and send to process to OPC Server", message.Id);
 
             MessageQueue.Enqueue(message);
         }
 
         //TODO to modifiy the delegate for this method
-        public void ProcessMessage(MessageModel message)
+        public void ProcessMessage()
         {
             while (MessageQueue.Count > 0)
             {
@@ -331,7 +330,7 @@ namespace WMSOpcClient.OPCService
             //var myNodeId = myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList();
             try
             {
-                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings);
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings);
             }
             catch (Exception ex)
             {
@@ -347,7 +346,7 @@ namespace WMSOpcClient.OPCService
             nodeIdStrings.Add("ns=2;s=ToWMS_dataReceived");
             try
             {
-                myClientHelperAPI.WriteValues(values, nodeIdStrings);
+                _myClientHelperAPI.WriteValues(values, nodeIdStrings);
             }
             catch (Exception ex)
             {
@@ -360,7 +359,7 @@ namespace WMSOpcClient.OPCService
             values.Add(sent.ToString());
             try
             {
-                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_dataReady")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_dataReady")).ToList());
             }
             catch (Exception ex)
             {
@@ -374,7 +373,7 @@ namespace WMSOpcClient.OPCService
             values.Add(destination.ToString());
             try
             {
-                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_destination")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_destination")).ToList());
             }
             catch (Exception ex)
             {
@@ -388,7 +387,7 @@ namespace WMSOpcClient.OPCService
             values.Add(originalBox.ToString());
             try
             {
-                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_originalBox")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_originalBox")).ToList());
             }
             catch (Exception ex)
             {
@@ -402,7 +401,7 @@ namespace WMSOpcClient.OPCService
             values.Add(sSSC.ToString());
             try
             {
-                myClientHelperAPI.WriteValues(values, myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_sscc")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_sscc")).ToList());
             }
             catch (Exception ex)
             {

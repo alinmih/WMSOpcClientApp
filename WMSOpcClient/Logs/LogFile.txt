@@ -3147,3 +3147,1428 @@ Object name: 'TransportChannel is not available.'.
 2021-01-29 13:22:48.338 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
 2021-01-29 13:30:49.883 +02:00 [INF] Try disposing services
 2021-01-29 13:30:50.079 +02:00 [INF] The service has been stopped...
+2021-01-29 16:22:56.989 +02:00 [INF] Starting up the service
+2021-01-29 16:22:58.303 +02:00 [INF] Connecting to OPC Server...
+2021-01-29 16:22:59.991 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-01-29 16:23:00.089 +02:00 [INF] Worker running at: "2021-01-29T16:23:00.0889759+02:00"
+2021-01-29 16:23:00.143 +02:00 [INF] Getting unprocessed boxes...
+2021-01-29 16:23:01.469 +02:00 [INF] Processed 0 boxes from past
+2021-01-29 16:23:01.471 +02:00 [INF] Entering subscription mode...
+2021-01-29 16:23:02.965 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-01-29 16:23:02.970 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-01-29 16:23:02.978 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-01-29 16:23:02.980 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-01-29 16:23:02.981 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-01-29 16:23:02.982 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-01-29 16:23:02.984 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-01-29 16:23:02.985 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-01-29 16:23:03.114 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-01-29 16:23:03.118 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:23:19.704 +02:00 [INF] New Message Received:160/12345678922222222/false/1
+2021-01-29 16:23:19.716 +02:00 [INF] Message 160 enqued and send to process to OPC Server
+2021-01-29 16:23:19.785 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:19.790 +02:00 [INF] Box 160-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:23:19.793 +02:00 [INF] New Message Received:161/123456789/false/2
+2021-01-29 16:23:19.795 +02:00 [INF] Message 161 enqued and send to process to OPC Server
+2021-01-29 16:23:19.911 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:19.927 +02:00 [INF] Box 161-123456789-false-2 has been sent to OPC
+2021-01-29 16:23:19.935 +02:00 [INF] New Message Received:162/123456789/false/3
+2021-01-29 16:23:19.957 +02:00 [INF] Message 162 enqued and send to process to OPC Server
+2021-01-29 16:23:19.974 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:19.990 +02:00 [INF] Box 162-123456789-false-3 has been sent to OPC
+2021-01-29 16:23:19.998 +02:00 [INF] New Message Received:163/123456789/false/4
+2021-01-29 16:23:20.073 +02:00 [INF] Message 163 enqued and send to process to OPC Server
+2021-01-29 16:23:20.097 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.104 +02:00 [INF] Box 163-123456789-false-4 has been sent to OPC
+2021-01-29 16:23:20.109 +02:00 [INF] New Message Received:164/123456789/false/5
+2021-01-29 16:23:20.135 +02:00 [INF] Message 164 enqued and send to process to OPC Server
+2021-01-29 16:23:20.159 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.163 +02:00 [INF] Box 164-123456789-false-5 has been sent to OPC
+2021-01-29 16:23:20.167 +02:00 [INF] New Message Received:165/123456789/false/6
+2021-01-29 16:23:20.170 +02:00 [INF] Message 165 enqued and send to process to OPC Server
+2021-01-29 16:23:20.282 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.284 +02:00 [INF] Box 165-123456789-false-6 has been sent to OPC
+2021-01-29 16:23:20.295 +02:00 [INF] New Message Received:166/123456789/false/7
+2021-01-29 16:23:20.299 +02:00 [INF] Message 166 enqued and send to process to OPC Server
+2021-01-29 16:23:20.407 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.410 +02:00 [INF] Box 166-123456789-false-7 has been sent to OPC
+2021-01-29 16:23:20.418 +02:00 [INF] New Message Received:167/123456789/false/8
+2021-01-29 16:23:20.420 +02:00 [INF] Message 167 enqued and send to process to OPC Server
+2021-01-29 16:23:20.474 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.480 +02:00 [INF] Box 167-123456789-false-8 has been sent to OPC
+2021-01-29 16:23:20.487 +02:00 [INF] New Message Received:168/123456789/false/9
+2021-01-29 16:23:20.495 +02:00 [INF] Message 168 enqued and send to process to OPC Server
+2021-01-29 16:23:20.596 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.600 +02:00 [INF] Box 168-123456789-false-9 has been sent to OPC
+2021-01-29 16:23:20.611 +02:00 [INF] New Message Received:169/123456789/false/10
+2021-01-29 16:23:20.614 +02:00 [INF] Message 169 enqued and send to process to OPC Server
+2021-01-29 16:23:20.720 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:23:20.733 +02:00 [INF] Box 169-123456789-false-10 has been sent to OPC
+2021-01-29 16:23:20.778 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:24:12.852 +02:00 [INF] Try disposing services
+2021-01-29 16:24:13.023 +02:00 [INF] The service has been stopped...
+2021-01-29 16:30:14.170 +02:00 [INF] Starting up the service
+2021-01-29 16:30:15.504 +02:00 [INF] Connecting to OPC Server...
+2021-01-29 16:30:17.281 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-01-29 16:30:17.360 +02:00 [INF] Worker running at: "2021-01-29T16:30:17.3596318+02:00"
+2021-01-29 16:30:17.572 +02:00 [INF] Getting unprocessed boxes...
+2021-01-29 16:30:18.322 +02:00 [INF] Processed 0 boxes from past
+2021-01-29 16:30:18.327 +02:00 [INF] Entering subscription mode...
+2021-01-29 16:30:27.543 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-01-29 16:30:27.547 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-01-29 16:30:27.555 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-01-29 16:30:27.556 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-01-29 16:30:27.557 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-01-29 16:30:27.559 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-01-29 16:30:27.560 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-01-29 16:30:27.561 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-01-29 16:30:27.690 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-01-29 16:30:27.694 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:30:50.254 +02:00 [INF] New Message Received:171/12345678922222222/false/1
+2021-01-29 16:30:50.258 +02:00 [INF] Message 171 enqued and send to process to OPC Server
+2021-01-29 16:30:50.324 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:30:50.336 +02:00 [INF] Box 171-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:30:50.363 +02:00 [FTL] Elapsed time:"00:00:00.1091285"
+2021-01-29 16:30:50.448 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:31:14.091 +02:00 [INF] New Message Received:172/12345678922222222/false/1
+2021-01-29 16:31:16.798 +02:00 [INF] Message 172 enqued and send to process to OPC Server
+2021-01-29 16:31:16.853 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:31:16.856 +02:00 [INF] Box 172-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:31:16.860 +02:00 [FTL] Elapsed time:"00:00:02.8777955"
+2021-01-29 16:31:16.915 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:31:21.206 +02:00 [INF] New Message Received:173/12345678922222222/false/1
+2021-01-29 16:31:21.211 +02:00 [INF] Message 173 enqued and send to process to OPC Server
+2021-01-29 16:31:21.361 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:31:21.388 +02:00 [INF] Box 173-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:31:21.396 +02:00 [FTL] Elapsed time:"00:00:03.0672968"
+2021-01-29 16:31:21.420 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:31:21.426 +02:00 [INF] Box 173-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:31:21.434 +02:00 [FTL] Elapsed time:"00:00:03.0672968"
+2021-01-29 16:31:21.543 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:31:40.927 +02:00 [INF] Try disposing services
+2021-01-29 16:31:41.089 +02:00 [INF] The service has been stopped...
+2021-01-29 16:31:57.390 +02:00 [INF] Starting up the service
+2021-01-29 16:31:58.872 +02:00 [INF] Connecting to OPC Server...
+2021-01-29 16:32:00.787 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-01-29 16:32:01.064 +02:00 [INF] Worker running at: "2021-01-29T16:32:01.0638770+02:00"
+2021-01-29 16:32:01.070 +02:00 [INF] Getting unprocessed boxes...
+2021-01-29 16:32:01.807 +02:00 [INF] Processed 0 boxes from past
+2021-01-29 16:32:01.810 +02:00 [INF] Entering subscription mode...
+2021-01-29 16:32:02.520 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-01-29 16:32:02.524 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-01-29 16:32:02.533 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-01-29 16:32:02.534 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-01-29 16:32:02.535 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-01-29 16:32:02.536 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-01-29 16:32:02.537 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-01-29 16:32:02.539 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-01-29 16:32:02.599 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-01-29 16:32:02.605 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:32:08.709 +02:00 [INF] New Message Received:174/12345678922222222/false/1
+2021-01-29 16:32:08.715 +02:00 [INF] Message 174 enqued and send to process to OPC Server
+2021-01-29 16:32:08.909 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:08.950 +02:00 [INF] Box 174-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:32:08.972 +02:00 [FTL] Elapsed time:"00:00:00.2630431"
+2021-01-29 16:32:09.087 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:32:13.006 +02:00 [INF] New Message Received:175/12345678922222222/false/1
+2021-01-29 16:32:13.063 +02:00 [INF] Message 175 enqued and send to process to OPC Server
+2021-01-29 16:32:13.157 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:13.159 +02:00 [INF] Box 175-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:32:13.163 +02:00 [FTL] Elapsed time:"00:00:00.1579013"
+2021-01-29 16:32:13.279 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:32:19.185 +02:00 [INF] New Message Received:176/12345678922222222/false/1
+2021-01-29 16:32:19.190 +02:00 [INF] Message 176 enqued and send to process to OPC Server
+2021-01-29 16:32:19.300 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:19.385 +02:00 [INF] Box 176-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:32:19.458 +02:00 [FTL] Elapsed time:"00:00:00.2728603"
+2021-01-29 16:32:19.529 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:32:24.779 +02:00 [INF] New Message Received:177/12345678922222222/false/1
+2021-01-29 16:32:24.814 +02:00 [INF] Message 177 enqued and send to process to OPC Server
+2021-01-29 16:32:24.836 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:24.845 +02:00 [INF] Box 177-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:32:24.851 +02:00 [INF] New Message Received:178/123456789/false/2
+2021-01-29 16:32:24.852 +02:00 [FTL] Elapsed time:"00:00:00.0733732"
+2021-01-29 16:32:24.855 +02:00 [INF] Message 178 enqued and send to process to OPC Server
+2021-01-29 16:32:24.962 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.098 +02:00 [INF] Box 178-123456789-false-2 has been sent to OPC
+2021-01-29 16:32:25.109 +02:00 [INF] New Message Received:179/123456789/false/3
+2021-01-29 16:32:25.115 +02:00 [FTL] Elapsed time:"00:00:00.0045856"
+2021-01-29 16:32:25.126 +02:00 [INF] Message 179 enqued and send to process to OPC Server
+2021-01-29 16:32:25.147 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.151 +02:00 [INF] Box 179-123456789-false-3 has been sent to OPC
+2021-01-29 16:32:25.166 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:32:25.177 +02:00 [INF] New Message Received:180/123456789/false/4
+2021-01-29 16:32:25.180 +02:00 [INF] Message 180 enqued and send to process to OPC Server
+2021-01-29 16:32:25.267 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.273 +02:00 [INF] Box 180-123456789-false-4 has been sent to OPC
+2021-01-29 16:32:25.282 +02:00 [FTL] Elapsed time:"00:00:00.1046472"
+2021-01-29 16:32:25.286 +02:00 [INF] New Message Received:181/123456789/false/5
+2021-01-29 16:32:25.289 +02:00 [INF] Message 181 enqued and send to process to OPC Server
+2021-01-29 16:32:25.331 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.335 +02:00 [INF] Box 181-123456789-false-5 has been sent to OPC
+2021-01-29 16:32:25.340 +02:00 [FTL] Elapsed time:"00:00:00.0533398"
+2021-01-29 16:32:25.348 +02:00 [INF] New Message Received:182/123456789/false/6
+2021-01-29 16:32:25.349 +02:00 [INF] Message 182 enqued and send to process to OPC Server
+2021-01-29 16:32:25.454 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.459 +02:00 [INF] Box 182-123456789-false-6 has been sent to OPC
+2021-01-29 16:32:25.464 +02:00 [FTL] Elapsed time:"00:00:00.1159315"
+2021-01-29 16:32:25.472 +02:00 [INF] New Message Received:183/123456789/false/7
+2021-01-29 16:32:25.477 +02:00 [INF] Message 183 enqued and send to process to OPC Server
+2021-01-29 16:32:25.579 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.581 +02:00 [INF] Box 183-123456789-false-7 has been sent to OPC
+2021-01-29 16:32:25.585 +02:00 [FTL] Elapsed time:"00:00:00.1126420"
+2021-01-29 16:32:25.588 +02:00 [INF] New Message Received:184/123456789/false/8
+2021-01-29 16:32:25.590 +02:00 [INF] Message 184 enqued and send to process to OPC Server
+2021-01-29 16:32:25.642 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.644 +02:00 [INF] Box 184-123456789-false-8 has been sent to OPC
+2021-01-29 16:32:25.648 +02:00 [FTL] Elapsed time:"00:00:00.0594960"
+2021-01-29 16:32:25.649 +02:00 [INF] New Message Received:185/123456789/false/9
+2021-01-29 16:32:25.652 +02:00 [INF] Message 185 enqued and send to process to OPC Server
+2021-01-29 16:32:25.771 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.778 +02:00 [INF] Box 185-123456789-false-9 has been sent to OPC
+2021-01-29 16:32:25.788 +02:00 [INF] New Message Received:186/123456789/false/10
+2021-01-29 16:32:25.790 +02:00 [FTL] Elapsed time:"00:00:00.0020207"
+2021-01-29 16:32:25.802 +02:00 [INF] Message 186 enqued and send to process to OPC Server
+2021-01-29 16:32:25.831 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:32:25.834 +02:00 [INF] Box 186-123456789-false-10 has been sent to OPC
+2021-01-29 16:32:25.848 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:32:25.954 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:33:15.230 +02:00 [INF] New Message Received:187/12345678922222222/false/1
+2021-01-29 16:33:15.259 +02:00 [INF] Message 187 enqued and send to process to OPC Server
+2021-01-29 16:33:15.342 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.355 +02:00 [INF] Box 187-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:33:15.361 +02:00 [FTL] Elapsed time:"00:00:00.1314348"
+2021-01-29 16:33:15.363 +02:00 [INF] New Message Received:188/123456789/false/2
+2021-01-29 16:33:15.366 +02:00 [INF] Message 188 enqued and send to process to OPC Server
+2021-01-29 16:33:15.465 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.470 +02:00 [INF] Box 188-123456789-false-2 has been sent to OPC
+2021-01-29 16:33:15.475 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:33:15.488 +02:00 [INF] New Message Received:189/123456789/false/3
+2021-01-29 16:33:15.509 +02:00 [INF] Message 189 enqued and send to process to OPC Server
+2021-01-29 16:33:15.590 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.592 +02:00 [INF] Box 189-123456789-false-3 has been sent to OPC
+2021-01-29 16:33:15.596 +02:00 [INF] New Message Received:190/123456789/false/4
+2021-01-29 16:33:15.597 +02:00 [FTL] Elapsed time:"00:00:00.1083405"
+2021-01-29 16:33:15.599 +02:00 [INF] Message 190 enqued and send to process to OPC Server
+2021-01-29 16:33:15.652 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.654 +02:00 [INF] Box 190-123456789-false-4 has been sent to OPC
+2021-01-29 16:33:15.657 +02:00 [INF] New Message Received:191/123456789/false/5
+2021-01-29 16:33:15.658 +02:00 [FTL] Elapsed time:"00:00:00.0009281"
+2021-01-29 16:33:15.660 +02:00 [INF] Message 191 enqued and send to process to OPC Server
+2021-01-29 16:33:15.775 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.779 +02:00 [INF] Box 191-123456789-false-5 has been sent to OPC
+2021-01-29 16:33:15.784 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:33:15.788 +02:00 [INF] New Message Received:192/123456789/false/6
+2021-01-29 16:33:15.792 +02:00 [INF] Message 192 enqued and send to process to OPC Server
+2021-01-29 16:33:15.836 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.840 +02:00 [INF] Box 192-123456789-false-6 has been sent to OPC
+2021-01-29 16:33:15.845 +02:00 [FTL] Elapsed time:"00:00:00.0567385"
+2021-01-29 16:33:15.850 +02:00 [INF] New Message Received:193/123456789/false/7
+2021-01-29 16:33:15.857 +02:00 [INF] Message 193 enqued and send to process to OPC Server
+2021-01-29 16:33:15.961 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:15.965 +02:00 [INF] Box 193-123456789-false-7 has been sent to OPC
+2021-01-29 16:33:15.969 +02:00 [INF] New Message Received:194/123456789/false/8
+2021-01-29 16:33:15.970 +02:00 [FTL] Elapsed time:"00:00:00.1193575"
+2021-01-29 16:33:15.972 +02:00 [INF] Message 194 enqued and send to process to OPC Server
+2021-01-29 16:33:16.084 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:16.087 +02:00 [INF] Box 194-123456789-false-8 has been sent to OPC
+2021-01-29 16:33:16.091 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:33:16.092 +02:00 [INF] New Message Received:195/123456789/false/9
+2021-01-29 16:33:16.098 +02:00 [INF] Message 195 enqued and send to process to OPC Server
+2021-01-29 16:33:16.149 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:16.158 +02:00 [INF] Box 195-123456789-false-9 has been sent to OPC
+2021-01-29 16:33:16.171 +02:00 [INF] New Message Received:196/123456789/false/10
+2021-01-29 16:33:16.173 +02:00 [FTL] Elapsed time:"00:00:00.0014038"
+2021-01-29 16:33:16.175 +02:00 [INF] Message 196 enqued and send to process to OPC Server
+2021-01-29 16:33:16.269 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:33:16.272 +02:00 [INF] Box 196-123456789-false-10 has been sent to OPC
+2021-01-29 16:33:16.278 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-01-29 16:33:16.333 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:34:02.756 +02:00 [INF] New Message Received:197/12345678922222222/false/1
+2021-01-29 16:34:02.759 +02:00 [INF] Message 197 enqued and send to process to OPC Server
+2021-01-29 16:34:02.883 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:34:02.890 +02:00 [INF] Box 197-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:34:02.900 +02:00 [FTL] Elapsed time:"00:00:00.1448345"
+2021-01-29 16:34:02.944 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:34:12.130 +02:00 [INF] New Message Received:198/12345678922222222/false/1
+2021-01-29 16:34:12.136 +02:00 [INF] Message 198 enqued and send to process to OPC Server
+2021-01-29 16:34:12.238 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:34:12.266 +02:00 [INF] Box 198-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:34:12.275 +02:00 [FTL] Elapsed time:"00:00:00.1458959"
+2021-01-29 16:34:12.359 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:34:16.744 +02:00 [INF] New Message Received:199/12345678922222222/false/1
+2021-01-29 16:34:16.848 +02:00 [INF] Message 199 enqued and send to process to OPC Server
+2021-01-29 16:34:16.875 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-01-29 16:34:16.879 +02:00 [INF] Box 199-12345678922222222-false-1 has been sent to OPC
+2021-01-29 16:34:16.884 +02:00 [FTL] Elapsed time:"00:00:00.1400439"
+2021-01-29 16:34:16.939 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-01-29 16:36:29.689 +02:00 [INF] Try disposing services
+2021-01-29 16:36:29.886 +02:00 [INF] The service has been stopped...
+2021-02-02 12:14:03.885 +02:00 [INF] Starting up the service
+2021-02-02 12:14:05.949 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:14:07.777 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:14:37.611 +02:00 [INF] Worker running at: "2021-02-02T12:14:37.6106539+02:00"
+2021-02-02 12:14:37.619 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:14:38.233 +02:00 [INF] Processed 0 boxes from past
+2021-02-02 12:14:38.235 +02:00 [INF] Entering subscription mode...
+2021-02-02 12:14:39.159 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 12:14:39.163 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 12:14:39.186 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 12:14:39.187 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 12:14:39.188 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 12:14:39.189 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 12:14:39.191 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 12:14:39.193 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 12:14:39.201 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 12:14:39.204 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 12:14:50.064 +02:00 [INF] Try disposing services
+2021-02-02 12:14:50.221 +02:00 [INF] The service has been stopped...
+2021-02-02 12:15:23.823 +02:00 [INF] Starting up the service
+2021-02-02 12:15:25.469 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:15:27.016 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:16:36.509 +02:00 [INF] Worker running at: "2021-02-02T12:16:36.5083274+02:00"
+2021-02-02 12:16:36.521 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:16:36.825 +02:00 [INF] Processed 0 boxes from past
+2021-02-02 12:16:36.827 +02:00 [INF] Entering subscription mode...
+2021-02-02 12:16:37.438 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 12:16:37.443 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 12:16:37.456 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 12:16:37.457 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 12:16:37.459 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 12:16:37.460 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 12:16:37.463 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 12:16:37.549 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 12:16:37.563 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 12:16:37.569 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 12:16:52.244 +02:00 [INF] Try disposing services
+2021-02-02 12:16:52.370 +02:00 [INF] The service has been stopped...
+2021-02-02 12:25:13.232 +02:00 [INF] Starting up the service
+2021-02-02 12:25:14.569 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:25:16.277 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:25:19.456 +02:00 [INF] Worker running at: "2021-02-02T12:25:19.4564274+02:00"
+2021-02-02 12:25:19.462 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:25:19.977 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 12:25:20.147 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:20.291 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:20.426 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:20.588 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:20.908 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.055 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.182 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.303 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.444 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.605 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.749 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:21.889 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.102 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.251 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.385 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.499 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.624 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.731 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.846 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:22.952 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.084 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.191 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.296 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.412 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.568 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.715 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.838 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:23.958 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.069 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.175 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.286 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.385 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.501 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.599 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.709 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.803 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:24.914 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.015 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.139 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.241 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.357 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.469 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.582 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.689 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.790 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:25.896 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.002 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.102 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.213 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.336 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.458 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.608 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.754 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:26.933 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.068 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.186 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.297 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.435 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.563 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.692 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.844 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:27.984 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.123 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.249 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.358 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.478 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.582 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.691 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.796 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:28.910 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.011 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.125 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.233 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.357 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.487 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.590 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.701 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.795 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:29.904 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.002 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.132 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.231 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.340 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.441 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.564 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.663 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.769 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:30.865 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.034 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.188 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.312 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.458 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.611 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.735 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.846 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:31.959 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.067 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.170 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.276 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.403 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.551 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.687 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.826 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:32.957 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.081 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.203 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.388 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.577 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.701 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.818 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:33.948 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.072 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.190 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.298 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.396 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.486 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.578 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.664 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.766 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.851 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:34.975 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.109 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.228 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.317 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.433 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.533 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.661 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.755 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.851 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:35.940 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.054 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.152 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.260 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.354 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.454 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.549 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.663 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.799 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:36.954 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.085 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.188 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.313 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.419 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.536 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.658 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.774 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.877 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:37.988 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.118 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.226 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.320 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.425 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.509 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.619 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.726 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.838 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:38.931 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.026 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.110 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.213 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.322 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.435 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.531 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.638 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.734 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.869 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:39.987 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.103 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.219 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.319 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.409 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.522 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.636 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.738 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.821 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:40.926 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.009 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.108 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.198 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.319 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.443 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.573 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.668 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:41.853 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.039 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.181 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.301 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.456 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.616 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.739 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:42.888 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.039 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.165 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.283 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.383 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.490 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.594 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.703 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.803 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:43.907 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.015 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.125 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.223 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.351 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.485 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.575 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.678 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.767 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.903 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:44.992 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.129 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.217 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.327 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.417 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.513 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.599 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.765 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.873 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:45.998 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.095 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.205 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.314 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.323 +02:00 [INF] Try disposing services
+2021-02-02 12:25:46.443 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.582 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:25:46.699 +02:00 [INF] The service has been stopped...
+2021-02-02 12:25:46.699 +02:00 [WRN] BadSecureChannelClosed
+2021-02-02 12:25:46.822 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:46.972 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.080 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.212 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.330 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.454 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.583 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.718 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.855 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:47.998 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.127 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.249 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.371 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.503 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.631 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.771 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:48.894 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.025 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.133 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.239 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.352 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.455 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.572 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.682 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.800 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:49.936 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.057 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.198 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.333 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.463 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.585 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.688 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.799 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:50.897 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.006 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.103 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.213 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.316 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.428 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.553 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.687 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:25:51.791 +02:00 [FTL] There was a problem starting the service
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WMSOpcClient.Program.Main(String[] args) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\Program.cs:line 32
+2021-02-02 12:25:51.831 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:26:10.208 +02:00 [INF] Starting up the service
+2021-02-02 12:26:11.526 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:26:13.101 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:26:15.711 +02:00 [INF] Worker running at: "2021-02-02T12:26:15.7106926+02:00"
+2021-02-02 12:26:15.716 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:26:31.869 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 12:26:47.277 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.371 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.465 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.558 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.661 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.752 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.849 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:47.962 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.101 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.250 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.409 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.540 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.666 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.805 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:48.930 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.049 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.179 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.300 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.441 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.573 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.702 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.803 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.903 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:49.991 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.090 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.236 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.394 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.516 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.628 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.733 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.832 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:50.940 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.065 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.188 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.287 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.383 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.481 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.575 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.665 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.785 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:51.900 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.024 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.149 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.261 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.395 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.516 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.631 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.774 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:52.996 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.092 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.211 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.318 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.446 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.543 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.651 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.755 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.876 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:53.984 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.159 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.306 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.474 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.646 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.801 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:54.924 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.059 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.191 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.317 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.444 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.584 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.709 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.834 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:55.939 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.052 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.162 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.283 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.411 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.520 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.684 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.831 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:56.949 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.120 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.270 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.421 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.573 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.739 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.874 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:57.976 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:58.100 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:58.207 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:58.340 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.278 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.403 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.406 +02:00 [INF] Try disposing services
+2021-02-02 12:26:59.528 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.666 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.787 +02:00 [WRN] BadNothingToDo
+2021-02-02 12:26:59.789 +02:00 [INF] The service has been stopped...
+2021-02-02 12:26:59.893 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.037 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.162 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.293 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.459 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.702 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:00.872 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.011 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.154 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.292 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.417 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.560 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.698 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.825 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:01.949 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.052 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.186 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.308 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.430 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.545 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.649 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.760 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.863 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:02.984 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.107 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.215 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.318 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.426 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.526 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.644 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.749 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.860 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:03.954 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.066 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.165 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.297 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.408 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.509 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:27:04.615 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:28:22.939 +02:00 [INF] Starting up the service
+2021-02-02 12:28:24.239 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:28:26.101 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:28:32.753 +02:00 [INF] Worker running at: "2021-02-02T12:28:32.7526693+02:00"
+2021-02-02 12:28:32.761 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:28:32.810 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 12:28:32.821 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 12:28:32.835 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 12:28:32.837 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 12:28:32.840 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 12:28:32.844 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 12:28:32.847 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 12:28:32.848 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 12:28:34.189 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 12:28:34.192 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:28:56.349 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 12:29:38.910 +02:00 [INF] Try disposing services
+2021-02-02 12:29:38.962 +02:00 [INF] The service has been stopped...
+2021-02-02 12:29:39.071 +02:00 [WRN] BadSessionIdInvalid
+2021-02-02 12:29:39.186 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:39.348 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:39.485 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:39.634 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:39.776 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:39.921 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.065 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.291 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.465 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.591 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.731 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.859 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:40.956 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.121 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.223 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.335 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.480 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.619 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.751 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.845 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:41.972 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.088 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.198 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.305 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.443 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.565 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.662 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.772 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.872 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:42.980 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.076 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.192 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.300 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.447 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.549 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.654 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.750 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.859 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:43.962 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:44.097 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:29:44.218 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:31:27.430 +02:00 [INF] Starting up the service
+2021-02-02 12:31:28.575 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 12:31:30.278 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 12:31:30.669 +02:00 [INF] Worker running at: "2021-02-02T12:31:30.6690793+02:00"
+2021-02-02 12:31:30.677 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 12:31:30.737 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 12:31:30.745 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 12:31:30.778 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 12:31:30.801 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:31:30.819 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 12:31:30.836 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 12:31:30.837 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 12:31:54.661 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 12:31:54.663 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 12:31:54.665 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 12:32:02.628 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 153
+2021-02-02 12:32:02.930 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReady
+2021-02-02 12:32:02.936 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReceived
+2021-02-02 12:32:07.292 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 12:32:07.295 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 12:32:07.299 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:32:07.304 +02:00 [INF] Box 150-12345678922222222-false-1 has been sent to OPC
+2021-02-02 12:32:07.334 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 12:32:07.375 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 12:32:09.900 +02:00 [INF] Message 151 enqued and send to process to OPC Server
+2021-02-02 12:32:09.911 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:32:09.914 +02:00 [INF] Box 151-123456789-false-2 has been sent to OPC
+2021-02-02 12:32:09.922 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 12:32:15.049 +02:00 [INF] Message 152 enqued and send to process to OPC Server
+2021-02-02 12:32:15.050 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:32:15.057 +02:00 [INF] Box 152-123456789-false-3 has been sent to OPC
+2021-02-02 12:32:15.061 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 12:32:26.396 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-02 12:32:26.404 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 12:32:26.409 +02:00 [INF] Box 153-123456789-false-4 has been sent to OPC
+2021-02-02 12:32:26.413 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 12:32:26.506 +02:00 [WRN] BadConnectionClosed
+2021-02-02 12:32:26.589 +02:00 [WRN] BadConnectionClosed
+2021-02-02 12:32:26.765 +02:00 [WRN] BadConnectionClosed
+2021-02-02 12:32:26.880 +02:00 [WRN] BadSecureChannelIdInvalid
+2021-02-02 12:32:26.893 +02:00 [INF] Message 154 enqued and send to process to OPC Server
+2021-02-02 12:32:45.187 +02:00 [INF] Try disposing services
+2021-02-02 12:32:45.221 +02:00 [INF] The service has been stopped...
+2021-02-02 12:32:45.308 +02:00 [WRN] BadSecureChannelClosed
+2021-02-02 12:32:45.399 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.491 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.575 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.672 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.767 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.881 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:45.983 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.110 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.215 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.355 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.480 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.618 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.788 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:46.906 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.034 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.164 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.333 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.543 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.697 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.848 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:47.997 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.124 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.245 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.360 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.473 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.586 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.691 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.816 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:48.917 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.053 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.170 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.279 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.386 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.494 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.581 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.686 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.776 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.875 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:49.969 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 12:32:50.081 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:13:18.207 +02:00 [INF] Starting up the service
+2021-02-02 13:13:19.466 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:13:21.685 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:13:22.154 +02:00 [INF] Worker running at: "2021-02-02T13:13:22.1537257+02:00"
+2021-02-02 13:13:22.171 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:13:22.251 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:13:22.257 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:13:22.273 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:13:22.291 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:13:22.309 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:13:22.316 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:13:22.319 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:13:22.321 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:13:36.690 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:13:36.710 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:14:50.191 +02:00 [INF] Message 154 enqued and send to process to OPC Server
+2021-02-02 13:14:50.318 +02:00 [WRN] BadConnectionClosed
+2021-02-02 13:14:50.494 +02:00 [WRN] BadConnectionClosed
+2021-02-02 13:14:50.629 +02:00 [WRN] BadSecureChannelIdInvalid
+2021-02-02 13:15:01.208 +02:00 [INF] Try disposing services
+2021-02-02 13:15:01.322 +02:00 [WRN] BadSessionIdInvalid
+2021-02-02 13:15:01.323 +02:00 [INF] The service has been stopped...
+2021-02-02 13:15:01.434 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:01.534 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:01.645 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:01.748 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:01.856 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:01.993 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.115 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.242 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.379 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.518 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.663 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.805 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:02.933 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.067 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.185 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.318 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.438 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.543 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.655 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.764 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.879 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:03.988 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.131 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.287 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.391 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.496 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.605 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.762 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:04.897 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.008 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.128 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.240 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.357 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.481 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.628 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.741 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.849 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:05.969 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:06.077 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:06.250 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:15:15.293 +02:00 [INF] Starting up the service
+2021-02-02 13:15:16.522 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:15:18.479 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:15:18.917 +02:00 [INF] Worker running at: "2021-02-02T13:15:18.9169160+02:00"
+2021-02-02 13:15:18.926 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:15:18.978 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:15:18.984 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:15:18.995 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:15:18.997 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:15:18.998 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:15:19.000 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:15:19.001 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:15:19.002 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:15:31.320 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:15:31.335 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:16:19.850 +02:00 [INF] Message 154 enqued and send to process to OPC Server
+2021-02-02 13:16:27.153 +02:00 [INF] Try disposing services
+2021-02-02 13:16:27.307 +02:00 [WRN] BadSessionIdInvalid
+2021-02-02 13:16:27.307 +02:00 [INF] The service has been stopped...
+2021-02-02 13:16:27.442 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:27.578 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:27.717 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:27.864 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.027 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.155 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.265 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.374 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.484 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.605 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.723 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.828 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:28.959 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.091 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.184 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.303 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.427 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.558 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.657 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.776 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.874 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:29.988 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.090 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.210 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.305 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.439 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.582 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.694 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.811 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:30.910 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.032 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.127 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.237 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.335 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.448 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.558 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.668 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.765 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.872 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:31.996 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:32.101 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:32.193 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:16:32.326 +02:00 [WRN] Cannot access a disposed object.
+Object name: 'TransportChannel is not available.'.
+2021-02-02 13:18:08.246 +02:00 [INF] Starting up the service
+2021-02-02 13:18:09.220 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:18:10.553 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:18:10.914 +02:00 [INF] Worker running at: "2021-02-02T13:18:10.9138537+02:00"
+2021-02-02 13:18:10.918 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:18:10.954 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:18:10.960 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:18:10.978 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:18:10.980 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:18:10.981 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:18:10.982 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:18:10.984 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:18:10.987 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:18:37.126 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:18:37.164 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:19:50.008 +02:00 [INF] Try disposing services
+2021-02-02 13:19:50.055 +02:00 [INF] The service has been stopped...
+2021-02-02 13:19:50.195 +02:00 [ERR] Error: BadSecureChannelClosed    at Opc.Ua.Bindings.ChannelAsyncOperation`1.End(Int32 timeout, Boolean throwOnError)
+   at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.EndSendRequest(IAsyncResult result)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.EndSendRequest(IAsyncResult result)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 153
+2021-02-02 13:19:53.949 +02:00 [INF] Starting up the service
+2021-02-02 13:19:59.634 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:20:01.318 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:20:01.703 +02:00 [INF] Worker running at: "2021-02-02T13:20:01.7027081+02:00"
+2021-02-02 13:20:01.707 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:20:01.739 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:20:01.752 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:20:01.766 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:20:01.767 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:20:01.775 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:20:01.778 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:20:01.788 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:20:01.790 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:20:01.801 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:20:01.825 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:20:06.123 +02:00 [INF] Message 154 enqued and send to process to OPC Server
+2021-02-02 13:20:06.182 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:06.189 +02:00 [INF] Box 154-123456789-false-5 has been sent to OPC
+2021-02-02 13:20:06.189 +02:00 [INF] Message 155 enqued and send to process to OPC Server
+2021-02-02 13:20:06.218 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:06.370 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:06.375 +02:00 [INF] Box 155-123456789-false-6 has been sent to OPC
+2021-02-02 13:20:06.380 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:06.809 +02:00 [INF] Message 156 enqued and send to process to OPC Server
+2021-02-02 13:20:06.872 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:20:07.993 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:07.996 +02:00 [INF] Box 156-123456789-false-7 has been sent to OPC
+2021-02-02 13:20:08.000 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:08.002 +02:00 [INF] Message 157 enqued and send to process to OPC Server
+2021-02-02 13:20:08.054 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:08.058 +02:00 [INF] Box 157-123456789-false-8 has been sent to OPC
+2021-02-02 13:20:08.061 +02:00 [INF] Message 158 enqued and send to process to OPC Server
+2021-02-02 13:20:08.062 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:08.182 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:08.187 +02:00 [INF] Box 158-123456789-false-9 has been sent to OPC
+2021-02-02 13:20:08.190 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:08.307 +02:00 [INF] Message 159 enqued and send to process to OPC Server
+2021-02-02 13:20:08.368 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:20:08.492 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:08.494 +02:00 [INF] Box 159-123456789-false-10 has been sent to OPC
+2021-02-02 13:20:08.499 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:08.814 +02:00 [INF] Processed 6 boxes from past
+2021-02-02 13:20:08.817 +02:00 [INF] Entering subscription mode...
+2021-02-02 13:20:08.869 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:20:08.871 +02:00 [INF] Box 159-123456789-false-10 has been sent to OPC
+2021-02-02 13:20:08.876 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:20:09.383 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:20:59.043 +02:00 [INF] Try disposing services
+2021-02-02 13:20:59.169 +02:00 [INF] The service has been stopped...
+2021-02-02 13:21:44.551 +02:00 [INF] Starting up the service
+2021-02-02 13:21:45.529 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:21:47.915 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:21:48.469 +02:00 [INF] Worker running at: "2021-02-02T13:21:48.4685334+02:00"
+2021-02-02 13:21:48.493 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:21:48.554 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:21:48.560 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:21:48.584 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:21:48.602 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:21:48.604 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:21:48.613 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:21:48.616 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:21:48.617 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:21:48.620 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:21:48.623 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:21:49.287 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 13:21:49.402 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:49.597 +02:00 [INF] Box 150-12345678922222222-false-1 has been sent to OPC
+2021-02-02 13:21:49.602 +02:00 [INF] Message 151 enqued and send to process to OPC Server
+2021-02-02 13:21:49.644 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:49.689 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:49.692 +02:00 [INF] Box 151-123456789-false-2 has been sent to OPC
+2021-02-02 13:21:49.699 +02:00 [INF] Message 152 enqued and send to process to OPC Server
+2021-02-02 13:21:49.701 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:49.749 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:49.751 +02:00 [INF] Box 152-123456789-false-3 has been sent to OPC
+2021-02-02 13:21:49.752 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-02 13:21:49.754 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:49.873 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:49.879 +02:00 [INF] Box 153-123456789-false-4 has been sent to OPC
+2021-02-02 13:21:49.884 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:49.887 +02:00 [INF] Message 154 enqued and send to process to OPC Server
+2021-02-02 13:21:49.937 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:49.943 +02:00 [INF] Box 154-123456789-false-5 has been sent to OPC
+2021-02-02 13:21:49.952 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:49.960 +02:00 [INF] Message 155 enqued and send to process to OPC Server
+2021-02-02 13:21:50.058 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:50.061 +02:00 [INF] Box 155-123456789-false-6 has been sent to OPC
+2021-02-02 13:21:50.065 +02:00 [INF] Message 156 enqued and send to process to OPC Server
+2021-02-02 13:21:50.065 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:50.183 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:50.187 +02:00 [INF] Box 156-123456789-false-7 has been sent to OPC
+2021-02-02 13:21:50.192 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:50.193 +02:00 [INF] Message 157 enqued and send to process to OPC Server
+2021-02-02 13:21:50.245 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:50.247 +02:00 [INF] Box 157-123456789-false-8 has been sent to OPC
+2021-02-02 13:21:50.252 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:50.259 +02:00 [INF] Message 158 enqued and send to process to OPC Server
+2021-02-02 13:21:50.376 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:50.381 +02:00 [INF] Box 158-123456789-false-9 has been sent to OPC
+2021-02-02 13:21:50.392 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:50.392 +02:00 [INF] Message 159 enqued and send to process to OPC Server
+2021-02-02 13:21:50.499 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:21:50.503 +02:00 [INF] Box 159-123456789-false-10 has been sent to OPC
+2021-02-02 13:21:50.506 +02:00 [INF] Processed 10 boxes from past
+2021-02-02 13:21:50.508 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:21:50.509 +02:00 [INF] Entering subscription mode...
+2021-02-02 13:21:50.560 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:22:12.695 +02:00 [INF] New Message Received:200/1212/true/1
+2021-02-02 13:22:12.698 +02:00 [INF] Message 200 enqued and send to process to OPC Server
+2021-02-02 13:22:12.785 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:22:12.796 +02:00 [INF] Box 200-1212-true-1 has been sent to OPC
+2021-02-02 13:22:12.819 +02:00 [FTL] Elapsed time:"00:00:00.1239898"
+2021-02-02 13:22:12.848 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:22:43.015 +02:00 [INF] New Message Received:201/225/true/1
+2021-02-02 13:22:43.018 +02:00 [INF] Message 201 enqued and send to process to OPC Server
+2021-02-02 13:22:43.065 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:22:43.114 +02:00 [INF] Box 201-225-true-1 has been sent to OPC
+2021-02-02 13:22:43.129 +02:00 [FTL] Elapsed time:"00:00:00.1142239"
+2021-02-02 13:22:43.188 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:23:10.162 +02:00 [INF] Try disposing services
+2021-02-02 13:23:10.320 +02:00 [INF] The service has been stopped...
+2021-02-02 13:24:38.882 +02:00 [INF] Starting up the service
+2021-02-02 13:24:40.092 +02:00 [INF] Connecting to OPC Server...
+2021-02-02 13:24:41.940 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-02 13:24:42.458 +02:00 [INF] Worker running at: "2021-02-02T13:24:42.4508708+02:00"
+2021-02-02 13:24:42.466 +02:00 [INF] Getting unprocessed boxes...
+2021-02-02 13:24:42.512 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-02 13:24:42.518 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-02 13:24:42.533 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-02 13:24:42.538 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-02 13:24:42.541 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-02 13:24:42.542 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-02 13:24:42.543 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-02 13:24:42.544 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-02 13:24:42.622 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-02 13:24:42.625 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:24:42.825 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:24:43.074 +02:00 [INF] Message 150 enqued and send to process to OPC Server
+2021-02-02 13:24:43.255 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:24:43.322 +02:00 [INF] Box 150-12345678922222222-false-1 has been sent to OPC
+2021-02-02 13:24:43.351 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-02 13:24:43.470 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:24:43.605 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:24:43.608 +02:00 [INF] Box 153-123456789-false-4 has been sent to OPC
+2021-02-02 13:24:43.617 +02:00 [INF] Message 155 enqued and send to process to OPC Server
+2021-02-02 13:24:43.619 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:24:43.674 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:24:43.697 +02:00 [INF] Message 158 enqued and send to process to OPC Server
+2021-02-02 13:24:43.697 +02:00 [INF] Box 155-123456789-false-6 has been sent to OPC
+2021-02-02 13:24:43.703 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:24:43.798 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:24:43.802 +02:00 [INF] Box 158-123456789-false-9 has been sent to OPC
+2021-02-02 13:24:43.807 +02:00 [INF] Processed 4 boxes from past
+2021-02-02 13:24:43.808 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-02 13:24:43.811 +02:00 [INF] Entering subscription mode...
+2021-02-02 13:24:43.923 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:25:24.164 +02:00 [INF] New Message Received:202/48484/true/5
+2021-02-02 13:25:28.003 +02:00 [INF] Message 202 enqued and send to process to OPC Server
+2021-02-02 13:25:28.096 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-02 13:25:28.099 +02:00 [INF] Box 202-48484-true-5 has been sent to OPC
+2021-02-02 13:25:28.110 +02:00 [FTL] Elapsed time:"00:00:03.9466462"
+2021-02-02 13:25:28.222 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-02 13:25:39.347 +02:00 [INF] Try disposing services
+2021-02-02 13:25:39.531 +02:00 [INF] The service has been stopped...
