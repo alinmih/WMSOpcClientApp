@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using WMSOpcClient.Common;
 using WMSOpcClient.DataAccessService.Models;
 using System.Linq;
+using System.Collections.Concurrent;
+using System.Threading;
 
 namespace WMSOpcClient.OPCService
 {
@@ -30,8 +32,8 @@ namespace WMSOpcClient.OPCService
         private readonly ILogger<OPCClient> _logger;
         private readonly IConfiguration _configuration;
 
-        public MessageQueue<MessageModel> MessageQueue { get; set; }
-        public MessageModel MessageModel { get; set; }
+        public ConcurrentQueue<MessageModel> MessageQueue { get; set; }
+        private MessageModel pendingMessageItem;
 
         private Session _mySession;
         private Subscription _mySubscription;
@@ -39,9 +41,14 @@ namespace WMSOpcClient.OPCService
         private EndpointDescription _mySelectedEndpoint;
         private List<String> _myRegisteredNodeIdStrings;
 
+        private ReaderWriterLockSlim rw;
+
         private bool ToWMS_dataReceived = false;
         private bool ToWMS_dataReady = false;
         private bool FromWMS_watchdog = false;
+
+        private bool shouldStop = false;
+
 
         public OPCClient(ILogger<OPCClient> logger, IConfiguration configuration)
         {
@@ -49,8 +56,42 @@ namespace WMSOpcClient.OPCService
             _configuration = configuration;
             _myClientHelperAPI = new UAClientHelperAPI();
             _myRegisteredNodeIdStrings = new List<string>();
-            MessageQueue = new MessageQueue<MessageModel>();
-            MessageQueue.ItemAdded += ProcessMessage;
+            MessageQueue = new ConcurrentQueue<MessageModel>();
+            rw = new ReaderWriterLockSlim();
+            StartWorkerAsync();
+        }
+
+        private void StartWorkerAsync()
+        {
+            Task.Run(() =>
+            {
+                MessageModel currentMessage=null;
+                while (shouldStop == false)
+                {
+                    if (rw.TryEnterWriteLock(60000))
+                    {
+                        try
+                        {
+                            if (pendingMessageItem == null && MessageQueue.TryPeek(out currentMessage))
+                            {
+                                pendingMessageItem = currentMessage;
+                            }
+                        }
+                        finally
+                        {
+                            rw.ExitWriteLock();
+                        }
+                        if (currentMessage != null)
+                        {
+                            ProcessMessage(currentMessage);
+                        }
+                    }
+                    else
+                    {
+                        Thread.Sleep(10);
+                    }
+                }
+            });
         }
 
         public bool OpcServerConnected { get; private set; }
@@ -128,7 +169,7 @@ namespace WMSOpcClient.OPCService
         /// </summary>
         public void Disconnect()
         {
-            MessageQueue.ItemAdded -= ProcessMessage;
+            shouldStop = true;
             _myClientHelperAPI.Disconnect();
         }
 
@@ -189,7 +230,7 @@ namespace WMSOpcClient.OPCService
 
             }
         }
-        
+
         /// <summary>
         /// When a item from subscription changes notify the subscribers to process modified message
         /// </summary>
@@ -218,16 +259,29 @@ namespace WMSOpcClient.OPCService
             {
                 if (notification.Value.WrappedValue == true)
                 {
+                    //if (pendingMessageItem!=null && pendingMessageItem.SSSC=="123456")
+                    //{
+                    //    Thread.Sleep(61000);
+                    //}
                     ToWMS_dataReceived = true;
-                    if (MessageQueue.Count > 0)
+                    if (rw.TryEnterWriteLock(60000))
                     {
-                        MessageQueue.Dequeue();
+                        try
+                        {
+                            if (pendingMessageItem != null)
+                            {
+                                OnMessageReveived?.Invoke(pendingMessageItem);
+                                WriteDataReceived(false);
+                                MessageQueue.TryDequeue(out pendingMessageItem);
+                                pendingMessageItem = null;
+                            }
+                        }
+                        finally
+                        {
+                            rw.ExitWriteLock();
+                        }
+
                     }
-                    if (MessageModel != null)
-                    {
-                        OnMessageReveived?.Invoke(MessageModel);
-                    }
-                    WriteDataReceived(false);
                     return;
                 }
             }
@@ -345,23 +399,18 @@ namespace WMSOpcClient.OPCService
         /// Handler fired when the queue receives item
         /// Sends message to OPC server
         /// </summary>
-        public void ProcessMessage()
+        public void ProcessMessage(MessageModel currentMessage)
         {
-            // TODO - without while processed only one element from Queue
-            while (MessageQueue.Count > 0)
-            {
-                var currentMessage = MessageQueue.Peek();
-                MessageModel = currentMessage;
+            pendingMessageItem = currentMessage;
 
-                //SendDataToOPC(message.SSSC, message.OriginalBox, message.Destination, true);
-                SendSSSCTagToOPC(currentMessage.SSSC);
-                SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
-                SendDestinationToOPC(currentMessage.Destination);
-                SendDataReadyToOPC(true);
+            //SendDataToOPC(message.SSSC, message.OriginalBox, message.Destination, true);
+            SendSSSCTagToOPC(currentMessage.SSSC);
+            SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
+            SendDestinationToOPC(currentMessage.Destination);
+            SendDataReadyToOPC(true);
 
-                //******************TO BE REMOVED IN PRODUCTION CODE*****************
-                WriteDataReceived(true);
-            }
+            //******************TO BE REMOVED IN PRODUCTION CODE*****************
+            WriteDataReceived(true);
         }
 
         private void SendDataToOPC(string sssc, bool original, int destination, bool dataReady)

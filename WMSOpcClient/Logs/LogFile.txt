@@ -4789,3 +4789,426 @@ System.AggregateException: Some services are not able to be constructed (Error w
 2021-02-03 16:08:57.726 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
 2021-02-03 16:25:17.178 +02:00 [INF] Try disposing services
 2021-02-03 16:25:17.677 +02:00 [INF] The service has been stopped...
+2021-02-03 17:02:53.375 +02:00 [INF] Starting up the service
+2021-02-03 17:02:55.572 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:02:58.395 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:02:59.019 +02:00 [INF] Worker running at: "2021-02-03T17:02:59.0170428+02:00"
+2021-02-03 17:02:59.037 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:02:59.096 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:02:59.106 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:02:59.141 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:02:59.143 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:02:59.149 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:02:59.156 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:02:59.160 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:02:59.161 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:02:59.261 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:02:59.454 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:03:00.209 +02:00 [INF] Processed 0 boxes from past
+2021-02-03 17:03:00.212 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:03:53.054 +02:00 [INF] New Message Received:211/545454/true/5
+2021-02-03 17:03:53.059 +02:00 [INF] Message 211 enqued and send to process to OPC Server
+2021-02-03 17:05:34.431 +02:00 [INF] New Message Received:153/123456789567/false/4
+2021-02-03 17:05:34.485 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-03 17:05:42.565 +02:00 [WRN] BadSessionIdInvalid
+2021-02-03 17:05:42.566 +02:00 [INF] New Message Received:209/555555/true/5
+2021-02-03 17:05:42.654 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:05:42.656 +02:00 [INF] Message 209 enqued and send to process to OPC Server
+2021-02-03 17:05:42.784 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:05:54.940 +02:00 [INF] New Message Received:212/4545/false/1
+2021-02-03 17:05:54.959 +02:00 [INF] Message 212 enqued and send to process to OPC Server
+2021-02-03 17:05:55.090 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:05:55.107 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 195
+2021-02-03 17:05:55.231 +02:00 [WRN] BadSessionIdInvalid
+2021-02-03 17:06:14.460 +02:00 [ERR] Error: BadSessionClosed    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 195
+2021-02-03 17:06:18.743 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:06:18.746 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:06:18.866 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:06:18.869 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:07:51.067 +02:00 [INF] Try disposing services
+2021-02-03 17:07:51.384 +02:00 [INF] The service has been stopped...
+2021-02-03 17:08:18.112 +02:00 [INF] Starting up the service
+2021-02-03 17:08:19.267 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:08:21.153 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:08:21.709 +02:00 [INF] Worker running at: "2021-02-03T17:08:21.7091301+02:00"
+2021-02-03 17:08:21.716 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:08:21.781 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:08:21.808 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:08:21.836 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:08:21.852 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:08:21.855 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:08:21.857 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:08:21.859 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:08:21.862 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:08:21.864 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:08:21.955 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:08:22.632 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-03 17:08:22.759 +02:00 [INF] Message 209 enqued and send to process to OPC Server
+2021-02-03 17:08:55.486 +02:00 [INF] Processed 2 boxes from past
+2021-02-03 17:08:59.549 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:09:00.805 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:09:03.565 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:09:03.664 +02:00 [WRN] BadSecureChannelIdInvalid
+2021-02-03 17:09:35.421 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:11:00.273 +02:00 [ERR] Error: BadSessionClosed    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 198
+2021-02-03 17:11:00.607 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:11:00.614 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:11:00.735 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:11:00.754 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:11:51.065 +02:00 [INF] Try disposing services
+2021-02-03 17:11:52.213 +02:00 [INF] The service has been stopped...
+2021-02-03 17:15:17.061 +02:00 [INF] Starting up the service
+2021-02-03 17:15:18.405 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:15:20.788 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:15:22.076 +02:00 [INF] Worker running at: "2021-02-03T17:15:22.0757226+02:00"
+2021-02-03 17:15:22.093 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:15:22.230 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:15:22.242 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:15:22.270 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:15:22.287 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:15:22.287 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:15:22.292 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:15:22.307 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:15:22.309 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:15:22.310 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:15:22.314 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:15:23.391 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-03 17:15:23.393 +02:00 [INF] Message 209 enqued and send to process to OPC Server
+2021-02-03 17:15:56.319 +02:00 [INF] Processed 2 boxes from past
+2021-02-03 17:15:56.376 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:15:56.504 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:15:56.733 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:15:56.811 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:15:56.884 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:16:16.275 +02:00 [ERR] Error: Session is already attempting to reconnect.    at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 201
+2021-02-03 17:16:37.655 +02:00 [ERR] Error: BadConnectionClosed    at Opc.Ua.Bindings.UaSCUaBinaryClientChannel.BeginSendRequest(IServiceRequest request, Int32 timeout, AsyncCallback callback, Object state)
+   at Opc.Ua.Bindings.UaSCUaBinaryTransportChannel.BeginSendRequest(IServiceRequest request, AsyncCallback callback, Object callbackData)
+   at Opc.Ua.SessionClient.BeginActivateSession(RequestHeader requestHeader, SignatureData clientSignature, SignedSoftwareCertificateCollection clientSoftwareCertificates, StringCollection localeIds, ExtensionObject userIdentityToken, SignatureData userTokenSignature, AsyncCallback callback, Object asyncState)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 201
+2021-02-03 17:16:57.424 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:16:57.430 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:16:57.534 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:16:57.536 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:18:51.155 +02:00 [INF] Try disposing services
+2021-02-03 17:18:51.489 +02:00 [INF] The service has been stopped...
+2021-02-03 17:19:09.650 +02:00 [INF] Starting up the service
+2021-02-03 17:19:11.007 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:19:13.517 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:19:14.013 +02:00 [INF] Worker running at: "2021-02-03T17:19:14.0125837+02:00"
+2021-02-03 17:19:14.023 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:19:14.075 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:19:14.080 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:19:14.109 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:19:14.111 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:19:14.124 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:19:14.127 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:19:14.173 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:19:14.176 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:19:14.236 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:19:14.315 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:19:15.537 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-03 17:19:15.572 +02:00 [INF] Message 209 enqued and send to process to OPC Server
+2021-02-03 17:19:25.896 +02:00 [INF] Processed 2 boxes from past
+2021-02-03 17:19:25.907 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:19:26.043 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:19:26.211 +02:00 [WRN] BadSecureChannelIdInvalid
+2021-02-03 17:19:26.292 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:19:40.446 +02:00 [INF] Box 153-123456789567-false-4 has been sent to OPC
+2021-02-03 17:19:40.517 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:19:51.523 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:20:10.216 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:20:10.275 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:20:10.361 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:20:10.450 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:20:10.518 +02:00 [WRN] BadConnectionClosed
+2021-02-03 17:21:23.437 +02:00 [ERR] Error: BadSessionClosed    at Opc.Ua.ClientBase.ValidateResponse(ResponseHeader header)
+   at Opc.Ua.SessionClient.EndActivateSession(IAsyncResult result, Byte[]& serverNonce, StatusCodeCollection& results, DiagnosticInfoCollection& diagnosticInfos)
+   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 201
+2021-02-03 17:21:40.234 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:21:40.238 +02:00 [INF] Added tags to subscription Subscription 2 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:21:40.358 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:21:40.360 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:21:48.331 +02:00 [INF] Box 209-555555-true-5 has been sent to OPC
+2021-02-03 17:21:48.337 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:22:28.734 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:23:06.733 +02:00 [INF] Try disposing services
+2021-02-03 17:23:06.954 +02:00 [INF] The service has been stopped...
+2021-02-03 17:23:28.423 +02:00 [INF] Starting up the service
+2021-02-03 17:23:29.577 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:23:31.346 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:23:31.930 +02:00 [INF] Worker running at: "2021-02-03T17:23:31.9290606+02:00"
+2021-02-03 17:23:31.955 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:23:32.031 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:23:32.036 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:23:32.077 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:23:32.094 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:23:32.098 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:23:32.129 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:23:32.132 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:23:32.134 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:23:32.135 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:23:32.135 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:23:32.742 +02:00 [INF] Message 153 enqued and send to process to OPC Server
+2021-02-03 17:23:32.744 +02:00 [INF] Message 211 enqued and send to process to OPC Server
+2021-02-03 17:23:37.274 +02:00 [INF] Message 212 enqued and send to process to OPC Server
+2021-02-03 17:23:37.279 +02:00 [INF] Processed 3 boxes from past
+2021-02-03 17:23:37.280 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:23:37.405 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:23:37.410 +02:00 [INF] Box 153-123456789567-false-4 has been sent to OPC
+2021-02-03 17:23:37.446 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:23:43.252 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:23:51.203 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:23:51.207 +02:00 [INF] Box 211-545454-true-5 has been sent to OPC
+2021-02-03 17:23:51.210 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:23:55.685 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:24:00.708 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:24:00.714 +02:00 [INF] Box 212-4545-true-1 has been sent to OPC
+2021-02-03 17:24:00.727 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:24:04.660 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:24:31.471 +02:00 [INF] New Message Received:213/12345678922222222/false/1
+2021-02-03 17:24:31.475 +02:00 [INF] Message 213 enqued and send to process to OPC Server
+2021-02-03 17:24:37.273 +02:00 [INF] New Message Received:214/123456789/false/2
+2021-02-03 17:24:37.281 +02:00 [INF] Message 214 enqued and send to process to OPC Server
+2021-02-03 17:24:37.314 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:24:37.321 +02:00 [INF] Box 213-12345678922222222-false-1 has been sent to OPC
+2021-02-03 17:24:37.331 +02:00 [FTL] Elapsed time:"00:00:05.8599516"
+2021-02-03 17:24:41.651 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:24:44.172 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:24:44.179 +02:00 [INF] Box 214-123456789-false-2 has been sent to OPC
+2021-02-03 17:24:44.183 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:24:54.972 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:25:10.016 +02:00 [INF] New Message Received:215/12345678922222222/false/1
+2021-02-03 17:25:10.085 +02:00 [INF] Message 215 enqued and send to process to OPC Server
+2021-02-03 17:25:10.106 +02:00 [INF] New Message Received:216/123456789/false/2
+2021-02-03 17:25:10.126 +02:00 [INF] Message 216 enqued and send to process to OPC Server
+2021-02-03 17:25:10.136 +02:00 [INF] New Message Received:217/123456789/false/3
+2021-02-03 17:25:10.147 +02:00 [INF] Message 217 enqued and send to process to OPC Server
+2021-02-03 17:25:10.156 +02:00 [INF] New Message Received:218/123456789/false/4
+2021-02-03 17:25:10.161 +02:00 [INF] Message 218 enqued and send to process to OPC Server
+2021-02-03 17:25:10.166 +02:00 [INF] New Message Received:219/123456789/false/5
+2021-02-03 17:25:10.169 +02:00 [INF] Message 219 enqued and send to process to OPC Server
+2021-02-03 17:25:10.176 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.181 +02:00 [INF] Box 215-12345678922222222-false-1 has been sent to OPC
+2021-02-03 17:25:10.185 +02:00 [FTL] Elapsed time:"00:00:00.1696405"
+2021-02-03 17:25:10.199 +02:00 [INF] New Message Received:220/123456789/false/6
+2021-02-03 17:25:10.291 +02:00 [INF] Message 220 enqued and send to process to OPC Server
+2021-02-03 17:25:10.307 +02:00 [INF] New Message Received:221/123456789/false/7
+2021-02-03 17:25:10.311 +02:00 [INF] Message 221 enqued and send to process to OPC Server
+2021-02-03 17:25:10.332 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.340 +02:00 [INF] Box 216-123456789-false-2 has been sent to OPC
+2021-02-03 17:25:10.346 +02:00 [FTL] Elapsed time:"00:00:00.1464386"
+2021-02-03 17:25:10.347 +02:00 [INF] New Message Received:222/123456789/false/8
+2021-02-03 17:25:10.352 +02:00 [INF] Message 222 enqued and send to process to OPC Server
+2021-02-03 17:25:10.364 +02:00 [INF] New Message Received:223/123456789/false/9
+2021-02-03 17:25:10.380 +02:00 [INF] Message 223 enqued and send to process to OPC Server
+2021-02-03 17:25:10.386 +02:00 [INF] New Message Received:224/123456789/false/10
+2021-02-03 17:25:10.393 +02:00 [INF] Message 224 enqued and send to process to OPC Server
+2021-02-03 17:25:10.394 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.400 +02:00 [INF] Box 217-123456789-false-3 has been sent to OPC
+2021-02-03 17:25:10.409 +02:00 [FTL] Elapsed time:"00:00:00.0454058"
+2021-02-03 17:25:10.515 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.518 +02:00 [INF] Box 218-123456789-false-4 has been sent to OPC
+2021-02-03 17:25:10.526 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:10.577 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.581 +02:00 [INF] Box 219-123456789-false-5 has been sent to OPC
+2021-02-03 17:25:10.589 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:10.701 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.707 +02:00 [INF] Box 220-123456789-false-6 has been sent to OPC
+2021-02-03 17:25:10.713 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:10.825 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.828 +02:00 [INF] Box 221-123456789-false-7 has been sent to OPC
+2021-02-03 17:25:10.832 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:10.889 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:10.892 +02:00 [INF] Box 222-123456789-false-8 has been sent to OPC
+2021-02-03 17:25:10.897 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:11.009 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:11.011 +02:00 [INF] Box 223-123456789-false-9 has been sent to OPC
+2021-02-03 17:25:11.016 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:11.073 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:25:11.076 +02:00 [INF] Box 224-123456789-false-10 has been sent to OPC
+2021-02-03 17:25:11.080 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:25:11.195 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:29:26.891 +02:00 [INF] Try disposing services
+2021-02-03 17:29:27.113 +02:00 [INF] The service has been stopped...
+2021-02-03 17:40:55.044 +02:00 [INF] Starting up the service
+2021-02-03 17:49:07.908 +02:00 [INF] Starting up the service
+2021-02-03 17:49:09.595 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:49:12.775 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:49:14.010 +02:00 [INF] Worker running at: "2021-02-03T17:49:14.0102242+02:00"
+2021-02-03 17:49:14.017 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:49:14.211 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:49:14.354 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:49:14.574 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:49:14.591 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:49:14.593 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:49:14.598 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:49:14.603 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:49:14.606 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:49:14.611 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:49:14.662 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:49:15.335 +02:00 [INF] Processed 0 boxes from past
+2021-02-03 17:49:15.360 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:49:25.611 +02:00 [INF] New Message Received:225/12345678922222222/false/1
+2021-02-03 17:49:25.779 +02:00 [INF] Message 225 enqued and send to process to OPC Server
+2021-02-03 17:49:26.130 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:49:26.238 +02:00 [INF] Box 225-12345678922222222-false-1 has been sent to OPC
+2021-02-03 17:49:26.347 +02:00 [INF] New Message Received:226/123456789/false/2
+2021-02-03 17:49:26.509 +02:00 [INF] Message 226 enqued and send to process to OPC Server
+2021-02-03 17:49:26.551 +02:00 [FTL] Elapsed time:"00:00:00.9412291"
+2021-02-03 17:50:03.259 +02:00 [INF] Starting up the service
+2021-02-03 17:50:04.522 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:50:06.764 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:50:07.555 +02:00 [INF] Worker running at: "2021-02-03T17:50:07.5547690+02:00"
+2021-02-03 17:50:07.562 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:50:07.634 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:50:07.663 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:50:07.669 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:50:07.695 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:50:07.696 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:50:07.697 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:50:07.698 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:50:07.699 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:50:07.700 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:50:07.704 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:50:09.198 +02:00 [INF] Processed 0 boxes from past
+2021-02-03 17:50:09.249 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:50:13.838 +02:00 [INF] New Message Received:235/12345678922222222/false/1
+2021-02-03 17:50:13.844 +02:00 [INF] Message 235 enqued and send to process to OPC Server
+2021-02-03 17:50:13.852 +02:00 [INF] New Message Received:236/123456789/false/2
+2021-02-03 17:50:13.860 +02:00 [INF] Message 236 enqued and send to process to OPC Server
+2021-02-03 17:50:13.866 +02:00 [INF] New Message Received:237/123456789/false/3
+2021-02-03 17:50:13.874 +02:00 [INF] Message 237 enqued and send to process to OPC Server
+2021-02-03 17:50:13.878 +02:00 [INF] New Message Received:238/123456789/false/4
+2021-02-03 17:50:13.892 +02:00 [INF] Message 238 enqued and send to process to OPC Server
+2021-02-03 17:50:13.915 +02:00 [INF] New Message Received:239/123456789/false/5
+2021-02-03 17:50:13.935 +02:00 [INF] Message 239 enqued and send to process to OPC Server
+2021-02-03 17:50:13.959 +02:00 [INF] New Message Received:240/123456789/false/6
+2021-02-03 17:50:13.961 +02:00 [INF] Message 240 enqued and send to process to OPC Server
+2021-02-03 17:50:13.967 +02:00 [INF] New Message Received:241/123456789/false/7
+2021-02-03 17:50:13.978 +02:00 [INF] Message 241 enqued and send to process to OPC Server
+2021-02-03 17:50:13.984 +02:00 [INF] New Message Received:242/123456789/false/8
+2021-02-03 17:50:13.994 +02:00 [INF] Message 242 enqued and send to process to OPC Server
+2021-02-03 17:50:14.008 +02:00 [INF] New Message Received:243/123456789/false/9
+2021-02-03 17:50:14.020 +02:00 [INF] Message 243 enqued and send to process to OPC Server
+2021-02-03 17:50:14.041 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.052 +02:00 [INF] New Message Received:244/123456789/false/10
+2021-02-03 17:50:14.067 +02:00 [INF] Message 244 enqued and send to process to OPC Server
+2021-02-03 17:50:14.081 +02:00 [INF] Box 235-12345678922222222-false-1 has been sent to OPC
+2021-02-03 17:50:14.134 +02:00 [FTL] Elapsed time:"00:00:00.2969506"
+2021-02-03 17:50:14.243 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.342 +02:00 [INF] Box 236-123456789-false-2 has been sent to OPC
+2021-02-03 17:50:14.366 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:14.407 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.412 +02:00 [INF] Box 237-123456789-false-3 has been sent to OPC
+2021-02-03 17:50:14.434 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:14.528 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.532 +02:00 [INF] Box 238-123456789-false-4 has been sent to OPC
+2021-02-03 17:50:14.539 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:14.597 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.619 +02:00 [INF] Box 239-123456789-false-5 has been sent to OPC
+2021-02-03 17:50:14.666 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:14.724 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.784 +02:00 [INF] Box 240-123456789-false-6 has been sent to OPC
+2021-02-03 17:50:14.824 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:14.907 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:14.910 +02:00 [INF] Box 241-123456789-false-7 has been sent to OPC
+2021-02-03 17:50:14.914 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:15.024 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:15.031 +02:00 [INF] Box 242-123456789-false-8 has been sent to OPC
+2021-02-03 17:50:15.040 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:15.144 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:15.146 +02:00 [INF] Box 243-123456789-false-9 has been sent to OPC
+2021-02-03 17:50:15.152 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:15.208 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:50:15.213 +02:00 [INF] Box 244-123456789-false-10 has been sent to OPC
+2021-02-03 17:50:15.226 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:50:15.328 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:51:13.285 +02:00 [INF] Try disposing services
+2021-02-03 17:51:13.550 +02:00 [INF] The service has been stopped...
+2021-02-03 17:53:09.595 +02:00 [INF] Starting up the service
+2021-02-03 17:53:10.984 +02:00 [INF] Connecting to OPC Server...
+2021-02-03 17:53:14.769 +02:00 [INF] Connected to OPC Server: opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator
+2021-02-03 17:53:16.525 +02:00 [INF] Worker running at: "2021-02-03T17:53:16.5144879+02:00"
+2021-02-03 17:53:16.565 +02:00 [INF] Getting unprocessed boxes...
+2021-02-03 17:53:16.634 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReady
+2021-02-03 17:53:16.643 +02:00 [INF] Added tags to subscription Subscription 1 : ns=2;s=ToWMS_dataReceived
+2021-02-03 17:53:16.654 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_dataReady
+2021-02-03 17:53:16.658 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_destination
+2021-02-03 17:53:16.659 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_originalBox
+2021-02-03 17:53:16.661 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_sscc
+2021-02-03 17:53:16.662 +02:00 [INF] Added tags to session: ns=2;s=FromWMS_watchdog
+2021-02-03 17:53:16.664 +02:00 [INF] Added tags to session: ns=2;s=ToWMS_sscc
+2021-02-03 17:53:16.794 +02:00 [INF] Monitored Item: ToWMS_dataReady has value: False
+2021-02-03 17:53:16.826 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:53:17.481 +02:00 [INF] Processed 0 boxes from past
+2021-02-03 17:53:17.489 +02:00 [INF] Entering subscription mode...
+2021-02-03 17:53:29.052 +02:00 [INF] New Message Received:245/12345678922222222/false/1
+2021-02-03 17:53:29.087 +02:00 [INF] Message 245 enqued and send to process to OPC Server
+2021-02-03 17:53:29.101 +02:00 [INF] New Message Received:246/123456789/false/2
+2021-02-03 17:53:29.117 +02:00 [INF] Message 246 enqued and send to process to OPC Server
+2021-02-03 17:53:29.132 +02:00 [INF] New Message Received:247/123456789/false/3
+2021-02-03 17:53:29.136 +02:00 [INF] Message 247 enqued and send to process to OPC Server
+2021-02-03 17:53:29.147 +02:00 [INF] New Message Received:248/123456789/false/4
+2021-02-03 17:53:29.151 +02:00 [INF] Message 248 enqued and send to process to OPC Server
+2021-02-03 17:53:29.161 +02:00 [INF] New Message Received:249/123456789/false/5
+2021-02-03 17:53:29.193 +02:00 [INF] Message 249 enqued and send to process to OPC Server
+2021-02-03 17:53:29.201 +02:00 [INF] New Message Received:250/123456789/false/6
+2021-02-03 17:53:29.253 +02:00 [INF] Message 250 enqued and send to process to OPC Server
+2021-02-03 17:53:29.283 +02:00 [INF] New Message Received:251/123456/false/7
+2021-02-03 17:53:29.298 +02:00 [INF] Message 251 enqued and send to process to OPC Server
+2021-02-03 17:53:29.310 +02:00 [INF] New Message Received:252/123456789/false/8
+2021-02-03 17:53:29.315 +02:00 [INF] Message 252 enqued and send to process to OPC Server
+2021-02-03 17:53:29.324 +02:00 [INF] New Message Received:253/123456789/false/9
+2021-02-03 17:53:29.329 +02:00 [INF] Message 253 enqued and send to process to OPC Server
+2021-02-03 17:53:29.335 +02:00 [INF] New Message Received:254/123456789/false/10
+2021-02-03 17:53:29.344 +02:00 [INF] Message 254 enqued and send to process to OPC Server
+2021-02-03 17:53:29.518 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:29.684 +02:00 [INF] Box 245-12345678922222222-false-1 has been sent to OPC
+2021-02-03 17:53:29.732 +02:00 [FTL] Elapsed time:"00:00:00.6803913"
+2021-02-03 17:53:29.825 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:29.863 +02:00 [INF] Box 246-123456789-false-2 has been sent to OPC
+2021-02-03 17:53:29.917 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:53:30.023 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:30.060 +02:00 [INF] Box 247-123456789-false-3 has been sent to OPC
+2021-02-03 17:53:30.083 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:53:30.131 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:30.134 +02:00 [INF] Box 248-123456789-false-4 has been sent to OPC
+2021-02-03 17:53:30.144 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:53:30.194 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:53:30.316 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:30.324 +02:00 [INF] Box 249-123456789-false-5 has been sent to OPC
+2021-02-03 17:53:30.332 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:53:30.375 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:53:30.379 +02:00 [INF] Box 250-123456789-false-6 has been sent to OPC
+2021-02-03 17:53:30.388 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:53:30.498 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:54:31.513 +02:00 [INF] Box 251-123456-false-7 has been sent to OPC
+2021-02-03 17:54:31.521 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:54:31.623 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:54:31.628 +02:00 [INF] Box 252-123456789-false-8 has been sent to OPC
+2021-02-03 17:54:31.641 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:54:31.695 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:54:31.709 +02:00 [INF] Box 253-123456789-false-9 has been sent to OPC
+2021-02-03 17:54:31.738 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:54:31.811 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: True
+2021-02-03 17:54:31.820 +02:00 [INF] Box 254-123456789-false-10 has been sent to OPC
+2021-02-03 17:54:31.842 +02:00 [FTL] Elapsed time:"00:00:00"
+2021-02-03 17:54:31.875 +02:00 [INF] Monitored Item: ToWMS_dataReceived has value: False
+2021-02-03 17:58:12.986 +02:00 [INF] Try disposing services
+2021-02-03 17:58:13.331 +02:00 [INF] The service has been stopped...
