@@ -18,7 +18,13 @@ namespace WMSOpcClient.OPCService
 
     public class OPCClient : IOPCClient
     {
+        /// <summary>
+        /// Event to be fired when message received from SQL
+        /// </summary>
         public event NewOPCMessageHandler OnMessageReveived;
+        /// <summary>
+        /// Event to be fired when PLC reads the SSSC
+        /// </summary>
         public event NewSSSCMessageHandler OnSSSCReceived;
 
         private readonly ILogger<OPCClient> _logger;
@@ -49,6 +55,9 @@ namespace WMSOpcClient.OPCService
 
         public bool OpcServerConnected { get; private set; }
 
+        /// <summary>
+        /// Connect to OPC server
+        /// </summary>
         public void Connect()
         {
             try
@@ -74,6 +83,9 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Setup OPC connection properties
+        /// </summary>
         private void ConnectToServer()
         {
             try
@@ -111,6 +123,9 @@ namespace WMSOpcClient.OPCService
 
         }
 
+        /// <summary>
+        /// Disconnect from OPC server
+        /// </summary>
         public void Disconnect()
         {
             MessageQueue.ItemAdded -= ProcessMessage;
@@ -174,6 +189,12 @@ namespace WMSOpcClient.OPCService
 
             }
         }
+        
+        /// <summary>
+        /// When a item from subscription changes notify the subscribers to process modified message
+        /// </summary>
+        /// <param name="monitoredItem"></param>
+        /// <param name="e"></param>
         private void Notification_MonitoredItem(MonitoredItem monitoredItem, MonitoredItemNotificationEventArgs e)
         {
             MonitoredItemNotification notification = e.NotificationValue as MonitoredItemNotification;
@@ -212,6 +233,9 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Create subscription
+        /// </summary>
         private void AddSubscription()
         {
             try
@@ -228,6 +252,9 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Add tags to session
+        /// </summary>
         private void AddTagsToSession()
         {
             // to be modified to OPCSessionTags after testing
@@ -251,6 +278,10 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Add tags to a subscription
+        /// </summary>
+        /// <param name="currentSubscription"></param>
         private void AddTagsToSubscription(Subscription currentSubscription)
         {
             // to be modified to OPCSubscriptionTags after testing
@@ -264,6 +295,10 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Read SSSC value from OPC server
+        /// </summary>
+        /// <returns></returns>
         private string ReadFromOPC()
         {
             List<String> values = new List<String>();
@@ -279,6 +314,9 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Add tags to session and subscription
+        /// </summary>
         public void Start()
         {
             if (_mySession != null)
@@ -292,16 +330,24 @@ namespace WMSOpcClient.OPCService
             AddTagsToSession();
         }
 
-        public void SendMessageToOPC(MessageModel message)
+        /// <summary>
+        /// Send message to Queue
+        /// </summary>
+        /// <param name="message"></param>
+        public void SendMessageToQueue(MessageModel message)
         {
             _logger.LogInformation("Message {message} enqued and send to process to OPC Server", message.Id);
 
             MessageQueue.Enqueue(message);
         }
 
-        //TODO to modifiy the delegate for this method
+        /// <summary>
+        /// Handler fired when the queue receives item
+        /// Sends message to OPC server
+        /// </summary>
         public void ProcessMessage()
         {
+            // TODO - without while processed only one element from Queue
             while (MessageQueue.Count > 0)
             {
                 var currentMessage = MessageQueue.Peek();
@@ -315,7 +361,6 @@ namespace WMSOpcClient.OPCService
 
                 //******************TO BE REMOVED IN PRODUCTION CODE*****************
                 WriteDataReceived(true);
-                //MessageQueue.Dequeue();
             }
         }
 
@@ -338,6 +383,10 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Manual write data received tag
+        /// </summary>
+        /// <param name="data"></param>
         private void WriteDataReceived(bool data)
         {
             List<String> values = new List<string>();
@@ -353,6 +402,11 @@ namespace WMSOpcClient.OPCService
                 _logger.LogWarning(ex.Message, "Error");
             }
         }
+
+        /// <summary>
+        /// Send data ready to Server
+        /// </summary>
+        /// <param name="sent"></param>
         private void SendDataReadyToOPC(bool sent)
         {
             List<String> values = new List<String>();

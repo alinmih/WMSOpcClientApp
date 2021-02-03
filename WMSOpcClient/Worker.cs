@@ -59,7 +59,6 @@ namespace WMSOpcClient
             _opcClient.OnMessageReveived += HandleOPCMessageReceived;
             try
             {
-                
                 _opcClient.Connect();
                 var sqlConnected = _scannedData.IsSQLServerConnected(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
 
@@ -72,6 +71,11 @@ namespace WMSOpcClient
             return base.StartAsync(cancellationToken);
         }
 
+        /// <summary>
+        /// Process message received from OPC server subscription
+        /// Update the record from SQL with value 1
+        /// </summary>
+        /// <param name="message"></param>
         private void HandleOPCMessageReceived(MessageModel message)
         {
             var box = new BoxModel
@@ -88,11 +92,19 @@ namespace WMSOpcClient
             sw.Reset();
         }
 
+        /// <summary>
+        /// Event handler which process read SSSC from PLC
+        /// </summary>
+        /// <param name="sssc"></param>
         private void HandleSSSCMessageRead(string sssc)
         {
             _logger.LogInformation("SSSC scanned: {sssc}", sssc);
         }
 
+        /// <summary>
+        /// Handler which forward message from SQL event to OPC client
+        /// </summary>
+        /// <param name="message"></param>
         private void HandleSQLMessageReceived(MessageModel message)
         {
             sw.Start();
@@ -100,7 +112,7 @@ namespace WMSOpcClient
             //Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
             _logger.LogInformation("New Message Received:{id}/{sssc}/{orig}/{dest}", message.Id, message.SSSC, message.OriginalBox, message.Destination);
 
-            _opcClient.SendMessageToOPC(message);
+            _opcClient.SendMessageToQueue(message);
         }
 
         public override Task StopAsync(CancellationToken cancellationToken)
@@ -129,7 +141,6 @@ namespace WMSOpcClient
 
                 _logger.LogInformation("Getting unprocessed boxes...");
 
-
                 // start monitor opc 
                 _opcClient.Start();
 
@@ -145,7 +156,7 @@ namespace WMSOpcClient
                         Destination = record.Destination
                     };
 
-                    _opcClient.SendMessageToOPC(model);
+                    _opcClient.SendMessageToQueue(model);
 
                 }
 
@@ -155,8 +166,6 @@ namespace WMSOpcClient
 
                 // start monitor SQL table
                 _messageRepository.Start(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
-
-                
             }
             catch (Exception ex)
             {

@@ -22,6 +22,10 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             _connectionString = connectionString;
         }
 
+        /// <summary>
+        /// Get all the boxes from database
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<BoxModel>> GetBoxes()
         {
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
@@ -40,6 +44,11 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
         }
 
+        /// <summary>
+        /// Update table with the sent boxes
+        /// </summary>
+        /// <param name="boxes"></param>
+        /// <returns></returns>
         public async Task<int> UpdateBoxes(List<BoxModel> boxes)
         {
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
@@ -63,6 +72,11 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
         }
 
+        /// <summary>
+        /// Update box record with send ack
+        /// </summary>
+        /// <param name="boxModel"></param>
+        /// <returns></returns>
         public async Task<int> UpdateSingleBox(BoxModel boxModel)
         {
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
@@ -80,6 +94,11 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             }
         }
 
+        /// <summary>
+        /// Check if SQL server online
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
         public bool IsSQLServerConnected(string connectionString)
         {
             try

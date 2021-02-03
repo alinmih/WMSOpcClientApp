@@ -11,7 +11,7 @@ namespace WMSOpcClient.OPCService
 
         void Connect();
         void Disconnect();
-        public void SendMessageToOPC(MessageModel message);
+        public void SendMessageToQueue(MessageModel message);
         public void Start();
     }
 }
