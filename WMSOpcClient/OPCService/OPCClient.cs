@@ -227,7 +227,7 @@ namespace WMSOpcClient.OPCService
                 }
                 AddSubscription();
                 AddTagsToSubscription(_mySubscription);
-
+                AddTagsToSession();
             }
         }
 
@@ -271,8 +271,8 @@ namespace WMSOpcClient.OPCService
                             if (pendingMessageItem != null)
                             {
                                 OnMessageReveived?.Invoke(pendingMessageItem);
-                                WriteDataReceived(false);
                                 MessageQueue.TryDequeue(out pendingMessageItem);
+                                WriteDataReceived(false);
                                 pendingMessageItem = null;
                             }
                         }
@@ -280,7 +280,6 @@ namespace WMSOpcClient.OPCService
                         {
                             rw.ExitWriteLock();
                         }
-
                     }
                     return;
                 }
@@ -410,7 +409,7 @@ namespace WMSOpcClient.OPCService
             SendDataReadyToOPC(true);
 
             //******************TO BE REMOVED IN PRODUCTION CODE*****************
-            WriteDataReceived(true);
+            //WriteDataReceived(true);
         }
 
         private void SendDataToOPC(string sssc, bool original, int destination, bool dataReady)

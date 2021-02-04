@@ -66,7 +66,7 @@ INSERT INTO [dbo].[aBox]
  [Destination]
 )
 VALUES
-('123456789', 
+('123456', 
  0, 
  7
 );
