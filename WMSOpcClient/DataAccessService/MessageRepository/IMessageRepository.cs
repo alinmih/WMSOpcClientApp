@@ -1,5 +1,8 @@
-﻿namespace WMSOpcClient.DataAccessService.MessageRepository
+﻿using WMSOpcClient.DataAccessService.Models;
+
+namespace WMSOpcClient.DataAccessService.MessageRepository
 {
+    public delegate void NewMessageHandler(MessageModel message);
     public interface IMessageRepository
     {
         event NewMessageHandler OnNewMessage;

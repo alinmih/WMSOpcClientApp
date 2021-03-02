@@ -45,27 +45,34 @@ namespace WMSOpcClient
         {
             // init client on service startup
 
-            // ********************SQL SECTION*****************************
+            try
+            {
+                // ********************SQL SECTION*****************************
 
-            // subscribe to SQL message service broker 
-            _messageRepository.OnNewMessage += HandleSQLMessageReceived;
+                // subscribe to SQL message service broker 
+                //_messageRepository.OnNewMessage += HandleSQLMessageReceived;
+                // start monitor SQL table
 
+                // ********************OPC SECTION*****************************
+                //var sqlConnected = _scannedData.IsSQLServerConnected(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
+                //_messageRepository.Start(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Cannot connect to SQL server: {0}-{1}", ex.Message, ex.StackTrace);
+            }
 
-            // ************************************************************
-
-
-            // ********************OPC SECTION*****************************
-            _opcClient.OnSSSCReceived += HandleSSSCMessageRead;
-            _opcClient.OnMessageReveived += HandleOPCMessageReceived;
             try
             {
                 _opcClient.Connect();
-                var sqlConnected = _scannedData.IsSQLServerConnected(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
+
+                _opcClient.OnSSSCReceived += HandleSSSCMessageRead;
+                _opcClient.OnMessageReveived += HandleOPCMessageReceived;
 
             }
             catch (Exception ex)
             {
-                _logger.LogError("Cannot connect to OPC server: {message}", ex.Message);
+                _logger.LogError("Cannot connect to OPC server: {0}-{1}", ex.Message, ex.StackTrace);
             }
             // ************************************************************
             return base.StartAsync(cancellationToken);
@@ -86,7 +93,7 @@ namespace WMSOpcClient
                 Destination = message.Destination
             };
             _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSSC, box.OriginalBox, box.Destination);
-            _scannedData.UpdateSingleBox(box);
+            _scannedData.UpdateServerReceived(box);
             sw.Stop();
             _logger.LogCritical("Elapsed time:{e}", sw.Elapsed);
             sw.Reset();
@@ -128,7 +135,7 @@ namespace WMSOpcClient
             }
             catch (Exception ex)
             {
-                _logger.LogWarning("Cannot disposing services: {mess}", ex.Message);
+                _logger.LogWarning("Cannot disposing services: {0}-{1}", ex.Message, ex.StackTrace);
             }
             return base.StopAsync(cancellationToken);
         }
@@ -144,8 +151,34 @@ namespace WMSOpcClient
                 // start monitor opc 
                 _opcClient.Start();
 
-                var records = await _scannedData.GetBoxes();
+                List<BoxModel> records = await UpdateExistingSQLItems();
 
+                _logger.LogInformation("Processed {boxes} boxes from past", records.Count);
+
+                _logger.LogInformation("Entering subscription mode...");
+
+                // new implementation to search for new records
+                while (!stoppingToken.IsCancellationRequested)
+                {
+                    List<BoxModel> newRecords = new List<BoxModel>();
+                    newRecords = await UpdateExistingSQLItems();
+                    _logger.LogInformation("Processed {boxes} boxes", newRecords.Count);
+
+                    Thread.Sleep(int.Parse(_configuration.GetSection("RefreshTime").Value));
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Service failure: {message}", ex.Message);
+            }
+        }
+
+        private async Task<List<BoxModel>> UpdateExistingSQLItems()
+        {
+            var records = await _scannedData.GetBoxes();
+            
+            if (records.Count > 0)
+            {
                 foreach (var record in records)
                 {
                     var model = new MessageModel
@@ -158,19 +191,16 @@ namespace WMSOpcClient
 
                     _opcClient.SendMessageToQueue(model);
 
+                    await _scannedData.UpdateSentToServer(new BoxModel {
+                        Id = model.Id,
+                        SSSC = model.SSSC,
+                        OriginalBox = model.OriginalBox,
+                        Destination = model.Destination
+                    });
                 }
-
-                _logger.LogInformation("Processed {boxes} boxes from past", records.Count);
-
-                _logger.LogInformation("Entering subscription mode...");
-
-                // start monitor SQL table
-                _messageRepository.Start(_configuration.GetConnectionString(_connectionString.SqlConnectionName));
             }
-            catch (Exception ex)
-            {
-                _logger.LogWarning("Service failure: {message}", ex.Message);
-            }
+            return records;
+
         }
     }
 }

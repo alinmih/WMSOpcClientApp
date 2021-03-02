@@ -7,7 +7,7 @@ using WMSOpcClient.DataAccessService.Models;
 
 namespace WMSOpcClient.DataAccessService.MessageRepository
 {
-    public delegate void NewMessageHandler(MessageModel message);
+
     public class MessageRepository : IDisposable, IMessageRepository
     {
         public event NewMessageHandler OnNewMessage;

@@ -48,7 +48,7 @@ namespace WMSOpcClient.OPCService
         private bool FromWMS_watchdog = false;
 
         private bool shouldStop = false;
-
+        private bool hasSend = false;
 
         public OPCClient(ILogger<OPCClient> logger, IConfiguration configuration)
         {
@@ -59,16 +59,43 @@ namespace WMSOpcClient.OPCService
             MessageQueue = new ConcurrentQueue<MessageModel>();
             rw = new ReaderWriterLockSlim();
             StartWorkerAsync();
+            //StartWorkerAsyncRefactored();
+        }
+
+        private void StartWorkerAsyncRefactored()
+        {
+            Task.Run(() =>
+            {
+                MessageModel currentMessage = null;
+                while (shouldStop == false)
+                {
+                    if (hasSend == false)
+                    {
+                        if (pendingMessageItem == null && MessageQueue.TryPeek(out currentMessage))
+                        {
+                            pendingMessageItem = currentMessage;
+                        }
+                        if (currentMessage != null)
+                        {
+                            hasSend = true;
+                            ProcessMessage(currentMessage);
+                        }
+                    }
+
+                    Thread.Sleep(1000);
+                }
+            });
         }
 
         private void StartWorkerAsync()
         {
             Task.Run(() =>
             {
-                MessageModel currentMessage=null;
+                MessageModel currentMessage = null;
                 while (shouldStop == false)
                 {
-                    if (rw.TryEnterWriteLock(60000))
+                    
+                    if (rw.TryEnterWriteLock(1000))
                     {
                         try
                         {
@@ -85,11 +112,14 @@ namespace WMSOpcClient.OPCService
                         {
                             ProcessMessage(currentMessage);
                         }
+
+                        Thread.Sleep(10);
                     }
                     else
                     {
                         Thread.Sleep(10);
                     }
+
                 }
             });
         }
@@ -147,6 +177,7 @@ namespace WMSOpcClient.OPCService
                     //Extract the session object for further direct session interactions
 
                     _mySession = _myClientHelperAPI.Session;
+                    //_mySession.KeepAliveInterval = 
                     OpcServerConnected = true;
 
                 }
@@ -158,7 +189,8 @@ namespace WMSOpcClient.OPCService
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message);
+                _logger.LogError("{0}-{1}",
+                ex.Message, ex.StackTrace);
                 OpcServerConnected = false;
             }
 
@@ -272,8 +304,11 @@ namespace WMSOpcClient.OPCService
                             {
                                 OnMessageReveived?.Invoke(pendingMessageItem);
                                 MessageQueue.TryDequeue(out pendingMessageItem);
-                                WriteDataReceived(false);
+
                                 pendingMessageItem = null;
+
+                                //******************TO BE REMOVED IN PRODUCTION CODE*****************
+                                WriteDataReceived(false);
                             }
                         }
                         finally
@@ -282,6 +317,16 @@ namespace WMSOpcClient.OPCService
                         }
                     }
                     return;
+                    //if (pendingMessageItem != null)
+                    //{
+                    //    OnMessageReveived?.Invoke(pendingMessageItem);
+                    //    MessageQueue.TryDequeue(out pendingMessageItem);
+
+                    //    pendingMessageItem = null;
+                    //    hasSend = false;
+                    //    //******************TO BE REMOVED IN PRODUCTION CODE*****************
+                    //    WriteDataReceived(false);
+                    //}
                 }
             }
         }
@@ -409,7 +454,7 @@ namespace WMSOpcClient.OPCService
             SendDataReadyToOPC(true);
 
             //******************TO BE REMOVED IN PRODUCTION CODE*****************
-            //WriteDataReceived(true);
+            WriteDataReceived(true);
         }
 
         private void SendDataToOPC(string sssc, bool original, int destination, bool dataReady)

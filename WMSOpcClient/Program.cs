@@ -57,11 +57,11 @@ namespace WMSOpcClient
                     });
 
                     // SQL services
-                    services.AddTransient<IBoxDataRepository, BoxDataRepository>();
-                    services.AddTransient<IMessageRepository, MessageRepository>();
+                    services.AddSingleton<IBoxDataRepository, BoxDataRepository>();
+                    services.AddSingleton<IMessageRepository, MessageRepository>();
 
                     // OPC service
-                    services.AddTransient<IOPCClient, OPCClient>();
+                    services.AddSingleton<IOPCClient, OPCClient>();
                 }).UseWindowsService().UseSerilog();
 
     }

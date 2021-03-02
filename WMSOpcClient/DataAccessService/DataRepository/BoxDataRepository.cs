@@ -36,7 +36,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
                       + "      ,[Destination]\n"
                       + "      ,[SendToServer]\n"
                       + "  FROM [dbo].[aBox]\n"
-                      + "  WHERE dbo.aBox.SendToServer=0";
+                      + "  WHERE dbo.aBox.SendToServer=0 OR dbo.aBox.SendToServer is NULL";
                 var records = await dbConnection.QueryAsync<BoxModel>(sqlString);
 
                 return records.ToList();
@@ -77,7 +77,24 @@ namespace WMSOpcClient.DataAccessService.DataRepository
         /// </summary>
         /// <param name="boxModel"></param>
         /// <returns></returns>
-        public async Task<int> UpdateSingleBox(BoxModel boxModel)
+        public async Task<int> UpdateServerReceived(BoxModel boxModel)
+        {
+            using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
+            {
+
+                var sqlString = "UPDATE [dbo].[aBox]\n"
+                       + $"   SET [ServerReceived] = 1\n"
+                       + $" WHERE [dbo].[aBox].Id = {boxModel.Id}";
+                var affectedRow = await dbConnection.ExecuteAsync(sqlString);
+                if (affectedRow == 1)
+                {
+                    boxModel.SendToServer = 1;
+                }
+                return affectedRow;
+            }
+        }
+
+        public async Task<int> UpdateSentToServer(BoxModel boxModel)
         {
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
             {

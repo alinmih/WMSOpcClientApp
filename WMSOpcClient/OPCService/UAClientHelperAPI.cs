@@ -109,6 +109,7 @@ namespace WMSOpcClient.OPCService
             catch (Exception e)
             {
                 //handle Exception here
+
                 throw e;
             }
         }
