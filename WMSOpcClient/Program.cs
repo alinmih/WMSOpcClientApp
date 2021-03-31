@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -18,15 +19,23 @@ namespace WMSOpcClient
     {
         public static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                .Enrich.FromLogContext()
-                .WriteTo.Console()
-                .WriteTo.File(@$"{Directory.GetCurrentDirectory()}\Logs\LogFile.txt")
-                .CreateLogger();
+            //Log.Logger = new LoggerConfiguration()
+            //    .MinimumLevel.Debug()
+            //    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+            //    .Enrich.FromLogContext()
+            //    .WriteTo.Console()
+            //    .WriteTo.File(@$"{Directory.GetCurrentDirectory()}\Logs\LogFile.txt")
+            //    .CreateLogger();
             try
             {
+                var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+                var configuration = new ConfigurationBuilder()
+                    .SetBasePath(baseDir)
+                    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT")}.json", true)
+                    .Build();
+                Log.Logger = new LoggerConfiguration()
+                    .ReadFrom.Configuration(configuration)
+                    .CreateLogger();
                 Log.Information("Starting up the service");
 
                 CreateHostBuilder(args).Build().Run();

@@ -29,6 +29,9 @@ namespace WMSOpcClient.OPCService
         /// </summary>
         public event NewSSSCMessageHandler OnSSSCReceived;
 
+        private const string sessionTags = "OPCSessionTags";
+        private const string subscriptionTags = "OPCSubscriptionTags";
+        private const string serverUrl = "OPCServerUrl";
         private readonly ILogger<OPCClient> _logger;
         private readonly IConfiguration _configuration;
 
@@ -143,7 +146,7 @@ namespace WMSOpcClient.OPCService
                 }
                 OpcServerConnected = true;
 
-                _logger.LogInformation("Connected to OPC Server: {opc}", _configuration.GetSection("OPCServerUrl").Value);
+                _logger.LogInformation("Connected to OPC Server: {opc}", _configuration.GetSection(serverUrl).Value);
 
                 // 2. Subscription of items
                 AddSubscription();
@@ -161,8 +164,10 @@ namespace WMSOpcClient.OPCService
         {
             try
             {
-                var url = _configuration.GetSection("OPCServerUrl").Value;
+                var url = _configuration.GetSection(serverUrl).Value;
                 var endpoints = _myClientHelperAPI.GetEndpoints(url);
+                var user = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "user").FirstOrDefault().Value;
+                var password = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "password").FirstOrDefault().Value;
                 _mySelectedEndpoint = endpoints[0];
 
                 //Register mandatory events (cert and keep alive)
@@ -173,7 +178,7 @@ namespace WMSOpcClient.OPCService
                 if (_mySelectedEndpoint != null)
                 {
                     //Call connect
-                    _myClientHelperAPI.Connect(_mySelectedEndpoint, false, "", "").Wait();
+                    _myClientHelperAPI.Connect(_mySelectedEndpoint, true, user, password).Wait();
                     //Extract the session object for further direct session interactions
 
                     _mySession = _myClientHelperAPI.Session;
@@ -189,8 +194,7 @@ namespace WMSOpcClient.OPCService
             }
             catch (Exception ex)
             {
-                _logger.LogError("{0}-{1}",
-                ex.Message, ex.StackTrace);
+                _logger.LogError("{0}-{1}",ex.Message, ex.StackTrace);
                 OpcServerConnected = false;
             }
 
@@ -356,7 +360,7 @@ namespace WMSOpcClient.OPCService
         private void AddTagsToSession()
         {
             // to be modified to OPCSessionTags after testing
-            var tags = _configuration.GetSection("OPCTestSessionTags").GetChildren();
+            var tags = _configuration.GetSection(sessionTags).GetChildren();
             List<String> nodeIdStrings = new List<String>();
             foreach (var tag in tags)
             {
@@ -383,7 +387,7 @@ namespace WMSOpcClient.OPCService
         private void AddTagsToSubscription(Subscription currentSubscription)
         {
             // to be modified to OPCSubscriptionTags after testing
-            var tags = _configuration.GetSection("OPCTestSubscriptionTags").GetChildren();
+            var tags = _configuration.GetSection(subscriptionTags).GetChildren();
             foreach (var tag in tags)
             {
                 var monitoredItemName = tag.Key;

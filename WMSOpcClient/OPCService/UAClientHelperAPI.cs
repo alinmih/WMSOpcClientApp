@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using Opc.Ua;
 using Opc.Ua.Client;
+using Opc.Ua.Security.Certificates;
 
 namespace WMSOpcClient.OPCService
 {
@@ -1440,10 +1441,15 @@ namespace WMSOpcClient.OPCService
             ApplicationConfiguration configuration = new ApplicationConfiguration();
 
             // Step 1 - Specify the client identity.
-            configuration.ApplicationName = "UA Client 1500";
+            configuration.ApplicationName = "WMSOPCClient";
             configuration.ApplicationType = ApplicationType.Client;
             configuration.ApplicationUri = "urn:MyClient"; //Kepp this syntax
-            configuration.ProductUri = "SiemensAG.IndustryOnlineSupport";
+            configuration.ProductUri = "SeniorSoftware.WMS";
+
+            //configuration.ApplicationName = "UA Client 1500";
+            //configuration.ApplicationType = ApplicationType.Client;
+            //configuration.ApplicationUri = "urn:MyClient"; //Kepp this syntax
+            //configuration.ProductUri = "SiemensAG.IndustryOnlineSupport";
 
             // Step 2 - Specify the client's application instance certificate.
             // Application instance certificates must be placed in a windows certficate store because that is 
@@ -1454,16 +1460,16 @@ namespace WMSOpcClient.OPCService
             configuration.SecurityConfiguration = new SecurityConfiguration();
             configuration.SecurityConfiguration.ApplicationCertificate = new CertificateIdentifier();
             configuration.SecurityConfiguration.ApplicationCertificate.StoreType = CertificateStoreType.X509Store;
-            configuration.SecurityConfiguration.ApplicationCertificate.StorePath = "CurrentUser\\My";
+            configuration.SecurityConfiguration.ApplicationCertificate.StorePath = "LocalMachine\\My";
             configuration.SecurityConfiguration.ApplicationCertificate.SubjectName = configuration.ApplicationName;
             configuration.SecurityConfiguration.AutoAcceptUntrustedCertificates = true;
             configuration.SecurityConfiguration.RejectSHA1SignedCertificates = false;
 
-            // Define trusted root store for server certificate checks
+            // Define trusted root store for server certificate checks , CurrentUser, LocalMachine
             configuration.SecurityConfiguration.TrustedIssuerCertificates.StoreType = CertificateStoreType.X509Store;
-            configuration.SecurityConfiguration.TrustedIssuerCertificates.StorePath = "CurrentUser\\Root";
+            configuration.SecurityConfiguration.TrustedIssuerCertificates.StorePath = "LocalMachine\\Root";
             configuration.SecurityConfiguration.TrustedPeerCertificates.StoreType = CertificateStoreType.X509Store;
-            configuration.SecurityConfiguration.TrustedPeerCertificates.StorePath = "CurrentUser\\Root";
+            configuration.SecurityConfiguration.TrustedPeerCertificates.StorePath = "LocalMachine\\Root";
 
             // find the client certificate in the store.
             Task<X509Certificate2> clientCertificate = configuration.SecurityConfiguration.ApplicationCertificate.Find(true);
@@ -1471,27 +1477,49 @@ namespace WMSOpcClient.OPCService
             // create a new self signed certificate if not found.
             if (clientCertificate.Result == null)
             {
-                // Get local interface ip addresses and DNS name
-                List<string> localIps = GetLocalIpAddressAndDns();
+                throw new Exception("No certificate installed for current client");
+                //// Get local interface ip addresses and DNS name
+                //List<string> localIps = GetLocalIpAddressAndDns();
 
-                UInt16 keySize = 2048; //must be multiples of 1024
-                UInt16 lifeTime = 24; //in month
-                UInt16 algorithm = 256; //0 = SHA1; 1 = SHA256
+                //UInt16 keySize = 2048; //must be multiples of 1024
+                //UInt16 lifeTime = 42; //in month
+                //UInt16 algorithm = 256; //0 = SHA1; 1 = SHA256
 
-                // this code would normally be called as part of the installer - called here to illustrate.
-                // create a new certificate and place it in the current user certificate store.
-                X509Certificate2 clientCertificate2 = CertificateFactory.CreateCertificate(
-                    configuration.SecurityConfiguration.ApplicationCertificate.StoreType,
-                    configuration.SecurityConfiguration.ApplicationCertificate.StorePath,
-                    null,
-                    configuration.ApplicationUri,
-                    configuration.ApplicationName,
-                    null,
-                    localIps,
-                    keySize,
-                    System.DateTime.Now,
-                    lifeTime,
-                    algorithm);
+                ////this code would normally be called as part of the installer - called here to illustrate.
+                //// create a new certificate and place it in the current user certificate store.
+                //X509Certificate2 clientCertificate2 = CertificateFactory.CreateCertificate(
+                //    configuration.SecurityConfiguration.ApplicationCertificate.StoreType,
+                //    configuration.SecurityConfiguration.ApplicationCertificate.StorePath,
+                //    null,
+                //    configuration.ApplicationUri,
+                //    configuration.ApplicationName,
+                //    null,
+                //    localIps,
+                //    keySize,
+                //    System.DateTime.Now,
+                //    lifeTime,
+                //    algorithm);
+
+                ////var CERT = CertificateBuilder.Create("aD");
+                ////var SSS = CERT.CreateForRSA();
+                ////SSS.AddToStore(configuration.SecurityConfiguration.ApplicationCertificate.StoreType, configuration.SecurityConfiguration.ApplicationCertificate.StorePath);
+                
+
+                ////SSS.AddToStore(configuration.SecurityConfiguration.ApplicationCertificate.StoreType, configuration.SecurityConfiguration.ApplicationCertificate.StorePath);
+                ////SSS = CertificateFactory.CreateCertificate(configuration.ApplicationUri, configuration.ApplicationName, null, localIps);
+
+                ////    (
+                ////    configuration.SecurityConfiguration.ApplicationCertificate.StoreType,
+                ////    configuration.SecurityConfiguration.ApplicationCertificate.StorePath,
+                ////    null,
+                ////    configuration.ApplicationUri,
+                ////    configuration.ApplicationName,
+                ////    null,
+                ////    localIps,
+                ////    keySize,
+                ////    System.DateTime.Now,
+                ////    lifeTime,
+                ////    algorithm);
             }
 
             // Step 3 - Specify the supported transport quotas.

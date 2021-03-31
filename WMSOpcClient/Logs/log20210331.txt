@@ -1,0 +1,92 @@
+[14:15:24 INF]   - Starting up the service
+[14:15:25 INF]   - Connecting to OPC Server...
+[14:15:27 INF]   - Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+[14:15:27 INF]   - Worker running at: 03/31/2021 14:15:27 +03:00
+[14:15:27 INF]   - Getting unprocessed boxes...
+[14:15:27 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+[14:15:27 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=FromWMS_dataReady"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=FromWMS_destination"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=FromWMS_originalBox"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=FromWMS_sscc"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=FromWMS_watchdog"
+[14:15:27 INF]   - Added tags to session: "ns=2;s=ToWMS_sscc"
+[14:15:28 INF]   - Monitored Item: "ToWMS_dataReady" has value: "False"
+[14:15:28 INF]   - Monitored Item: "ToWMS_dataReceived" has value: "False"
+[14:15:28 INF]   - Processed 0 boxes from past
+[14:15:28 INF]   - Entering subscription mode...
+[14:15:28 INF]   - Processed 0 boxes
+[14:15:33 INF]   - Try disposing services
+[14:15:33 INF]   - The service has been stopped...
+[14:17:18 INF]   - Starting up the service
+[14:17:18 INF]   - Connecting to OPC Server...
+[14:17:20 INF]   - Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+[14:17:20 INF]   - Worker running at: 03/31/2021 14:17:20 +03:00
+[14:17:20 INF]   - Getting unprocessed boxes...
+[14:17:20 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+[14:17:20 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=FromWMS_dataReady"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=FromWMS_destination"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=FromWMS_originalBox"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=FromWMS_sscc"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=FromWMS_watchdog"
+[14:17:20 INF]   - Added tags to session: "ns=2;s=ToWMS_sscc"
+[14:17:21 INF]   - Monitored Item: "ToWMS_dataReady" has value: "False"
+[14:17:21 INF]   - Monitored Item: "ToWMS_dataReceived" has value: "False"
+[14:17:21 INF]   - Processed 0 boxes from past
+[14:17:21 INF]   - Entering subscription mode...
+[14:17:21 INF]   - Processed 0 boxes
+[14:17:26 INF]   - Processed 0 boxes
+[14:17:28 INF]   - Try disposing services
+[14:17:28 INF]   - The service has been stopped...
+[14:26:47 INF]   - Starting up the service
+[14:26:48 INF]   - Connecting to OPC Server...
+[14:28:30 INF]   - Starting up the service
+[14:28:31 INF]   - Connecting to OPC Server...
+[14:28:33 ERR]   - "One or more errors occurred. (BadUserAccessDenied)"-"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 181"
+[14:28:33 ERR]   - "One or more errors occurred. (BadUserAccessDenied)"-"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 181"
+[14:28:34 ERR]   - "One or more errors occurred. (BadUserAccessDenied)"-"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 181"
+[14:28:34 ERR]   - "One or more errors occurred. (BadUserAccessDenied)"-"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 181"
+[14:28:35 ERR]   - "One or more errors occurred. (BadUserAccessDenied)"-"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 181"
+[14:29:35 INF]   - Starting up the service
+[14:29:36 INF]   - Connecting to OPC Server...
+[14:29:38 INF]   - Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+[14:29:38 INF]   - Worker running at: 03/31/2021 14:29:38 +03:00
+[14:29:38 INF]   - Getting unprocessed boxes...
+[14:29:38 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+[14:29:38 INF]   - Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=FromWMS_dataReady"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=FromWMS_destination"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=FromWMS_originalBox"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=FromWMS_sscc"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=FromWMS_watchdog"
+[14:29:38 INF]   - Added tags to session: "ns=2;s=ToWMS_sscc"
+[14:29:40 INF]   - Monitored Item: "ToWMS_dataReady" has value: "False"
+[14:29:40 INF]   - Monitored Item: "ToWMS_dataReceived" has value: "True"
+[14:29:40 INF]   - Processed 0 boxes from past
+[14:29:40 INF]   - Entering subscription mode...
+[14:29:40 INF]   - Processed 0 boxes
+[14:29:45 INF]   - Processed 0 boxes
+[14:29:50 INF]   - Processed 0 boxes
+[14:29:55 INF]   - Processed 0 boxes
+[14:30:00 INF]   - Processed 0 boxes
+[14:30:06 INF]   - Processed 0 boxes
+[14:30:11 INF]   - Processed 0 boxes
+[14:30:16 INF]   - Processed 0 boxes
+[14:30:17 INF]   - Try disposing services
+[14:30:17 INF]   - The service has been stopped...

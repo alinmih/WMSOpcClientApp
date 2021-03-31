@@ -1,0 +1,13 @@
+Link documentatie: https://github.com/OPCFoundation/Misc-Tools
+
+Exemplu generare din cmd:
+Necesare(se iau din aplicatia client dezvoltata):
+- nume aplicatie: WMSOPCClient 
+- nume urn: urn:MyClient
+- nume organizatie(optional): SeniorSoftware 
+- durata[luni]: 120
+Ex: C:\tmp>"C:\Program Files (x86)\Common Files\OPC Foundation\UA\v1.0\Bin\Opc.Ua.CertificateGenerator.exe" -cmd issue -sp . -an WMSOPCClient -au urn:MyClient -o SeniorSoftware -lm 120
+
+Din folderul unde s-au creat:
+1. Dupa generare se instaleaza din private cel cu .pfx pe LocalComputer
+2. Cel din certs se copiaza in server la TrustedCertificates\certs
