@@ -1,10 +1,17 @@
 {
   "profiles": {
-    "WMSOpcClient": {
+    "WMSOpcClientDev": {
       "commandName": "Project",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
+    },
+    "WMSOpcClientProd": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Production"
+      }
     }
+
   }
 }

@@ -451,28 +451,29 @@ namespace WMSOpcClient.OPCService
         {
             pendingMessageItem = currentMessage;
 
-            //SendDataToOPC(message.SSSC, message.OriginalBox, message.Destination, true);
-            SendSSSCTagToOPC(currentMessage.SSSC);
-            SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
-            SendDestinationToOPC(currentMessage.Destination);
+            SendDataToOPC(pendingMessageItem.SSSC, pendingMessageItem.OriginalBox, pendingMessageItem.Destination);
+            //SendSSSCTagToOPC(currentMessage.SSSC);
+            //SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
+            //SendDestinationToOPC(currentMessage.Destination);
             SendDataReadyToOPC(true);
 
             //******************TO BE REMOVED IN PRODUCTION CODE*****************
             WriteDataReceived(true);
         }
 
-        private void SendDataToOPC(string sssc, bool original, int destination, bool dataReady)
+        private void SendDataToOPC(string sssc, bool original, int destination)
         {
             List<String> values = new List<string>();
-            values.Add(sssc);
-            values.Add(original.ToString());
-            values.Add(destination.ToString());
-            values.Add(dataReady.ToString());
+            //values.Add(sssc);
+            //values.Add(original.ToString());
+            //values.Add(destination.ToString());
+            var valToSend = string.Concat(sssc,";", original,";", destination);
+            values.Add(valToSend);
 
             //var myNodeId = myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList();
             try
             {
-                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings);
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList());
             }
             catch (Exception ex)
             {

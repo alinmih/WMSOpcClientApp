@@ -1,0 +1,1538 @@
+[13:07:08 INF]   - Starting up the service
+[13:07:12 INF]   - Connecting to OPC Server...
+[13:07:17 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+[13:07:20 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+[13:07:23 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+[13:07:26 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+[13:07:29 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+[13:07:32 ERR]   - "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:08:07.7334946+03:00 [INF] (//) Starting up the service
+2021-04-01T13:08:08.4861997+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:08:12.3300230+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:12:55.5212237+03:00 [INF] (//) Starting up the service
+2021-04-01T13:12:56.6194355+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:13:00.5742109+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:13:03.7386663+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:13:06.8630070+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:13:10.0141333+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:14.5264969+03:00 [INF] (//) Starting up the service
+2021-04-01T13:15:15.6049755+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:15:19.5357237+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:22.7162222+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:25.8826839+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:42.9713338+03:00 [INF] (//) Starting up the service
+2021-04-01T13:15:43.9033805+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:15:47.9027117+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:51.0712557+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:54.2492798+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:15:57.3873185+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:00.5382931+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:03.6476172+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:06.7712017+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:09.9033994+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:23.4108458+03:00 [INF] (//) Starting up the service
+2021-04-01T13:16:24.2793935+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:16:28.4075367+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:16:31.5954119+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:18.7952363+03:00 [INF] (//) Starting up the service
+2021-04-01T13:19:19.8902321+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:19:27.6204638+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:29.9688840+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:32.3923175+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:34.7938976+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:37.2105014+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:39.5595532+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:41.9601184+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:48.9112276+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:51.3264493+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:53.7087169+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:56.0820355+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:19:58.4772753+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:01.0270652+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:03.3824125+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:10.3651746+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:12.7659096+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:15.1998007+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:17.5522621+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:19.9887597+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:22.3599190+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:24.7616723+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T13:20:48.5786126+03:00 [INF] (//) Starting up the service
+2021-04-01T13:20:49.3348372+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T13:20:50.7970540+03:00 [INF] (//) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01T13:20:50.8719798+03:00 [INF] (//) Worker running at: 04/01/2021 13:20:50 +03:00
+2021-04-01T13:20:50.8752051+03:00 [INF] (//) Getting unprocessed boxes...
+2021-04-01T13:20:50.9505298+03:00 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01T13:20:50.9550470+03:00 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01T13:20:50.9693132+03:00 [INF] (//) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01T13:20:50.9712627+03:00 [INF] (//) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01T13:20:50.9728592+03:00 [INF] (//) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01T13:20:50.9744777+03:00 [INF] (//) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01T13:20:50.9758408+03:00 [INF] (//) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01T13:20:50.9788476+03:00 [INF] (//) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01T13:20:51.1229457+03:00 [INF] (//) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01T13:20:51.1340442+03:00 [INF] (//) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01T13:20:52.7860816+03:00 [INF] (//) Processed 0 boxes from past
+2021-04-01T13:20:52.7883665+03:00 [INF] (//) Entering subscription mode...
+2021-04-01T13:20:52.8380641+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:20:57.8871571+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:02.9572435+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:08.0105657+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:13.0559301+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:18.1406171+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:23.1964480+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:28.2391253+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:33.2715594+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:38.3471695+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:43.4275373+03:00 [INF] (//) Processed 0 boxes
+2021-04-01T13:21:44.0453826+03:00 [INF] (//) Try disposing services
+2021-04-01T13:21:44.2499945+03:00 [INF] (//) The service has been stopped...
+2021-04-01 13:21:55 [INF] (//) Starting up the service
+2021-04-01 13:21:56 [INF] (//) Connecting to OPC Server...
+2021-04-01 13:21:57 [INF] (//) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:21:57 [INF] (//) Worker running at: 04/01/2021 13:21:57 +03:00
+2021-04-01 13:21:57 [INF] (//) Getting unprocessed boxes...
+2021-04-01 13:21:57 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:21:57 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:21:57 [INF] (//) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:22:11 [INF] (//) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:22:12 [INF] (//) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:22:12 [INF] (//) Processed 0 boxes from past
+2021-04-01 13:22:12 [INF] (//) Entering subscription mode...
+2021-04-01 13:22:12 [INF] (//) Processed 0 boxes
+2021-04-01 13:22:28 [INF] (//) Starting up the service
+2021-04-01 13:22:28 [INF] (//) Connecting to OPC Server...
+2021-04-01 13:22:30 [INF] (//) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:22:31 [INF] (//) Worker running at: 04/01/2021 13:22:31 +03:00
+2021-04-01 13:22:31 [INF] (//) Getting unprocessed boxes...
+2021-04-01 13:22:31 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:22:31 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:22:31 [INF] (//) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:22:31 [INF] (//) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:22:31 [INF] (//) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:22:33 [INF] (//) Processed 0 boxes from past
+2021-04-01 13:22:33 [INF] (//) Entering subscription mode...
+2021-04-01 13:22:33 [INF] (//) Processed 0 boxes
+2021-04-01 13:22:38 [INF] (//) Processed 0 boxes
+2021-04-01 13:22:43 [INF] (//) Processed 0 boxes
+2021-04-01 13:25:36 [INF] (//) Starting up the service
+2021-04-01 13:25:37 [INF] (//) Connecting to OPC Server...
+2021-04-01 13:25:38 [INF] (//) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:25:39 [INF] (//) Worker running at: 04/01/2021 13:25:39 +03:00
+2021-04-01 13:25:39 [INF] (//) Getting unprocessed boxes...
+2021-04-01 13:25:39 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:25:39 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:25:39 [INF] (//) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:25:40 [INF] (//) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:25:40 [INF] (//) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:25:40 [INF] (//) Try disposing services
+2021-04-01 13:25:40 [INF] (//) The service has been stopped...
+2021-04-01 13:25:41 [INF] (//) Processed 0 boxes from past
+2021-04-01 13:25:41 [INF] (//) Entering subscription mode...
+2021-04-01 13:26:29 [INF] (//) Starting up the service
+2021-04-01 13:26:30 [INF] (//) Connecting to OPC Server...
+2021-04-01 13:26:32 [INF] (//) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:26:32 [INF] (//) Worker running at: 04/01/2021 13:26:32 +03:00
+2021-04-01 13:26:32 [INF] (//) Getting unprocessed boxes...
+2021-04-01 13:26:32 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:26:32 [INF] (//) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:26:32 [INF] (//) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:26:34 [INF] (//) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:26:34 [INF] (//) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:26:34 [INF] (//) Processed 0 boxes from past
+2021-04-01 13:26:34 [INF] (//) Entering subscription mode...
+2021-04-01 13:26:35 [INF] (//) Processed 0 boxes
+2021-04-01 13:26:37 [INF] (//) Try disposing services
+2021-04-01 13:26:37 [INF] (//) The service has been stopped...
+2021-04-01 13:27:20 [INF] (//1) Starting up the service
+2021-04-01 13:27:21 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:27:23 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:27:23 [INF] (//1) Worker running at: 04/01/2021 13:27:23 +03:00
+2021-04-01 13:27:23 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:27:23 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:27:23 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:27:23 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:27:24 [INF] (//13) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:27:24 [INF] (//13) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:27:25 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:27:25 [INF] (//8) Entering subscription mode...
+2021-04-01 13:27:25 [INF] (//7) Processed 0 boxes
+2021-04-01 13:27:30 [INF] (//8) Processed 0 boxes
+2021-04-01 13:27:35 [INF] (//12) Processed 0 boxes
+2021-04-01 13:27:36 [INF] (//7) Try disposing services
+2021-04-01 13:27:36 [INF] (//7) The service has been stopped...
+2021-04-01 13:28:02 [INF] (//1) Starting up the service
+2021-04-01 13:28:04 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:28:05 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:28:05 [INF] (//1) Worker running at: 04/01/2021 13:28:05 +03:00
+2021-04-01 13:28:05 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:28:05 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:28:05 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:28:05 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:28:07 [INF] (//5) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:28:07 [INF] (//5) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:28:07 [INF] (//1) Try disposing services
+2021-04-01 13:28:07 [INF] (//1) The service has been stopped...
+2021-04-01 13:28:07 [INF] (//4) Processed 0 boxes from past
+2021-04-01 13:28:07 [INF] (//4) Entering subscription mode...
+2021-04-01 13:28:28 [INF] (//1) Starting up the service
+2021-04-01 13:28:29 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:28:31 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:28:31 [INF] (//1) Worker running at: 04/01/2021 13:28:31 +03:00
+2021-04-01 13:28:31 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:28:31 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:28:31 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:28:31 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:28:32 [INF] (//15) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:28:32 [INF] (//15) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:28:32 [INF] (//9) Processed 0 boxes from past
+2021-04-01 13:28:32 [INF] (//9) Entering subscription mode...
+2021-04-01 13:28:32 [INF] (//9) Processed 0 boxes
+2021-04-01 13:28:37 [INF] (//9) Processed 0 boxes
+2021-04-01 13:28:38 [INF] (//8) Try disposing services
+2021-04-01 13:28:38 [INF] (//8) The service has been stopped...
+2021-04-01 13:29:07 [INF] (//1) Starting up the service
+2021-04-01 13:29:08 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:29:09 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:29:09 [INF] (//1) Worker running at: 04/01/2021 13:29:09 +03:00
+2021-04-01 13:29:09 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:29:09 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:29:09 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:29:09 [INF] (//9) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:29:09 [INF] (//9) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:29:09 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:29:12 [INF] (//9) Processed 0 boxes from past
+2021-04-01 13:29:12 [INF] (//9) Entering subscription mode...
+2021-04-01 13:29:12 [INF] (//8) Processed 0 boxes
+2021-04-01 13:29:15 [INF] (//7) Try disposing services
+2021-04-01 13:29:15 [INF] (//7) The service has been stopped...
+2021-04-01 13:29:37 [INF] (//1) Starting up the service
+2021-04-01 13:29:38 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:29:40 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:29:40 [INF] (//1) Worker running at: 04/01/2021 13:29:40 +03:00
+2021-04-01 13:29:40 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:29:40 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:29:40 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:29:40 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:29:41 [INF] (//8) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:29:41 [INF] (//8) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:29:41 [INF] (//1) Try disposing services
+2021-04-01 13:29:41 [INF] (//1) The service has been stopped...
+2021-04-01 13:29:42 [INF] (//4) Processed 0 boxes from past
+2021-04-01 13:29:42 [INF] (//4) Entering subscription mode...
+2021-04-01 13:30:45 [INF] (//1) Starting up the service
+2021-04-01 13:30:46 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:30:48 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:30:48 [INF] (//1) Worker running at: 04/01/2021 13:30:48 +03:00
+2021-04-01 13:30:48 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:30:48 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:30:48 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:30:48 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:30:49 [INF] (//13) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:30:49 [INF] (//13) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:30:50 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:30:50 [INF] (//8) Entering subscription mode...
+2021-04-01 13:30:50 [INF] (//8) Processed 0 boxes
+2021-04-01 13:30:55 [INF] (//9) Processed 0 boxes
+2021-04-01 13:31:00 [INF] (//9) Processed 0 boxes
+2021-04-01 13:31:05 [INF] (//9) Processed 0 boxes
+2021-04-01 13:31:10 [INF] (//13) Processed 0 boxes
+2021-04-01 13:31:15 [INF] (//4) Processed 0 boxes
+2021-04-01 13:31:20 [INF] (//8) Processed 0 boxes
+2021-04-01 13:31:22 [INF] (//4) Try disposing services
+2021-04-01 13:31:22 [INF] (//4) The service has been stopped...
+2021-04-01 13:31:32 [INF] (//1) Starting up the service
+2021-04-01 13:31:33 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:31:34 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:31:34 [INF] (//1) Worker running at: 04/01/2021 13:31:34 +03:00
+2021-04-01 13:31:34 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:31:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:31:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:31:34 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:31:35 [INF] (//7) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:31:35 [INF] (//7) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:31:36 [INF] (//14) Processed 0 boxes from past
+2021-04-01 13:31:36 [INF] (//14) Entering subscription mode...
+2021-04-01 13:31:36 [INF] (//14) Processed 0 boxes
+2021-04-01 13:31:41 [INF] (//8) Processed 0 boxes
+2021-04-01 13:31:41 [INF] (//9) Try disposing services
+2021-04-01 13:31:41 [INF] (//9) The service has been stopped...
+2021-04-01 13:32:54 [INF] (//1) Starting up the service
+2021-04-01 13:32:55 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:32:56 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:32:57 [INF] (//1) Worker running at: 04/01/2021 13:32:57 +03:00
+2021-04-01 13:32:57 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:32:57 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:32:57 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:32:57 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:32:58 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:32:58 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:32:58 [INF] (//7) Processed 0 boxes from past
+2021-04-01 13:32:58 [INF] (//7) Entering subscription mode...
+2021-04-01 13:32:58 [INF] (//7) Processed 0 boxes
+2021-04-01 13:33:03 [INF] (//14) Processed 0 boxes
+2021-04-01 13:33:08 [INF] (//12) Processed 0 boxes
+2021-04-01 13:33:14 [INF] (//8) Processed 0 boxes
+2021-04-01 13:33:19 [INF] (//14) Processed 0 boxes
+2021-04-01 13:33:24 [INF] (//12) Processed 0 boxes
+2021-04-01 13:33:29 [INF] (//8) Processed 0 boxes
+2021-04-01 13:33:34 [INF] (//12) Processed 0 boxes
+2021-04-01 13:33:39 [INF] (//18) Processed 0 boxes
+2021-04-01 13:33:44 [INF] (//12) Processed 0 boxes
+2021-04-01 13:34:00 [INF] (//1) Starting up the service
+2021-04-01 13:34:01 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:34:03 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:34:03 [INF] (//1) Worker running at: 04/01/2021 13:34:03 +03:00
+2021-04-01 13:34:03 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:34:03 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:34:03 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:34:03 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:34:05 [INF] (//4) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:34:05 [INF] (//4) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:34:05 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:34:05 [INF] (//8) Entering subscription mode...
+2021-04-01 13:34:05 [INF] (//10) Processed 0 boxes
+2021-04-01 13:34:09 [INF] (//4) Try disposing services
+2021-04-01 13:34:09 [INF] (//4) The service has been stopped...
+2021-04-01 13:34:44 [INF] (//1) Starting up the service
+2021-04-01 13:34:45 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:34:47 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:34:47 [INF] (//1) Worker running at: 04/01/2021 13:34:47 +03:00
+2021-04-01 13:34:47 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:34:47 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:34:47 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:34:47 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:35:02 [INF] (//14) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:35:02 [ERR] (//8) Error: "Session is already attempting to reconnect." "   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 245"
+2021-04-01 13:35:02 [INF] (//14) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:35:02 [INF] (//8) Added tags to subscription "Subscription 2" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:35:02 [INF] (//8) Added tags to subscription "Subscription 2" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:35:02 [INF] (//8) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:35:02 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:35:02 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:35:02 [INF] (//7) Processed 0 boxes from past
+2021-04-01 13:35:02 [INF] (//7) Entering subscription mode...
+2021-04-01 13:35:02 [INF] (//7) Processed 0 boxes
+2021-04-01 13:35:07 [INF] (//8) Processed 0 boxes
+2021-04-01 13:35:12 [INF] (//8) Processed 0 boxes
+2021-04-01 13:35:17 [INF] (//14) Processed 0 boxes
+2021-04-01 13:35:22 [INF] (//14) Processed 0 boxes
+2021-04-01 13:35:27 [INF] (//12) Processed 0 boxes
+2021-04-01 13:36:45 [INF] (//1) Starting up the service
+2021-04-01 13:36:58 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:36:59 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:36:59 [INF] (//1) Worker running at: 04/01/2021 13:36:59 +03:00
+2021-04-01 13:36:59 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:36:59 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:36:59 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:36:59 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:37:01 [INF] (//9) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:37:01 [INF] (//9) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:37:01 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:37:01 [INF] (//8) Entering subscription mode...
+2021-04-01 13:37:01 [INF] (//9) Processed 0 boxes
+2021-04-01 13:37:06 [INF] (//9) Processed 0 boxes
+2021-04-01 13:37:11 [INF] (//5) Processed 0 boxes
+2021-04-01 13:37:16 [INF] (//14) Processed 0 boxes
+2021-04-01 13:37:19 [INF] (//5) Try disposing services
+2021-04-01 13:37:19 [INF] (//5) The service has been stopped...
+2021-04-01 13:37:55 [INF] (//1) Starting up the service
+2021-04-01 13:37:56 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:37:57 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:37:57 [INF] (//1) Worker running at: 04/01/2021 13:37:57 +03:00
+2021-04-01 13:37:57 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:37:57 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:37:57 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:37:57 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:37:58 [INF] (//14) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:37:58 [INF] (//14) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:37:59 [INF] (//14) Processed 0 boxes from past
+2021-04-01 13:37:59 [INF] (//14) Entering subscription mode...
+2021-04-01 13:38:00 [INF] (//8) Processed 0 boxes
+2021-04-01 13:38:05 [INF] (//7) Processed 0 boxes
+2021-04-01 13:38:10 [INF] (//9) Processed 0 boxes
+2021-04-01 13:38:15 [INF] (//8) Processed 0 boxes
+2021-04-01 13:38:20 [INF] (//8) Processed 0 boxes
+2021-04-01 13:38:25 [INF] (//8) Processed 0 boxes
+2021-04-01 13:38:30 [INF] (//9) Processed 0 boxes
+2021-04-01 13:38:41 [INF] (//1) Starting up the service
+2021-04-01 13:38:42 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:38:44 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:38:44 [INF] (//1) Worker running at: 04/01/2021 13:38:44 +03:00
+2021-04-01 13:38:44 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:38:44 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:38:44 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:38:44 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:38:45 [INF] (//5) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:38:45 [INF] (//5) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:38:46 [INF] (//5) Processed 0 boxes from past
+2021-04-01 13:38:46 [INF] (//5) Entering subscription mode...
+2021-04-01 13:38:46 [INF] (//5) Processed 0 boxes
+2021-04-01 13:38:50 [INF] (//8) Try disposing services
+2021-04-01 13:38:50 [INF] (//8) The service has been stopped...
+2021-04-01 13:39:35 [INF] (//1) ====================================================================
+2021-04-01 13:39:35 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:39:35 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:39:35 [INF] (//1) Starting up the service
+2021-04-01 13:39:35 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:39:37 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:39:37 [INF] (//1) Worker running at: 04/01/2021 13:39:37 +03:00
+2021-04-01 13:39:37 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:39:37 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:39:37 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:39:37 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:39:39 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:39:39 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:39:39 [INF] (//12) Processed 0 boxes from past
+2021-04-01 13:39:39 [INF] (//12) Entering subscription mode...
+2021-04-01 13:39:39 [INF] (//8) Processed 0 boxes
+2021-04-01 13:39:44 [INF] (//14) Processed 0 boxes
+2021-04-01 13:39:49 [INF] (//14) Processed 0 boxes
+2021-04-01 13:39:54 [INF] (//8) Processed 0 boxes
+2021-04-01 13:39:59 [INF] (//7) Processed 0 boxes
+2021-04-01 13:39:59 [INF] (//8) Try disposing services
+2021-04-01 13:39:59 [INF] (//8) The service has been stopped...
+2021-04-01 13:51:15 [INF] (//1) ====================================================================
+2021-04-01 13:51:15 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:51:15 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:51:15 [INF] (//1) Starting up the service
+2021-04-01 13:51:16 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:51:18 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:51:18 [INF] (//1) Worker running at: 04/01/2021 13:51:18 +03:00
+2021-04-01 13:51:18 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:51:18 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:51:18 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:51:18 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:51:19 [INF] (//8) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:51:19 [INF] (//8) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:51:20 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:51:20 [INF] (//8) Entering subscription mode...
+2021-04-01 13:51:20 [INF] (//8) Processed 0 boxes
+2021-04-01 13:51:25 [INF] (//12) Processed 0 boxes
+2021-04-01 13:51:30 [INF] (//5) Processed 0 boxes
+2021-04-01 13:51:35 [INF] (//13) Processed 0 boxes
+2021-04-01 13:51:40 [INF] (//5) Try disposing services
+2021-04-01 13:51:40 [INF] (//5) The service has been stopped...
+2021-04-01 13:57:21 [INF] (//1) ====================================================================
+2021-04-01 13:57:22 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:57:22 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:57:22 [INF] (//1) Starting up the service
+2021-04-01 13:57:22 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:57:24 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:57:24 [INF] (//1) Worker running at: 04/01/2021 13:57:24 +03:00
+2021-04-01 13:57:24 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:57:24 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:57:24 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:57:24 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:57:25 [INF] (//9) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:57:25 [INF] (//9) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:57:26 [INF] (//5) Processed 0 boxes from past
+2021-04-01 13:57:26 [INF] (//5) Entering subscription mode...
+2021-04-01 13:57:26 [INF] (//13) Processed 0 boxes
+2021-04-01 13:57:31 [INF] (//9) Processed 0 boxes
+2021-04-01 13:57:32 [INF] (//8) Try disposing services
+2021-04-01 13:57:32 [INF] (//8) The service has been stopped...
+2021-04-01 13:57:49 [INF] (//1) ====================================================================
+2021-04-01 13:57:49 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:57:49 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:57:49 [INF] (//1) Starting up the service
+2021-04-01 13:57:50 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:57:51 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:57:51 [INF] (//1) Worker running at: 04/01/2021 13:57:51 +03:00
+2021-04-01 13:57:51 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:57:51 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:57:51 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:57:51 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:57:53 [INF] (//10) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:57:53 [INF] (//10) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:57:53 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:57:53 [INF] (//8) Entering subscription mode...
+2021-04-01 13:57:53 [INF] (//8) Processed 0 boxes
+2021-04-01 13:57:58 [INF] (//11) Processed 0 boxes
+2021-04-01 13:58:04 [INF] (//11) Processed 0 boxes
+2021-04-01 13:58:06 [INF] (//8) Try disposing services
+2021-04-01 13:58:06 [INF] (//8) The service has been stopped...
+2021-04-01 13:58:23 [INF] (//1) ====================================================================
+2021-04-01 13:58:23 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:58:23 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:58:23 [INF] (//1) Starting up the service
+2021-04-01 13:58:24 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:58:26 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:58:26 [INF] (//1) Worker running at: 04/01/2021 13:58:26 +03:00
+2021-04-01 13:58:26 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:58:26 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:58:26 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:58:26 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:58:27 [INF] (//8) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:58:27 [INF] (//8) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:58:27 [INF] (//8) Processed 0 boxes from past
+2021-04-01 13:58:27 [INF] (//8) Entering subscription mode...
+2021-04-01 13:58:27 [INF] (//8) Processed 0 boxes
+2021-04-01 13:58:33 [INF] (//13) Processed 0 boxes
+2021-04-01 13:58:38 [INF] (//7) Processed 0 boxes
+2021-04-01 13:58:43 [INF] (//8) Processed 0 boxes
+2021-04-01 13:58:48 [INF] (//13) Processed 0 boxes
+2021-04-01 13:58:49 [INF] (//7) Try disposing services
+2021-04-01 13:58:49 [INF] (//7) The service has been stopped...
+2021-04-01 13:59:11 [INF] (//1) ====================================================================
+2021-04-01 13:59:12 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 13:59:12 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 13:59:12 [INF] (//1) Starting up the service
+2021-04-01 13:59:12 [INF] (//1) Connecting to OPC Server...
+2021-04-01 13:59:14 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 13:59:14 [INF] (//1) Worker running at: 04/01/2021 13:59:14 +03:00
+2021-04-01 13:59:14 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 13:59:14 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 13:59:14 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 13:59:14 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 13:59:14 [INF] (//11) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 13:59:14 [INF] (//13) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 13:59:16 [INF] (//5) Processed 0 boxes from past
+2021-04-01 13:59:16 [INF] (//5) Entering subscription mode...
+2021-04-01 13:59:16 [INF] (//13) Processed 0 boxes
+2021-04-01 13:59:21 [INF] (//11) Processed 0 boxes
+2021-04-01 13:59:26 [INF] (//11) Processed 0 boxes
+2021-04-01 13:59:31 [INF] (//11) Processed 0 boxes
+2021-04-01 13:59:33 [INF] (//5) Try disposing services
+2021-04-01 13:59:33 [INF] (//5) The service has been stopped...
+2021-04-01 14:03:31 [INF] (//1) ====================================================================
+2021-04-01 14:03:31 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:03:31 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:03:31 [INF] (//1) Starting up the service
+2021-04-01 14:03:32 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:03:34 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:03:34 [INF] (//1) Worker running at: 04/01/2021 14:03:34 +03:00
+2021-04-01 14:03:34 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:03:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:03:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:03:34 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:03:35 [INF] (//4) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:03:35 [INF] (//4) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:03:36 [INF] (//9) Processed 0 boxes from past
+2021-04-01 14:03:36 [INF] (//9) Entering subscription mode...
+2021-04-01 14:03:36 [INF] (//12) Processed 0 boxes
+2021-04-01 14:03:41 [INF] (//13) Processed 0 boxes
+2021-04-01 14:03:46 [INF] (//4) Processed 0 boxes
+2021-04-01 14:03:50 [INF] (//9) Try disposing services
+2021-04-01 14:03:51 [INF] (//9) The service has been stopped...
+2021-04-01 14:04:07 [INF] (//1) ====================================================================
+2021-04-01 14:04:07 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:04:07 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:04:07 [INF] (//1) Starting up the service
+2021-04-01 14:04:08 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:04:10 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:04:10 [INF] (//1) Worker running at: 04/01/2021 14:04:10 +03:00
+2021-04-01 14:04:10 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:04:10 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:04:10 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:04:10 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:04:11 [INF] (//5) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:04:11 [INF] (//5) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:04:12 [INF] (//8) Processed 0 boxes from past
+2021-04-01 14:04:12 [INF] (//8) Entering subscription mode...
+2021-04-01 14:04:12 [INF] (//8) Processed 0 boxes
+2021-04-01 14:04:17 [INF] (//13) Processed 0 boxes
+2021-04-01 14:04:22 [INF] (//5) Processed 0 boxes
+2021-04-01 14:04:27 [INF] (//5) Processed 0 boxes
+2021-04-01 14:04:56 [INF] (//1) ====================================================================
+2021-04-01 14:04:56 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:04:56 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:04:56 [INF] (//1) Starting up the service
+2021-04-01 14:04:56 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:04:58 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:04:58 [INF] (//1) Worker running at: 04/01/2021 14:04:58 +03:00
+2021-04-01 14:04:58 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:04:58 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:04:58 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:04:58 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:05:00 [INF] (//8) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:05:00 [INF] (//8) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:05:00 [INF] (//8) Processed 0 boxes from past
+2021-04-01 14:05:00 [INF] (//8) Entering subscription mode...
+2021-04-01 14:05:00 [INF] (//9) Processed 0 boxes
+2021-04-01 14:05:05 [INF] (//8) Processed 0 boxes
+2021-04-01 14:05:10 [INF] (//9) Processed 0 boxes
+2021-04-01 14:05:15 [INF] (//8) Processed 0 boxes
+2021-04-01 14:05:20 [INF] (//5) Processed 0 boxes
+2021-04-01 14:05:26 [INF] (//12) Processed 0 boxes
+2021-04-01 14:05:31 [INF] (//8) Processed 0 boxes
+2021-04-01 14:05:36 [INF] (//17) Processed 0 boxes
+2021-04-01 14:05:38 [INF] (//5) Try disposing services
+2021-04-01 14:05:38 [INF] (//5) The service has been stopped...
+2021-04-01 14:05:51 [INF] (//1) ====================================================================
+2021-04-01 14:05:51 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:05:51 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:05:51 [INF] (//1) Starting up the service
+2021-04-01 14:05:52 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:05:54 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:05:54 [INF] (//1) Worker running at: 04/01/2021 14:05:54 +03:00
+2021-04-01 14:05:54 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:05:54 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:05:54 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:05:54 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:05:55 [INF] (//9) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:05:55 [INF] (//9) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:05:55 [INF] (//8) Processed 0 boxes from past
+2021-04-01 14:05:55 [INF] (//8) Entering subscription mode...
+2021-04-01 14:05:55 [INF] (//8) Processed 0 boxes
+2021-04-01 14:05:58 [INF] (//7) Try disposing services
+2021-04-01 14:05:58 [INF] (//7) The service has been stopped...
+2021-04-01 14:06:11 [INF] (//1) ====================================================================
+2021-04-01 14:06:11 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:06:11 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:06:11 [INF] (//1) Starting up the service
+2021-04-01 14:06:11 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:06:13 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:06:13 [INF] (//1) Worker running at: 04/01/2021 14:06:13 +03:00
+2021-04-01 14:06:13 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:06:13 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:06:13 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:06:13 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:06:13 [INF] (//13) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:06:14 [INF] (//13) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:06:15 [INF] (//8) Processed 0 boxes from past
+2021-04-01 14:06:15 [INF] (//8) Entering subscription mode...
+2021-04-01 14:06:15 [INF] (//5) Processed 0 boxes
+2021-04-01 14:09:31 [INF] (//1) ====================================================================
+2021-04-01 14:09:32 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:09:32 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:09:32 [INF] (//1) Starting up the service
+2021-04-01 14:09:32 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:09:34 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:09:34 [INF] (//1) Worker running at: 04/01/2021 14:09:34 +03:00
+2021-04-01 14:09:34 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:09:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:09:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:09:34 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:09:35 [INF] (//5) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:09:35 [INF] (//5) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:09:36 [INF] (//13) Processed 0 boxes from past
+2021-04-01 14:09:36 [INF] (//13) Entering subscription mode...
+2021-04-01 14:09:36 [INF] (//13) Processed 0 boxes
+2021-04-01 14:09:41 [INF] (//13) Processed 0 boxes
+2021-04-01 14:10:03 [INF] (//1) ====================================================================
+2021-04-01 14:10:03 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:10:03 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:10:03 [INF] (//1) Starting up the service
+2021-04-01 14:10:04 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:10:06 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:10:06 [INF] (//1) Worker running at: 04/01/2021 14:10:06 +03:00
+2021-04-01 14:10:06 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:10:06 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:10:06 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:10:06 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:10:07 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:10:07 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:10:07 [INF] (//8) Processed 0 boxes from past
+2021-04-01 14:10:07 [INF] (//8) Entering subscription mode...
+2021-04-01 14:10:08 [INF] (//8) Processed 0 boxes
+2021-04-01 14:10:13 [INF] (//5) Processed 0 boxes
+2021-04-01 14:10:14 [INF] (//8) Try disposing services
+2021-04-01 14:10:14 [INF] (//8) The service has been stopped...
+2021-04-01 14:10:31 [INF] (//1) ====================================================================
+2021-04-01 14:10:31 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:10:31 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:10:31 [INF] (//1) Starting up the service
+2021-04-01 14:10:32 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:10:33 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:10:34 [INF] (//1) Worker running at: 04/01/2021 14:10:34 +03:00
+2021-04-01 14:10:34 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:10:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:10:34 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:10:34 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:10:34 [INF] (//5) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:10:34 [INF] (//9) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:10:35 [INF] (//5) Processed 0 boxes from past
+2021-04-01 14:10:35 [INF] (//5) Entering subscription mode...
+2021-04-01 14:10:36 [INF] (//13) Processed 0 boxes
+2021-04-01 14:10:41 [INF] (//13) Processed 0 boxes
+2021-04-01 14:11:14 [INF] (//1) ====================================================================
+2021-04-01 14:11:14 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:11:14 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:11:14 [INF] (//1) Starting up the service
+2021-04-01 14:11:15 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:11:16 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:11:16 [INF] (//1) Worker running at: 04/01/2021 14:11:16 +03:00
+2021-04-01 14:11:16 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:11:17 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:11:17 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:11:17 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:11:17 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:11:17 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:11:18 [INF] (//7) Processed 0 boxes from past
+2021-04-01 14:11:18 [INF] (//7) Entering subscription mode...
+2021-04-01 14:11:18 [INF] (//13) Processed 0 boxes
+2021-04-01 14:11:24 [INF] (//12) Processed 0 boxes
+2021-04-01 14:11:29 [INF] (//13) Processed 0 boxes
+2021-04-01 14:11:34 [INF] (//13) Processed 0 boxes
+2021-04-01 14:11:39 [INF] (//8) Processed 0 boxes
+2021-04-01 14:11:44 [INF] (//11) Processed 0 boxes
+2021-04-01 14:11:49 [INF] (//11) Processed 0 boxes
+2021-04-01 14:11:54 [INF] (//11) Processed 0 boxes
+2021-04-01 14:11:59 [INF] (//11) Processed 0 boxes
+2021-04-01 14:12:04 [INF] (//13) Processed 0 boxes
+2021-04-01 14:12:09 [INF] (//13) Processed 0 boxes
+2021-04-01 14:12:19 [INF] (//1) ====================================================================
+2021-04-01 14:12:19 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:12:19 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:12:19 [INF] (//1) Starting up the service
+2021-04-01 14:12:20 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:12:22 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:12:22 [INF] (//1) Worker running at: 04/01/2021 14:12:22 +03:00
+2021-04-01 14:12:22 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:12:22 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:12:22 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:12:22 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:12:23 [INF] (//8) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:12:23 [INF] (//8) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:12:23 [INF] (//5) Processed 0 boxes from past
+2021-04-01 14:12:23 [INF] (//5) Entering subscription mode...
+2021-04-01 14:12:23 [INF] (//5) Processed 0 boxes
+2021-04-01 14:12:28 [INF] (//12) Processed 0 boxes
+2021-04-01 14:12:33 [INF] (//5) Processed 0 boxes
+2021-04-01 14:12:38 [INF] (//12) Processed 0 boxes
+2021-04-01 14:12:39 [INF] (//8) Try disposing services
+2021-04-01 14:12:39 [INF] (//8) The service has been stopped...
+2021-04-01 14:15:25 [INF] (//1) ====================================================================
+2021-04-01 14:15:25 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:15:25 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:15:25 [INF] (//1) Starting up the service
+2021-04-01 14:15:26 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:15:28 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:15:28 [INF] (//1) Worker running at: 04/01/2021 14:15:28 +03:00
+2021-04-01 14:15:28 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:15:28 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:15:28 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:15:28 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:15:29 [INF] (//12) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:15:29 [INF] (//12) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:15:30 [INF] (//13) Processed 0 boxes from past
+2021-04-01 14:15:30 [INF] (//13) Entering subscription mode...
+2021-04-01 14:15:30 [INF] (//12) Processed 0 boxes
+2021-04-01 14:15:33 [INF] (//5) Try disposing services
+2021-04-01 14:15:33 [INF] (//5) The service has been stopped...
+2021-04-01 14:15:49 [INF] (//1) ====================================================================
+2021-04-01 14:15:50 [INF] (//1) Application Starts. Version: 1.0.0.0
+2021-04-01 14:15:50 [INF] (//1) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:15:50 [INF] (//1) Starting up the service
+2021-04-01 14:15:51 [INF] (//1) Connecting to OPC Server...
+2021-04-01 14:15:53 [INF] (//1) Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:15:53 [INF] (//1) Worker running at: 04/01/2021 14:15:53 +03:00
+2021-04-01 14:15:53 [INF] (//1) Getting unprocessed boxes...
+2021-04-01 14:15:53 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:15:53 [INF] (//1) Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:15:53 [INF] (//1) Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:15:55 [INF] (//7) Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:15:55 [INF] (//7) Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:15:55 [INF] (//12) Processed 0 boxes from past
+2021-04-01 14:15:55 [INF] (//12) Entering subscription mode...
+2021-04-01 14:15:55 [INF] (//12) Processed 0 boxes
+2021-04-01 14:16:00 [INF] (//8) Processed 0 boxes
+2021-04-01 14:16:05 [INF] (//8) Processed 0 boxes
+2021-04-01 14:16:10 [INF] (//12) Processed 0 boxes
+2021-04-01 14:16:15 [INF] (//12) Processed 0 boxes
+2021-04-01 14:16:20 [INF] (//10) Processed 0 boxes
+2021-04-01 14:16:22 [INF] (//7) Try disposing services
+2021-04-01 14:16:22 [INF] (//7) The service has been stopped...
+2021-04-01 14:16:56.643[INF]<1 >[]-> ====================================================================
+2021-04-01 14:16:56.810[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:16:56.839[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:16:56.842[INF]<1 >[]-> Starting up the service
+2021-04-01 14:16:57.964[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:16:59.788[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:16:59.947[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:16:59 +03:00
+2021-04-01 14:16:59.950[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:16:59.987[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:16:59.996[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:17:00.008[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:17:00.010[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:17:00.011[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:17:00.013[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:17:00.015[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:17:00.016[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:17:01.478[INF]<5 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:17:01.481[INF]<5 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:17:01.976[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:17:01.978[INF]<8 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:17:02.029[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:17:48.755[INF]<1 >[]-> ====================================================================
+2021-04-01 14:17:49.397[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:17:49.404[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:17:49.407[INF]<1 >[]-> Starting up the service
+2021-04-01 14:17:50.155[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:17:51.757[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:17:51.792[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:17:51 +03:00
+2021-04-01 14:17:51.795[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:17:51.814[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:17:51.822[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:17:51.832[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:17:51.835[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:17:51.838[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:17:51.841[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:17:51.844[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:17:51.846[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:17:53.044[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:17:53.047[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:17:53.523[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:17:53.526[INF]<8 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:17:53.589[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:17:58.642[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:18:03.687[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:18:04.514[INF]<7 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:18:04.551[INF]<7 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:19:00.545[INF]<1 >[]-> ====================================================================
+2021-04-01 14:19:00.722[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:19:00.725[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:19:00.728[INF]<1 >[]-> Starting up the service
+2021-04-01 14:19:01.598[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:19:03.540[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:19:03.596[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:19:03 +03:00
+2021-04-01 14:19:03.600[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:19:03.622[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:19:03.626[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:19:03.635[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:19:03.637[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:19:03.639[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:19:03.641[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:19:03.643[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:19:03.647[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:19:04.931[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:19:04.935[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:19:05.426[INF]<9 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:19:05.429[INF]<9 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:19:05.490[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:10.551[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:15.612[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:20.675[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:25.752[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:30.801[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:35.852[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:40.945[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:19:45.989[INF]<17>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:09.471[INF]<1 >[]-> ====================================================================
+2021-04-01 14:20:09.594[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:20:09.596[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:20:09.597[INF]<1 >[]-> Starting up the service
+2021-04-01 14:20:10.359[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:20:11.891[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:20:11.945[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:20:11 +03:00
+2021-04-01 14:20:11.950[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:20:11.980[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:20:11.986[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:20:12.007[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:20:12.011[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:20:12.015[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:20:12.018[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:20:12.037[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:20:12.107[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:20:12.122[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:20:12.126[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:20:14.632[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:20:14.635[INF]<14>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:20:14.734[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:19.802[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:24.839[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:41.700[INF]<1 >[]-> ====================================================================
+2021-04-01 14:20:45.013[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:20:45.015[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:20:45.016[INF]<1 >[]-> Starting up the service
+2021-04-01 14:20:45.588[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:20:46.706[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:20:46.744[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:20:46 +03:00
+2021-04-01 14:20:46.746[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:20:46.764[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:20:46.769[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:20:46.778[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:20:46.780[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:20:46.782[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:20:46.784[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:20:46.788[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:20:46.790[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:20:47.787[INF]<14>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:20:47.820[INF]<14>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:20:48.263[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:20:48.267[INF]<5 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:20:48.322[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:53.387[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:20:53.470[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:20:53.503[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:21:10.237[INF]<1 >[]-> ====================================================================
+2021-04-01 14:21:10.405[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:21:10.408[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:21:10.410[INF]<1 >[]-> Starting up the service
+2021-04-01 14:21:11.119[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:21:12.609[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:21:12.657[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:21:12 +03:00
+2021-04-01 14:21:12.660[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:21:12.704[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:21:12.734[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:21:12.751[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:21:12.754[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:21:12.756[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:21:12.759[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:21:12.761[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:21:12.763[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:21:14.216[INF]<14>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:21:14.220[INF]<14>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:21:14.795[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:21:14.797[INF]<14>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:21:14.858[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:19.938[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:25.037[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:30.079[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:35.131[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:40.228[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:45.299[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:50.344[INF]<14>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:21:53.632[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:21:53.670[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:23:12.814[INF]<1 >[]-> ====================================================================
+2021-04-01 14:23:12.959[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:23:12.960[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:23:12.962[INF]<1 >[]-> Starting up the service
+2021-04-01 14:23:13.726[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:23:15.544[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:23:15.602[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:23:15 +03:00
+2021-04-01 14:23:15.604[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:23:15.636[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:23:15.643[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:23:15.658[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:23:15.662[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:23:15.665[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:23:15.669[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:23:15.673[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:23:15.676[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:23:17.144[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:23:17.149[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:23:17.663[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:23:17.666[INF]<8 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:23:17.718[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:23:22.794[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:23:26.739[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:23:26.774[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:28:28.518[INF]<1 >[]-> ====================================================================
+2021-04-01 14:28:28.629[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:28:28.631[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:28:28.632[INF]<1 >[]-> Starting up the service
+2021-04-01 14:28:29.509[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:28:31.257[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:28:31.346[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:28:31 +03:00
+2021-04-01 14:28:31.566[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:28:31.600[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:28:31.607[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:28:31.625[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:28:31.629[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:28:31.635[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:28:31.637[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:28:31.639[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:28:31.644[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:28:31.647[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:28:31.735[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:28:33.561[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:28:33.563[INF]<13>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:28:33.614[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:28:38.683[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:28:43.748[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:28:48.803[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:28:53.845[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:28:54.204[INF]<7 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:28:54.239[INF]<7 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:29:15.928[INF]<1 >[]-> ====================================================================
+2021-04-01 14:29:16.326[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:29:16.329[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:29:16.332[INF]<1 >[]-> Starting up the service
+2021-04-01 14:29:17.029[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:29:18.272[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:29:18.326[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:29:18 +03:00
+2021-04-01 14:29:18.328[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:29:18.357[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:29:18.362[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:29:18.373[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:29:18.376[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:29:18.379[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:29:18.383[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:29:18.386[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:29:18.388[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:29:33.203[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:29:33.362[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:29:33.570[ERR]<10>[WMSOpcClient.OPCService.OPCClient]-> Error: "Session is already attempting to reconnect." "   at Opc.Ua.Client.Session.Reconnect(ITransportWaitingConnection connection)
+   at Opc.Ua.Client.Session.Reconnect()
+   at WMSOpcClient.OPCService.OPCClient.Notification_KeepAlive(Session sender, KeepAliveEventArgs e) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 245"
+2021-04-01 14:29:33.851[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 2" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:29:33.855[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 2" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:29:33.859[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:29:33.861[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:29:33.864[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:29:33.866[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:29:33.872[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:29:33.875[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:29:33.969[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:29:33.971[INF]<13>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:29:33.980[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:29:34.008[INF]<13>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:29:34.012[INF]<13>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:29:38.993[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:30:26.853[INF]<1 >[]-> ====================================================================
+2021-04-01 14:30:27.024[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:30:27.028[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:30:27.030[INF]<1 >[]-> Starting up the service
+2021-04-01 14:30:28.177[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:30:30.057[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:30:30.099[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:30:30 +03:00
+2021-04-01 14:30:30.101[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:30:30.121[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:30:30.124[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:30:30.137[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:30:30.139[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:30:30.141[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:30:30.144[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:30:30.146[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:30:30.148[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:30:31.338[INF]<13>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:30:31.383[INF]<13>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:30:31.950[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:30:31.952[INF]<12>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:30:32.034[INF]<4 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:30:37.084[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:30:42.124[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:30:47.181[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:30:47.681[INF]<4 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:30:47.713[INF]<4 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:31:18.879[INF]<1 >[]-> ====================================================================
+2021-04-01 14:31:19.112[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:31:19.121[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:31:19.149[INF]<1 >[]-> Starting up the service
+2021-04-01 14:31:19.997[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:31:21.878[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:31:21.917[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:31:21 +03:00
+2021-04-01 14:31:21.922[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:31:21.945[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:31:21.949[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:31:21.960[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:31:21.962[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:31:21.964[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:31:21.966[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:31:21.968[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:31:21.970[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:31:23.320[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:31:23.324[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:31:23.826[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:31:23.829[INF]<12>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:31:23.894[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:31:28.958[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:31:34.014[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:31:37.540[INF]<7 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:31:37.572[INF]<7 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:37:06.487[INF]<1 >[]-> ====================================================================
+2021-04-01 14:37:06.707[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:37:06.722[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:37:06.726[INF]<1 >[]-> Starting up the service
+2021-04-01 14:37:07.555[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:37:09.128[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:37:09.164[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:37:09 +03:00
+2021-04-01 14:37:09.168[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:37:09.190[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:37:09.195[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:37:09.205[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:37:09.209[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:37:09.211[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:37:09.213[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:37:09.215[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:37:09.219[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:37:10.458[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:37:10.462[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:37:10.948[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:37:10.951[INF]<8 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:37:11.004[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:37:16.051[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:37:19.852[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:37:19.900[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:37:34.957[INF]<1 >[]-> ====================================================================
+2021-04-01 14:37:35.118[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:37:35.121[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:37:35.123[INF]<1 >[]-> Starting up the service
+2021-04-01 14:37:35.933[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:37:37.864[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:37:37.914[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:37:37 +03:00
+2021-04-01 14:37:37.917[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:37:37.945[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:37:37.987[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:37:38.000[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:37:38.002[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:37:38.004[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:37:38.010[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:37:38.013[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:37:38.014[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:37:39.200[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:37:39.206[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:37:39.719[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:37:39.721[INF]<10>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:37:39.771[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:37:44.859[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:37:49.912[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:21.861[INF]<1 >[]-> ====================================================================
+2021-04-01 14:38:22.012[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:38:22.014[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:38:22.016[INF]<1 >[]-> Starting up the service
+2021-04-01 14:38:22.686[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:38:24.395[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:38:24.439[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:38:24 +03:00
+2021-04-01 14:38:24.441[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:38:24.462[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:38:24.466[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:38:24.474[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:38:24.476[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:38:24.477[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:38:24.479[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:38:24.482[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:38:24.484[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:38:25.710[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:38:25.713[INF]<10>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:38:26.193[INF]<11>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:38:26.196[INF]<11>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:38:26.267[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:31.324[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:36.410[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:41.462[INF]<11>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:46.510[INF]<11>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:51.554[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:38:56.597[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:01.646[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:01.923[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:39:01.975[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:39:12.360[INF]<1 >[]-> ====================================================================
+2021-04-01 14:39:12.505[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:39:12.512[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:39:12.514[INF]<1 >[]-> Starting up the service
+2021-04-01 14:39:13.285[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:39:15.176[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:39:15.255[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:39:15 +03:00
+2021-04-01 14:39:15.258[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:39:15.282[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:39:15.287[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:39:15.297[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:39:15.305[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:39:15.309[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:39:15.311[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:39:15.313[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:39:15.315[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:39:16.334[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:39:16.339[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:39:16.800[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:39:16.802[INF]<12>[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:39:16.867[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:21.942[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:35.971[INF]<1 >[]-> ====================================================================
+2021-04-01 14:39:36.155[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:39:36.158[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:39:36.159[INF]<1 >[]-> Starting up the service
+2021-04-01 14:39:36.878[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:39:38.691[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:39:38.739[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:39:38 +03:00
+2021-04-01 14:39:38.741[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:39:38.768[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:39:38.774[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:39:38.785[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:39:38.787[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:39:38.792[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:39:38.796[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:39:38.798[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:39:38.800[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:39:40.159[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:39:40.162[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:39:40.622[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:39:40.624[INF]<7 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:39:40.677[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:45.778[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:50.841[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:55.900[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:39:56.858[INF]<12>[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:39:56.903[INF]<12>[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:40:12.656[INF]<1 >[]-> ====================================================================
+2021-04-01 14:40:12.808[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:40:12.810[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:40:12.811[INF]<1 >[]-> Starting up the service
+2021-04-01 14:40:13.554[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:40:15.458[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:40:15.498[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:40:15 +03:00
+2021-04-01 14:40:15.501[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:40:15.521[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:40:15.525[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:40:15.535[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:40:15.537[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:40:15.539[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:40:15.541[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:40:15.545[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:40:15.547[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:40:16.864[INF]<11>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:40:16.869[INF]<11>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:40:17.351[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:40:17.354[INF]<5 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:40:17.407[INF]<10>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:40:22.495[INF]<11>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:40:23.231[INF]<10>[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:40:23.264[INF]<10>[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:40:41.613[INF]<1 >[]-> ====================================================================
+2021-04-01 14:40:41.727[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:40:41.729[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:40:41.730[INF]<1 >[]-> Starting up the service
+2021-04-01 14:40:42.679[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:40:44.297[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:40:44.356[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:40:44 +03:00
+2021-04-01 14:40:44.359[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:40:44.389[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:40:44.403[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:40:44.417[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:40:44.428[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:40:44.441[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:40:44.461[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:40:44.568[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:40:44.578[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:40:44.587[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:40:44.593[INF]<12>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:40:46.683[INF]<7 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:40:46.737[INF]<7 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:40:46.860[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:40:51.937[INF]<12>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:40:55.164[INF]<7 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:40:55.198[INF]<7 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:41:04.127[INF]<1 >[]-> ====================================================================
+2021-04-01 14:41:04.359[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:41:04.361[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:41:04.363[INF]<1 >[]-> Starting up the service
+2021-04-01 14:41:05.348[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:41:07.156[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:41:07.192[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:41:07 +03:00
+2021-04-01 14:41:07.194[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:41:07.213[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:41:07.219[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:41:07.228[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:41:07.230[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:41:07.238[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:41:07.240[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:41:07.242[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:41:07.244[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:41:08.226[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:41:08.230[INF]<9 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:41:08.748[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:41:08.751[INF]<8 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:41:08.804[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:13.849[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:18.922[INF]<4 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:24.002[INF]<8 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:28.463[INF]<4 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:41:28.498[INF]<4 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01 14:41:40.003[INF]<1 >[]-> ====================================================================
+2021-04-01 14:41:40.129[INF]<1 >[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 14:41:40.132[INF]<1 >[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 14:41:40.134[INF]<1 >[]-> Starting up the service
+2021-04-01 14:41:40.940[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 14:41:42.892[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 14:41:42.993[INF]<1 >[WMSOpcClient.Worker]-> Worker running at: 04/01/2021 14:41:42 +03:00
+2021-04-01 14:41:42.999[INF]<1 >[WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 14:41:43.036[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 14:41:43.043[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 14:41:43.058[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 14:41:43.060[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 14:41:43.062[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 14:41:43.081[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 14:41:43.084[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 14:41:43.086[INF]<1 >[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 14:41:44.337[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 14:41:44.341[INF]<8 >[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 14:41:44.828[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes from past
+2021-04-01 14:41:44.831[INF]<5 >[WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 14:41:44.904[INF]<5 >[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:49.957[INF]<13>[WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 14:41:52.464[INF]<5 >[WMSOpcClient.Worker]-> Try disposing services
+2021-04-01 14:41:52.508[INF]<5 >[WMSOpcClient.Worker]-> The service has been stopped...
+2021-04-01T15:09:35.9197935+03:00 [INF] (//) ====================================================================
+2021-04-01T15:09:37.1077334+03:00 [INF] (//) Application Starts. Version: 1.0.0.0
+2021-04-01T15:09:37.6248758+03:00 [INF] (//) Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01T15:09:39.6844199+03:00 [INF] (//) Starting up the service
+2021-04-01T15:09:40.2802643+03:00 [INF] (//) Connecting to OPC Server...
+2021-04-01T15:09:47.9841171+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:09:50.3904182+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:09:52.7513582+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:09:55.1492998+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:09:57.5016526+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:09:59.8980111+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01T15:10:02.2635545+03:00 [ERR] (//) "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01 15:43:27.114[INF]<>[]-> ====================================================================
+2021-04-01 15:43:27.295[INF]<>[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 15:43:27.306[INF]<>[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 15:43:27.312[INF]<>[]-> Starting up the service
+2021-04-01 15:43:28.993[INF]<>[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 15:43:32.269[ERR]<>[WMSOpcClient.OPCService.OPCClient]-> "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01 15:43:34.618[ERR]<>[WMSOpcClient.OPCService.OPCClient]-> "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01 15:43:37.280[ERR]<>[WMSOpcClient.OPCService.OPCClient]-> "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-01 15:43:50.738[INF]< 1>[]-> ====================================================================
+2021-04-01 15:43:50.923[INF]< 1>[]-> Application Starts. Version: 1.0.0.0
+2021-04-01 15:43:50.925[INF]< 1>[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-01 15:43:50.927[INF]< 1>[]-> Starting up the service
+2021-04-01 15:43:51.653[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-01 15:43:53.156[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Connected to OPC Server: "opc.tcp://desktop-itg8i1h:62640/IntegrationObjects/ServerSimulator"
+2021-04-01 15:43:53.205[INF]< 1>[              WMSOpcClient.Worker]-> Worker running at: 04/01/2021 15:43:53 +03:00
+2021-04-01 15:43:53.209[INF]< 1>[              WMSOpcClient.Worker]-> Getting unprocessed boxes...
+2021-04-01 15:43:53.230[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReady"
+2021-04-01 15:43:53.235[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to subscription "Subscription 1" : "ns=2;s=ToWMS_dataReceived"
+2021-04-01 15:43:53.244[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_all"
+2021-04-01 15:43:53.245[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_dataReady"
+2021-04-01 15:43:53.248[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_destination"
+2021-04-01 15:43:53.250[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_originalBox"
+2021-04-01 15:43:53.252[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_sscc"
+2021-04-01 15:43:53.256[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=FromWMS_watchdog"
+2021-04-01 15:43:53.258[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Added tags to session: "ns=2;s=ToWMS_sscc"
+2021-04-01 15:43:54.763[INF]< 8>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReady" has value: "False"
+2021-04-01 15:43:54.768[INF]< 8>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 15:43:55.270[INF]< 8>[WMSOpcClient.OPCService.OPCClient]-> Message 1442 enqued and send to process to OPC Server
+2021-04-01 15:43:55.362[INF]< 8>[              WMSOpcClient.Worker]-> Processed 1 boxes from past
+2021-04-01 15:43:55.364[INF]< 8>[              WMSOpcClient.Worker]-> Entering subscription mode...
+2021-04-01 15:43:55.424[INF]<12>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:43:55.526[INF]<13>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "True"
+2021-04-01 15:43:55.532[INF]<13>[              WMSOpcClient.Worker]-> Box 1442-"123456789"-False-3 has been sent to OPC
+2021-04-01 15:43:55.572[FTL]<13>[              WMSOpcClient.Worker]-> Elapsed time:00:00:00
+2021-04-01 15:43:55.584[INF]< 4>[WMSOpcClient.OPCService.OPCClient]-> Monitored Item: "ToWMS_dataReceived" has value: "False"
+2021-04-01 15:43:56.472[INF]< 4>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:43:57.511[INF]< 4>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:43:58.551[INF]<12>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:43:59.599[INF]< 4>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:44:00.653[INF]<13>[              WMSOpcClient.Worker]-> Processed 0 boxes
+2021-04-01 15:44:01.695[INF]< 8>[              WMSOpcClient.Worker]-> Processed 0 boxes
