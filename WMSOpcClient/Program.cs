@@ -31,14 +31,14 @@ namespace WMSOpcClient
                 var baseDir = AppDomain.CurrentDomain.BaseDirectory;
                 var configuration = new ConfigurationBuilder()
                     .SetBasePath(baseDir)
-                    .AddJsonFile("appsettings.json")
+                    //.AddJsonFile("appsettings.json")
                     .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT")}.json", true)
                     .Build();
                 Log.Logger = new LoggerConfiguration()
                     .ReadFrom.Configuration(configuration)
                     .CreateLogger();
                 Log.Information("====================================================================");
-                Log.Information($"Application Starts. Version: {System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version}");
+                Log.Information($"Application Starts in {Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT")}. Version: {System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version}");
                 Log.Information($"Application Directory: {AppDomain.CurrentDomain.BaseDirectory}");
                 Log.Information("Starting up the service");
 

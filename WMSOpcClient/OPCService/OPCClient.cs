@@ -43,6 +43,7 @@ namespace WMSOpcClient.OPCService
         private UAClientHelperAPI _myClientHelperAPI;
         private EndpointDescription _mySelectedEndpoint;
         private List<String> _myRegisteredNodeIdStrings;
+        private string ToWMSDataReceivedTag;
 
         private ReaderWriterLockSlim rw;
 
@@ -61,6 +62,7 @@ namespace WMSOpcClient.OPCService
             _myRegisteredNodeIdStrings = new List<string>();
             MessageQueue = new ConcurrentQueue<MessageModel>();
             rw = new ReaderWriterLockSlim();
+            ToWMSDataReceivedTag = _configuration.GetSection(subscriptionTags).GetChildren().Where(u => u.Key == "ToWMS_dataReceived").First().Value;
             StartWorkerAsync();
             //StartWorkerAsyncRefactored();
         }
@@ -168,6 +170,8 @@ namespace WMSOpcClient.OPCService
                 var endpoints = _myClientHelperAPI.GetEndpoints(url);
                 var user = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "user").FirstOrDefault().Value;
                 var password = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "password").FirstOrDefault().Value;
+                var userAuth = bool.Parse(_configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "loginRequired").FirstOrDefault().Value);
+
                 _mySelectedEndpoint = endpoints[0];
 
                 //Register mandatory events (cert and keep alive)
@@ -178,7 +182,7 @@ namespace WMSOpcClient.OPCService
                 if (_mySelectedEndpoint != null)
                 {
                     //Call connect
-                    _myClientHelperAPI.Connect(_mySelectedEndpoint, true, user, password).Wait();
+                    _myClientHelperAPI.Connect(_mySelectedEndpoint, userAuth, user, password).Wait();
                     //Extract the session object for further direct session interactions
 
                     _mySession = _myClientHelperAPI.Session;
@@ -222,7 +226,6 @@ namespace WMSOpcClient.OPCService
                 {
                     e.Accept = true;
                 }
-
             }
             catch (Exception ex)
             {
@@ -295,10 +298,6 @@ namespace WMSOpcClient.OPCService
             {
                 if (notification.Value.WrappedValue == true)
                 {
-                    //if (pendingMessageItem!=null && pendingMessageItem.SSSC=="123456")
-                    //{
-                    //    Thread.Sleep(61000);
-                    //}
                     ToWMS_dataReceived = true;
                     if (rw.TryEnterWriteLock(60000))
                     {
@@ -311,7 +310,6 @@ namespace WMSOpcClient.OPCService
 
                                 pendingMessageItem = null;
 
-                                //******************TO BE REMOVED IN PRODUCTION CODE*****************
                                 WriteDataReceived(false);
                             }
                         }
@@ -321,16 +319,6 @@ namespace WMSOpcClient.OPCService
                         }
                     }
                     return;
-                    //if (pendingMessageItem != null)
-                    //{
-                    //    OnMessageReveived?.Invoke(pendingMessageItem);
-                    //    MessageQueue.TryDequeue(out pendingMessageItem);
-
-                    //    pendingMessageItem = null;
-                    //    hasSend = false;
-                    //    //******************TO BE REMOVED IN PRODUCTION CODE*****************
-                    //    WriteDataReceived(false);
-                    //}
                 }
             }
         }
@@ -457,8 +445,6 @@ namespace WMSOpcClient.OPCService
             //SendDestinationToOPC(currentMessage.Destination);
             SendDataReadyToOPC(true);
 
-            //******************TO BE REMOVED IN PRODUCTION CODE*****************
-            WriteDataReceived(true);
         }
 
         private void SendDataToOPC(string sssc, bool original, int destination)
@@ -490,7 +476,7 @@ namespace WMSOpcClient.OPCService
             List<String> values = new List<string>();
             List<String> nodeIdStrings = new List<string>();
             values.Add(data.ToString());
-            nodeIdStrings.Add("ns=2;s=ToWMS_dataReceived");
+            nodeIdStrings.Add(ToWMSDataReceivedTag);
             try
             {
                 _myClientHelperAPI.WriteValues(values, nodeIdStrings);

@@ -15,7 +15,7 @@ namespace WMSOpcClient.DataAccessService.MessageRepository
         private SqlTableDependency<MessageModel> _tableDependency;
         public void Start(string connectionString)
         {
-            _tableDependency = new SqlTableDependency<MessageModel>(connectionString, "aBox");
+            _tableDependency = new SqlTableDependency<MessageModel>(connectionString, "SEN_Conveyor_Box");
             _tableDependency.OnChanged += OnDataChanged;
             _tableDependency.Start();
         }

@@ -35,8 +35,8 @@ namespace WMSOpcClient.DataAccessService.DataRepository
                       + "      ,[OriginalBox]\n"
                       + "      ,[Destination]\n"
                       + "      ,[SendToServer]\n"
-                      + "  FROM [dbo].[aBox]\n"
-                      + "  WHERE dbo.aBox.SendToServer=0 OR dbo.aBox.SendToServer is NULL";
+                      + "  FROM [dbo].[SEN_Conveyor_Box]\n"
+                      + "  WHERE dbo.SEN_Conveyor_Box.SendToServer=0 OR dbo.SEN_Conveyor_Box.SendToServer is NULL";
                 var records = await dbConnection.QueryAsync<BoxModel>(sqlString);
 
                 return records.ToList();
@@ -56,9 +56,9 @@ namespace WMSOpcClient.DataAccessService.DataRepository
                 var affectedRows = 0;
                 foreach (var box in boxes)
                 {
-                    var sqlString = "UPDATE [dbo].[aBox]\n"
+                    var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                            + "   SET [SendToServer] = 1\n"
-                           + $" WHERE [dbo].[aBox].Id = {box.Id}";
+                           + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {box.Id}";
                     var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                     if (affectedRow == 1)
                     {
@@ -82,9 +82,9 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
             {
 
-                var sqlString = "UPDATE [dbo].[aBox]\n"
+                var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [ServerReceived] = 1\n"
-                       + $" WHERE [dbo].[aBox].Id = {boxModel.Id}";
+                       + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)
                 {
@@ -99,9 +99,9 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
             {
 
-                var sqlString = "UPDATE [dbo].[aBox]\n"
+                var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SendToServer] = 1\n"
-                       + $" WHERE [dbo].[aBox].Id = {boxModel.Id}";
+                       + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)
                 {
