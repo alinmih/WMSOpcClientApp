@@ -1,0 +1,9 @@
+2021-04-14 09:41:47.090[INF]< 1>[]-> ====================================================================
+2021-04-14 09:41:47.288[INF]< 1>[]-> Application Starts. Version: 1.0.0.0
+2021-04-14 09:41:47.292[INF]< 1>[]-> Application Directory: C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\bin\Debug\netcoreapp3.1\
+2021-04-14 09:41:47.296[INF]< 1>[]-> Starting up the service
+2021-04-14 09:41:48.778[INF]< 1>[WMSOpcClient.OPCService.OPCClient]-> Connecting to OPC Server...
+2021-04-14 09:41:55.960[ERR]< 1>[WMSOpcClient.OPCService.OPCClient]-> "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
+2021-04-14 09:42:01.560[ERR]< 1>[WMSOpcClient.OPCService.OPCClient]-> "Error establishing a connection: BadNotConnected"-"   at WMSOpcClient.OPCService.UAClientHelperAPI.GetEndpoints(String serverUrl) in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\UAClientHelperAPI.cs:line 114
+   at WMSOpcClient.OPCService.OPCClient.ConnectToServer() in C:\Users\Alin Mihailescu\source\repos\WMSOpcClientApp\WMSOpcClient\OPCService\OPCClient.cs:line 168"
