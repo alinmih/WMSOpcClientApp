@@ -297,7 +297,6 @@ namespace WMSOpcClient.OPCService
             {
                 if (notification.Value.WrappedValue == true)
                 {
-                    ToWMS_dataReceived = true;
                     if (rw.TryEnterWriteLock(60000))
                     {
                         try
