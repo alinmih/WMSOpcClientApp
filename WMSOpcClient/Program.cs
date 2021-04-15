@@ -40,7 +40,7 @@ namespace WMSOpcClient
                 Log.Information("====================================================================");
                 Log.Information($"Application Starts in {Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT")}. Version: {System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version}");
                 Log.Information($"Application Directory: {AppDomain.CurrentDomain.BaseDirectory}");
-                Log.Information("Starting up the service");
+                Log.Information("Waiting for tasks...");
 
                 CreateHostBuilder(args).Build().Run();
 

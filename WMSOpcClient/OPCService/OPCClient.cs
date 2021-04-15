@@ -44,12 +44,9 @@ namespace WMSOpcClient.OPCService
         private EndpointDescription _mySelectedEndpoint;
         private List<String> _myRegisteredNodeIdStrings;
         private string ToWMSDataReceivedTag;
-
+        private string ToWMSDataReadyTag;
         private ReaderWriterLockSlim rw;
 
-        private bool ToWMS_dataReceived = false;
-        private bool ToWMS_dataReady = false;
-        private bool FromWMS_watchdog = false;
 
         private bool shouldStop = false;
         private bool hasSend = false;
@@ -63,6 +60,7 @@ namespace WMSOpcClient.OPCService
             MessageQueue = new ConcurrentQueue<MessageModel>();
             rw = new ReaderWriterLockSlim();
             ToWMSDataReceivedTag = _configuration.GetSection(subscriptionTags).GetChildren().Where(u => u.Key == "ToWMS_dataReceived").First().Value;
+            ToWMSDataReadyTag = _configuration.GetSection(subscriptionTags).GetChildren().Where(u => u.Key == "ToWMS_dataReady").First().Value;
             StartWorkerAsync();
             //StartWorkerAsyncRefactored();
         }
@@ -172,7 +170,7 @@ namespace WMSOpcClient.OPCService
                 var password = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "password").FirstOrDefault().Value;
                 var userAuth = bool.Parse(_configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "loginRequired").FirstOrDefault().Value);
 
-                _mySelectedEndpoint = endpoints[0];
+                _mySelectedEndpoint = endpoints[2];
 
                 //Register mandatory events (cert and keep alive)
                 _myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
@@ -291,6 +289,7 @@ namespace WMSOpcClient.OPCService
                 {
                     var ssscItem = ReadFromOPC();
                     OnSSSCReceived?.Invoke(ssscItem);
+                    SendToWMSDataReady(false);
                     return;
                 }
             }
@@ -310,7 +309,9 @@ namespace WMSOpcClient.OPCService
 
                                 pendingMessageItem = null;
 
-                                WriteDataReceived(false);
+                                SendFromWMSDataReady(false);
+
+                                SendToWMSDataReceived(false);
                             }
                         }
                         finally
@@ -439,15 +440,15 @@ namespace WMSOpcClient.OPCService
         {
             pendingMessageItem = currentMessage;
 
-            SendDataToOPC(pendingMessageItem.SSSC, pendingMessageItem.OriginalBox, pendingMessageItem.Destination);
+            SendFromWMSDataToOPC(pendingMessageItem.SSSC, pendingMessageItem.OriginalBox, pendingMessageItem.Destination);
             //SendSSSCTagToOPC(currentMessage.SSSC);
             //SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
             //SendDestinationToOPC(currentMessage.Destination);
-            SendDataReadyToOPC(true);
+            SendFromWMSDataReady(true);
 
         }
 
-        private void SendDataToOPC(string sssc, bool original, int destination)
+        private void SendFromWMSDataToOPC(string sssc, bool original, int destination)
         {
             List<String> values = new List<string>();
             //values.Add(sssc);
@@ -471,7 +472,7 @@ namespace WMSOpcClient.OPCService
         /// Manual write data received tag
         /// </summary>
         /// <param name="data"></param>
-        private void WriteDataReceived(bool data)
+        private void SendToWMSDataReceived(bool data)
         {
             List<String> values = new List<string>();
             List<String> nodeIdStrings = new List<string>();
@@ -487,14 +488,30 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        private void SendToWMSDataReady(bool data)
+        {
+            List<String> values = new List<string>();
+            List<String> nodeIdStrings = new List<string>();
+            values.Add(data.ToString());
+            nodeIdStrings.Add(ToWMSDataReadyTag);
+            try
+            {
+                _myClientHelperAPI.WriteValues(values, nodeIdStrings);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+            }
+        }
+
         /// <summary>
         /// Send data ready to Server
         /// </summary>
-        /// <param name="sent"></param>
-        private void SendDataReadyToOPC(bool sent)
+        /// <param name="data"></param>
+        private void SendFromWMSDataReady(bool data)
         {
             List<String> values = new List<String>();
-            values.Add(sent.ToString());
+            values.Add(data.ToString());
             try
             {
                 _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_dataReady")).ToList());

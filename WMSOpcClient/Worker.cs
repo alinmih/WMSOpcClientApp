@@ -93,9 +93,9 @@ namespace WMSOpcClient
                 Destination = message.Destination
             };
             _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSSC, box.OriginalBox, box.Destination);
-            _scannedData.UpdateServerReceived(box);
+            _scannedData.UpdateSentToServer(box);
             sw.Stop();
-            _logger.LogCritical("Elapsed time:{e}", sw.Elapsed);
+            _logger.LogDebug("Elapsed time:{e}", sw.Elapsed);
             sw.Reset();
         }
 
@@ -105,6 +105,8 @@ namespace WMSOpcClient
         /// <param name="sssc"></param>
         private void HandleSSSCMessageRead(string sssc)
         {
+            _scannedData.UpdateSSCCRead(sssc);
+
             _logger.LogInformation("SSSC scanned: {sssc}", sssc);
         }
 

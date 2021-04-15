@@ -8,7 +8,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
     {
         Task<List<BoxModel>> GetBoxes();
         Task<int> UpdateBoxes(List<BoxModel> boxes);
-        Task<int> UpdateServerReceived(BoxModel boxModel);
+        Task<int> UpdateSSCCRead(string sscc);
         Task<int> UpdateSentToServer(BoxModel boxModel);
         bool IsSQLServerConnected(string connectionString);
     }

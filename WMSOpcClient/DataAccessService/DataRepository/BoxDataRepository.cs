@@ -77,19 +77,16 @@ namespace WMSOpcClient.DataAccessService.DataRepository
         /// </summary>
         /// <param name="boxModel"></param>
         /// <returns></returns>
-        public async Task<int> UpdateServerReceived(BoxModel boxModel)
+        public async Task<int> UpdateSSCCRead(string sscc)
         {
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
             {
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
-                       + $"   SET [ServerReceived] = 1\n"
-                       + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
+                       + $"   SET [SSCCRead] = 1\n"
+                       + $" WHERE [dbo].[SEN_Conveyor_Box].SSSC = {sscc}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
-                if (affectedRow == 1)
-                {
-                    boxModel.SendToServer = 1;
-                }
+
                 return affectedRow;
             }
         }
