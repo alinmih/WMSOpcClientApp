@@ -216,7 +216,7 @@ namespace WMSOpcClient.OPCService
             try
             {
                 //Search for the server's certificate in store; if found -> accept
-                X509Store store = new X509Store(StoreName.Root, StoreLocation.CurrentUser);
+                X509Store store = new X509Store(StoreName.Root, StoreLocation.LocalMachine);
                 store.Open(OpenFlags.ReadOnly);
                 X509CertificateCollection certCol = store.Certificates.Find(X509FindType.FindByThumbprint, e.Certificate.Thumbprint, true);
                 store.Close();

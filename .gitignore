@@ -343,3 +343,6 @@ healthchecksdb
 /Kit
 /WMSOpcClient/Rejected/certs
 /server.uap
+/service commands.txt
+/insert_1.sql
+/insert_2.sql
