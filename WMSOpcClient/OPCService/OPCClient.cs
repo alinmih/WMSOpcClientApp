@@ -97,7 +97,7 @@ namespace WMSOpcClient.OPCService
                 MessageModel currentMessage = null;
                 while (shouldStop == false)
                 {
-                    
+
                     if (rw.TryEnterWriteLock(1000))
                     {
                         try
@@ -116,11 +116,11 @@ namespace WMSOpcClient.OPCService
                             ProcessMessage(currentMessage);
                         }
 
-                        Thread.Sleep(10);
+                        Thread.Sleep(1000);
                     }
                     else
                     {
-                        Thread.Sleep(10);
+                        Thread.Sleep(1000);
                     }
 
                 }
@@ -170,7 +170,7 @@ namespace WMSOpcClient.OPCService
                 var password = _configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "password").FirstOrDefault().Value;
                 var userAuth = bool.Parse(_configuration.GetSection("Credentials").GetChildren().Where(u => u.Key == "loginRequired").FirstOrDefault().Value);
 
-                _mySelectedEndpoint = endpoints[2];
+                _mySelectedEndpoint = endpoints[0];
 
                 //Register mandatory events (cert and keep alive)
                 _myClientHelperAPI.KeepAliveNotification += new KeepAliveEventHandler(Notification_KeepAlive);
@@ -196,7 +196,7 @@ namespace WMSOpcClient.OPCService
             }
             catch (Exception ex)
             {
-                _logger.LogError("{0}-{1}",ex.Message, ex.StackTrace);
+                _logger.LogError("{0}-{1}", ex.Message, ex.StackTrace);
                 OpcServerConnected = false;
             }
 
@@ -281,7 +281,7 @@ namespace WMSOpcClient.OPCService
                 return;
             }
 
-            _logger.LogInformation("Monitored Item: {item} has value: {value}", monitoredItem.DisplayName, notification.Value.WrappedValue);
+            _logger.LogDebug("Monitored Item: {item} has value: {value}", monitoredItem.DisplayName, notification.Value.WrappedValue);
 
             if (monitoredItem.DisplayName == "ToWMS_dataReady")
             {
@@ -308,9 +308,6 @@ namespace WMSOpcClient.OPCService
 
                                 pendingMessageItem = null;
 
-                                SendFromWMSDataReady(false);
-
-                                SendToWMSDataReceived(false);
                             }
                         }
                         finally
@@ -332,7 +329,7 @@ namespace WMSOpcClient.OPCService
             {
                 if (_mySubscription == null && _mySession != null)
                 {
-                    _mySubscription = _myClientHelperAPI.Subscribe(100);
+                    _mySubscription = _myClientHelperAPI.Subscribe(10);
                     _myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 }
             }
@@ -385,24 +382,6 @@ namespace WMSOpcClient.OPCService
             }
         }
 
-        /// <summary>
-        /// Read SSSC value from OPC server
-        /// </summary>
-        /// <returns></returns>
-        private string ReadFromOPC()
-        {
-            List<String> values = new List<String>();
-            try
-            {
-                values = _myClientHelperAPI.ReadValues(_myRegisteredNodeIdStrings.Where(item => item.Contains("ToWMS_sscc")).ToList());
-                return values.ElementAt<String>(0);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning(ex.Message, "Error");
-                return "";
-            }
-        }
 
         /// <summary>
         /// Add tags to session and subscription
@@ -437,9 +416,12 @@ namespace WMSOpcClient.OPCService
         /// </summary>
         public void ProcessMessage(MessageModel currentMessage)
         {
-            pendingMessageItem = currentMessage;
+            
+            SendFromWMSDataReady(false);
+            SendToWMSDataReceived(false);
 
-            SendFromWMSDataToOPC(pendingMessageItem.SSSC, pendingMessageItem.OriginalBox, pendingMessageItem.Destination);
+            //pendingMessageItem = currentMessage;
+            SendFromWMSDataToOPC(currentMessage.SSSC, currentMessage.OriginalBox, currentMessage.Destination);
             //SendSSSCTagToOPC(currentMessage.SSSC);
             //SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
             //SendDestinationToOPC(currentMessage.Destination);
@@ -453,13 +435,13 @@ namespace WMSOpcClient.OPCService
             //values.Add(sssc);
             //values.Add(original.ToString());
             //values.Add(destination.ToString());
-            var valToSend = string.Concat(sssc,";", original,";", destination);
+            var valToSend = string.Concat(sssc, ";", original, ";", destination);
             values.Add(valToSend);
 
             //var myNodeId = myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList();
             try
             {
-                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(items => items.Contains("i=2")).ToList());
             }
             catch (Exception ex)
             {
@@ -487,6 +469,10 @@ namespace WMSOpcClient.OPCService
             }
         }
 
+        /// <summary>
+        /// Received a message from server
+        /// </summary>
+        /// <param name="data"></param>
         private void SendToWMSDataReady(bool data)
         {
             List<String> values = new List<string>();
@@ -513,13 +499,33 @@ namespace WMSOpcClient.OPCService
             values.Add(data.ToString());
             try
             {
-                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("FromWMS_dataReady")).ToList());
+                _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(item => item.Contains("i=3")).ToList());
             }
             catch (Exception ex)
             {
                 _logger.LogWarning(ex.Message, "Error");
             }
         }
+
+        /// <summary>
+        /// Read SSSC value from OPC server
+        /// </summary>
+        /// <returns></returns>
+        private string ReadFromOPC()
+        {
+            List<String> values = new List<String>();
+            try
+            {
+                values = _myClientHelperAPI.ReadValues(_myRegisteredNodeIdStrings.Where(item => item.Contains("i=4")).ToList());
+                return values.ElementAt<String>(0);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message, "Error");
+                return "";
+            }
+        }
+
 
         private void SendDestinationToOPC(int destination)
         {

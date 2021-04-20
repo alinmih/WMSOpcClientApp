@@ -31,7 +31,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
             using (IDbConnection dbConnection = new SqlConnection(_configuration.GetConnectionString(_connectionString.SqlConnectionName)))
             {
                 var sqlString = "SELECT[Id]\n"
-                      + "      ,[SSSC]\n"
+                      + "      ,[SSCC]\n"
                       + "      ,[OriginalBox]\n"
                       + "      ,[Destination]\n"
                       + "      ,[SendToServer]\n"
@@ -84,7 +84,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SSCCRead] = 1\n"
-                       + $" WHERE [dbo].[SEN_Conveyor_Box].SSSC = {sscc}";
+                       + $" WHERE [dbo].[SEN_Conveyor_Box].SSCC = '{sscc}'";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
 
                 return affectedRow;

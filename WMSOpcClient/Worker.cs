@@ -61,7 +61,6 @@ namespace WMSOpcClient
             {
                 _logger.LogError("Cannot connect to SQL server: {0}-{1}", ex.Message, ex.StackTrace);
             }
-
             try
             {
                 _opcClient.Connect();
@@ -88,11 +87,11 @@ namespace WMSOpcClient
             var box = new BoxModel
             {
                 Id = message.Id,
-                SSSC = message.SSSC,
+                SSCC = message.SSSC,
                 OriginalBox = message.OriginalBox,
                 Destination = message.Destination
             };
-            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSSC, box.OriginalBox, box.Destination);
+            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSCC, box.OriginalBox, box.Destination);
             _scannedData.UpdateSentToServer(box);
             sw.Stop();
             _logger.LogDebug("Elapsed time:{e}", sw.Elapsed);
@@ -106,8 +105,7 @@ namespace WMSOpcClient
         private void HandleSSSCMessageRead(string sssc)
         {
             _scannedData.UpdateSSCCRead(sssc);
-
-            _logger.LogInformation("SSSC scanned: {sssc}", sssc);
+            _logger.LogInformation("SSCC scanned: {sssc}", sssc);
         }
 
         /// <summary>
@@ -178,7 +176,7 @@ namespace WMSOpcClient
         private async Task<List<BoxModel>> UpdateExistingSQLItems()
         {
             var records = await _scannedData.GetBoxes();
-            
+
             if (records.Count > 0)
             {
                 foreach (var record in records)
@@ -186,16 +184,17 @@ namespace WMSOpcClient
                     var model = new MessageModel
                     {
                         Id = record.Id,
-                        SSSC = record.SSSC,
+                        SSSC = record.SSCC,
                         OriginalBox = record.OriginalBox,
                         Destination = record.Destination
                     };
 
                     _opcClient.SendMessageToQueue(model);
 
-                    await _scannedData.UpdateSentToServer(new BoxModel {
+                    await _scannedData.UpdateSentToServer(new BoxModel
+                    {
                         Id = model.Id,
-                        SSSC = model.SSSC,
+                        SSCC = model.SSSC,
                         OriginalBox = model.OriginalBox,
                         Destination = model.Destination
                     });

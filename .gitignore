@@ -342,3 +342,4 @@ healthchecksdb
 /Logs
 /Kit
 /WMSOpcClient/Rejected/certs
+/server.uap
