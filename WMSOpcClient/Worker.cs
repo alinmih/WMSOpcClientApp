@@ -188,9 +188,9 @@ namespace WMSOpcClient
                         OriginalBox = record.OriginalBox,
                         Destination = record.Destination
                     };
-
+                    
+                    sw.Start();
                     _opcClient.SendMessageToQueue(model);
-
                     await _scannedData.UpdateSentToServer(new BoxModel
                     {
                         Id = model.Id,

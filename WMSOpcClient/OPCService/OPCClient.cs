@@ -116,11 +116,11 @@ namespace WMSOpcClient.OPCService
                             ProcessMessage(currentMessage);
                         }
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(100);
                     }
                     else
                     {
-                        Thread.Sleep(1000);
+                        Thread.Sleep(100);
                     }
 
                 }
