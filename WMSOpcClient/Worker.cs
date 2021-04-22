@@ -26,6 +26,7 @@ namespace WMSOpcClient
         private readonly IMessageRepository _messageRepository;
         private readonly IOPCClient _opcClient;
         private readonly ConnectionStringData _connectionString;
+        private int millisecondsTimeout = 0;
         private Stopwatch sw;
 
 
@@ -38,6 +39,7 @@ namespace WMSOpcClient
             _opcClient = OPCClient;
             _connectionString = connectionString;
             sw = new Stopwatch();
+            millisecondsTimeout = int.Parse(_configuration.GetSection("RefreshTime").Value);
         }
 
         // init clients on startup
@@ -105,6 +107,7 @@ namespace WMSOpcClient
         private void HandleSSSCMessageRead(string sssc)
         {
             _scannedData.UpdateSSCCRead(sssc);
+
             _logger.LogInformation("SSCC scanned: {sssc}", sssc);
         }
 
@@ -164,7 +167,7 @@ namespace WMSOpcClient
                     newRecords = await UpdateExistingSQLItems();
                     _logger.LogInformation("Processed {boxes} boxes", newRecords.Count);
 
-                    Thread.Sleep(int.Parse(_configuration.GetSection("RefreshTime").Value));
+                    Thread.Sleep(millisecondsTimeout);
                 }
             }
             catch (Exception ex)
@@ -177,7 +180,7 @@ namespace WMSOpcClient
         {
             var records = await _scannedData.GetBoxes();
 
-            if (records.Count > 0)
+            if (records.Count > 0 && _opcClient.OpcServerConnected == true)
             {
                 foreach (var record in records)
                 {

@@ -249,23 +249,31 @@ namespace WMSOpcClient.OPCService
             catch (Exception ex)
             {
                 _logger.LogError("Error: {error} {stackTrace}", ex.Message, ex.StackTrace);
-                OpcServerConnected = false;
-                _mySubscription.Delete(true);
-                _mySubscription = null;
-                _myClientHelperAPI.Disconnect();
-                _mySession = null;
-                _myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
-                _myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
-                _myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
-                while (OpcServerConnected != true)
-                {
-                    //Thread.Sleep(1000);
-                    ConnectToServer();
-                }
-                AddSubscription();
-                AddTagsToSubscription(_mySubscription);
-                AddTagsToSession();
+                Reconnect();
             }
+        }
+
+        /// <summary>
+        /// Reconnect to server when connection fails
+        /// </summary>
+        private void Reconnect()
+        {
+            OpcServerConnected = false;
+            _mySubscription.Delete(true);
+            _mySubscription = null;
+            _myClientHelperAPI.Disconnect();
+            _mySession = null;
+            _myClientHelperAPI.KeepAliveNotification -= new KeepAliveEventHandler(Notification_KeepAlive);
+            _myClientHelperAPI.CertificateValidationNotification -= new CertificateValidationEventHandler(Notification_ServerCertificate);
+            _myClientHelperAPI.ItemChangedNotification -= new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
+            while (OpcServerConnected != true)
+            {
+                //Thread.Sleep(1000);
+                ConnectToServer();
+            }
+            AddSubscription();
+            AddTagsToSubscription(_mySubscription);
+            AddTagsToSession();
         }
 
         /// <summary>
@@ -281,7 +289,7 @@ namespace WMSOpcClient.OPCService
                 return;
             }
 
-            _logger.LogDebug("Monitored Item: {item} has value: {value}", monitoredItem.DisplayName, notification.Value.WrappedValue);
+            _logger.LogDebug("{item} has value: {value}", monitoredItem.DisplayName, notification.Value.WrappedValue);
 
             if (monitoredItem.DisplayName == "ToWMS_dataReady")
             {
@@ -329,7 +337,7 @@ namespace WMSOpcClient.OPCService
             {
                 if (_mySubscription == null && _mySession != null)
                 {
-                    _mySubscription = _myClientHelperAPI.Subscribe(10);
+                    _mySubscription = _myClientHelperAPI.Subscribe(100);
                     _myClientHelperAPI.ItemChangedNotification += new MonitoredItemNotificationEventHandler(Notification_MonitoredItem);
                 }
             }

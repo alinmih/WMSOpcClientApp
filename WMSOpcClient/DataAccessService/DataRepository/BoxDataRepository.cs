@@ -69,7 +69,6 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 return affectedRows;
             }
-
         }
 
         /// <summary>
@@ -84,6 +83,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SSCCRead] = 1\n"
+                       + $"      ,[DateSSCCRead] = {DateTime.Now}\n"
                        + $" WHERE [dbo].[SEN_Conveyor_Box].SSCC = '{sscc}'";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
 
@@ -98,6 +98,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SendToServer] = 1\n"
+                       + $"      ,[DateSendToServer] = '{DateTime.Now}'\n"
                        + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)
