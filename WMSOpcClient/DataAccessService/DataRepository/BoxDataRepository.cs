@@ -35,6 +35,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
                       + "      ,[OriginalBox]\n"
                       + "      ,[Destination]\n"
                       + "      ,[SendToServer]\n"
+                      + "      ,[PickingLocation]\n"
                       + "  FROM [dbo].[SEN_Conveyor_Box]\n"
                       + "  WHERE dbo.SEN_Conveyor_Box.SendToServer=0 OR dbo.SEN_Conveyor_Box.SendToServer is NULL";
                 var records = await dbConnection.QueryAsync<BoxModel>(sqlString);
@@ -83,7 +84,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SSCCRead] = 1\n"
-                       + $"      ,[DateSSCCRead] = {DateTime.Now}\n"
+                       + $"      ,[DateSSCCRead] = '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}'\n"
                        + $" WHERE [dbo].[SEN_Conveyor_Box].SSCC = '{sscc}'";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
 
@@ -98,7 +99,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SendToServer] = 1\n"
-                       + $"      ,[DateSendToServer] = '{DateTime.Now}'\n"
+                       + $"      ,[DateSendToServer] = '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}'\n"
                        + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)

@@ -111,20 +111,6 @@ namespace WMSOpcClient
             _logger.LogInformation("SSCC scanned: {sssc}", sssc);
         }
 
-        /// <summary>
-        /// Handler which forward message from SQL event to OPC client
-        /// </summary>
-        /// <param name="message"></param>
-        private void HandleSQLMessageReceived(MessageModel message)
-        {
-            sw.Start();
-            //_logger.LogInformation("Time started", DateTime.Now);
-            //Console.WriteLine($"- New Message Received: {message.Id}\t {message.SSSC}\t{message.OriginalBox}\t{message.Destination}]");
-            _logger.LogInformation("New Message Received:{id}/{sssc}/{orig}/{dest}", message.Id, message.SSSC, message.OriginalBox, message.Destination);
-
-            _opcClient.SendMessageToQueue(message);
-        }
-
         public override Task StopAsync(CancellationToken cancellationToken)
         {
             // dispose services
@@ -189,7 +175,8 @@ namespace WMSOpcClient
                         Id = record.Id,
                         SSSC = record.SSCC,
                         OriginalBox = record.OriginalBox,
-                        Destination = record.Destination
+                        Destination = record.Destination,
+                        PickingLocation = record.PickingLocation
                     };
                     
                     sw.Start();
@@ -199,7 +186,8 @@ namespace WMSOpcClient
                         Id = model.Id,
                         SSCC = model.SSSC,
                         OriginalBox = model.OriginalBox,
-                        Destination = model.Destination
+                        Destination = model.Destination,
+                        PickingLocation = model.PickingLocation
                     });
                 }
             }
