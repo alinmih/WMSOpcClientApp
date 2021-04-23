@@ -91,9 +91,10 @@ namespace WMSOpcClient
                 Id = message.Id,
                 SSCC = message.SSSC,
                 OriginalBox = message.OriginalBox,
-                Destination = message.Destination
+                Destination = message.Destination,
+                PickingLocation = message.PickingLocation
             };
-            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest} has been sent to OPC", box.Id, box.SSCC, box.OriginalBox, box.Destination);
+            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest}-{pick} has been sent to OPC", box.Id, box.SSCC, box.OriginalBox, box.Destination,box.PickingLocation);
             _scannedData.UpdateSentToServer(box);
             sw.Stop();
             _logger.LogDebug("Elapsed time:{e}", sw.Elapsed);
