@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Opc.Ua;
 using Opc.Ua.Client;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace WMSOpcClient
         private readonly ConnectionStringData _connectionString;
         private int millisecondsTimeout = 0;
         private Stopwatch sw;
+        private ConcurrentDictionary<int,BoxModel> CurrentBoxes;
 
 
         public Worker(ILogger<Worker> logger, IConfiguration configuration, IBoxDataRepository scannedData, IMessageRepository messageRepository, IOPCClient OPCClient, ConnectionStringData connectionString)
@@ -39,6 +41,7 @@ namespace WMSOpcClient
             _opcClient = OPCClient;
             _connectionString = connectionString;
             sw = new Stopwatch();
+            CurrentBoxes = new ConcurrentDictionary<int, BoxModel>();
             millisecondsTimeout = int.Parse(_configuration.GetSection("RefreshTime").Value);
         }
 
@@ -94,8 +97,13 @@ namespace WMSOpcClient
                 Destination = message.Destination,
                 PickingLocation = message.PickingLocation
             };
-            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest}-{pick} has been sent to OPC", box.Id, box.SSCC, box.OriginalBox, box.Destination,box.PickingLocation);
+            _logger.LogInformation("Box {id}-{sssc}-{orig}-{dest}-{pick} has been sent to OPC", box.Id, box.SSCC, box.OriginalBox, box.Destination, box.PickingLocation);
             _scannedData.UpdateSentToServer(box);
+            var tookedBox = new BoxModel();
+            if (CurrentBoxes.TryRemove(message.Id, out tookedBox))
+            {
+                _logger.LogDebug("Removed {0} from CurrentBoxes", tookedBox.Id);
+            }
             sw.Stop();
             _logger.LogDebug("Elapsed time:{e}", sw.Elapsed);
             sw.Reset();
@@ -136,23 +144,23 @@ namespace WMSOpcClient
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                _logger.LogInformation("Getting unprocessed boxes...");
-
                 // start monitor opc 
                 _opcClient.Start();
 
-                List<BoxModel> records = await UpdateExistingSQLItems();
 
-                _logger.LogInformation("Processed {boxes} boxes from past", records.Count);
+                //List<BoxModel> records = await UpdateExistingSQLItems();
+
+                //_logger.LogInformation("Processed {boxes} boxes from past", records.Count);
 
                 _logger.LogInformation("Entering subscription mode...");
 
                 // new implementation to search for new records
                 while (!stoppingToken.IsCancellationRequested)
                 {
-                    List<BoxModel> newRecords = new List<BoxModel>();
-                    newRecords = await UpdateExistingSQLItems();
-                    _logger.LogInformation("Processed {boxes} boxes", newRecords.Count);
+                    if (CurrentBoxes.IsEmpty)
+                    {
+                        CurrentBoxes = await UpdateExistingSQLItems();
+                    }
 
                     Thread.Sleep(millisecondsTimeout);
                 }
@@ -163,7 +171,7 @@ namespace WMSOpcClient
             }
         }
 
-        private async Task<List<BoxModel>> UpdateExistingSQLItems()
+        private async Task<ConcurrentDictionary<int,BoxModel>> UpdateExistingSQLItems()
         {
             var records = await _scannedData.GetBoxes();
 
@@ -179,20 +187,21 @@ namespace WMSOpcClient
                         Destination = record.Destination,
                         PickingLocation = record.PickingLocation
                     };
-                    
+
+                    CurrentBoxes.TryAdd(record.Id, record);
                     sw.Start();
                     _opcClient.SendMessageToQueue(model);
-                    await _scannedData.UpdateSentToServer(new BoxModel
-                    {
-                        Id = model.Id,
-                        SSCC = model.SSSC,
-                        OriginalBox = model.OriginalBox,
-                        Destination = model.Destination,
-                        PickingLocation = model.PickingLocation
-                    });
+                    //await _scannedData.UpdateSentToServer(new BoxModel
+                    //{
+                    //    Id = model.Id,
+                    //    SSCC = model.SSSC,
+                    //    OriginalBox = model.OriginalBox,
+                    //    Destination = model.Destination,
+                    //    PickingLocation = model.PickingLocation
+                    //});
                 }
             }
-            return records;
+            return CurrentBoxes;
 
         }
     }
