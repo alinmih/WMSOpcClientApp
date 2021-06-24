@@ -11,6 +11,7 @@ namespace WMSOpcClient.DataAccessService.Models
         public bool OriginalBox { get; set; }
         public int Destination { get; set; }
         public int SendToServer { get; set; }
+        public string PickingLocation { get; set; }
 
     }
 }

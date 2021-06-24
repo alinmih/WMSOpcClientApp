@@ -315,7 +315,6 @@ namespace WMSOpcClient.OPCService
                                 MessageQueue.TryDequeue(out pendingMessageItem);
 
                                 pendingMessageItem = null;
-
                             }
                         }
                         finally
@@ -428,25 +427,19 @@ namespace WMSOpcClient.OPCService
             SendFromWMSDataReady(false);
             SendToWMSDataReceived(false);
 
-            //pendingMessageItem = currentMessage;
-            SendFromWMSDataToOPC(currentMessage.SSSC, currentMessage.OriginalBox, currentMessage.Destination);
-            //SendSSSCTagToOPC(currentMessage.SSSC);
-            //SendOriginalBoxTagToOPC(currentMessage.OriginalBox);
-            //SendDestinationToOPC(currentMessage.Destination);
+            SendFromWMSDataToOPC(currentMessage.SSSC, currentMessage.OriginalBox, currentMessage.Destination, currentMessage.PickingLocation);
+
             SendFromWMSDataReady(true);
 
         }
 
-        private void SendFromWMSDataToOPC(string sssc, bool original, int destination)
+        private void SendFromWMSDataToOPC(string sssc, bool original, int destination, string pickLocation)
         {
             List<String> values = new List<string>();
-            //values.Add(sssc);
-            //values.Add(original.ToString());
-            //values.Add(destination.ToString());
-            var valToSend = string.Concat(sssc, ";", original, ";", destination);
+
+            var valToSend = string.Concat(sssc, ";", original, ";", destination, ";", pickLocation);
             values.Add(valToSend);
 
-            //var myNodeId = myRegisteredNodeIdStrings.Where(items => items.Contains("ToWMS_sscc")).ToList();
             try
             {
                 _myClientHelperAPI.WriteValues(values, _myRegisteredNodeIdStrings.Where(items => items.Contains("i=2")).ToList());

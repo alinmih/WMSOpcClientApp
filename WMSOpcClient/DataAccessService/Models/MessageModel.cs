@@ -10,5 +10,6 @@ namespace WMSOpcClient.DataAccessService.Models
         public string SSSC { get; set; }
         public bool OriginalBox { get; set; }
         public int Destination { get; set; }
+        public string PickingLocation { get; set; }
     }
 }
