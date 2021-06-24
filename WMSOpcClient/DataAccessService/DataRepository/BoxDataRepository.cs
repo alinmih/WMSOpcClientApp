@@ -98,7 +98,7 @@ namespace WMSOpcClient.DataAccessService.DataRepository
 
                 var sqlString = "UPDATE [dbo].[SEN_Conveyor_Box]\n"
                        + $"   SET [SendToServer] = 1\n"
-                       + $"      ,[DateSendToServer] = '{DateTime.Now}'\n"
+                       + $"      ,[DateSendToServer] = '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}'\n"
                        + $" WHERE [dbo].[SEN_Conveyor_Box].Id = {boxModel.Id}";
                 var affectedRow = await dbConnection.ExecuteAsync(sqlString);
                 if (affectedRow == 1)
